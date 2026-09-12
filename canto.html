@@ -1,0 +1,2648 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canción Terapéutica Personalizada · Kirti Ranpreet</title>
+  <meta name="description" content="Eleva tu frecuencia y reprograma tu subconsciente. Una canción terapéutica creada desde tu historia, tus palabras y tu proceso.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* =========================================================
+       VARIABLES Y PALETA DE BRANDING (ELEGIRTE / KIRTI RANPREET)
+       ========================================================= */
+    :root {
+      --bg-primary: #F9F7EB;
+      --bg-secondary: #F4EBE2;
+      --bg-card: #FFFFFF;
+      --bg-dark: #130e12;
+      --bg-dark-card: #1c141a;
+      
+      --text-main: #181517;
+      --text-muted: #5c4e56;
+      --text-light: #8e7a84;
+      --text-inverse: #F9F7EB;
+      
+      --accent-gold: #9c396c;        /* Magenta Berry Signature */
+      --accent-gold-light: #b3548a;  /* Rose Plum */
+      --accent-copper: #c77b9d;      /* Warm Mauve */
+      --accent-rose: #e8b3cf;        /* Soft Blush Champagne */
+      --accent-green: #34c759;       /* Active Audio Connection LED */
+      
+      --border-subtle: rgba(156, 57, 108, 0.16);
+      --border-focus: rgba(156, 57, 108, 0.45);
+      
+      --shadow-sm: 0 4px 12px rgba(24, 21, 23, 0.05);
+      --shadow-md: 0 12px 30px rgba(24, 21, 23, 0.08);
+      --shadow-lg: 0 24px 55px rgba(156, 57, 108, 0.14);
+      --shadow-glow: 0 0 35px rgba(232, 179, 207, 0.55);
+      
+      --radius-sm: 10px;
+      --radius-md: 18px;
+      --radius-lg: 26px;
+      --radius-full: 9999px;
+      
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --font-display: 'Cinzel', serif;
+      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-ui: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    /* BASE RESET */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* SCROLL PROGRESS BAR */
+    #scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      width: 0%;
+      background: linear-gradient(90deg, var(--accent-gold), var(--accent-rose), var(--accent-gold-light));
+      z-index: 1000;
+      transition: width 0.1s ease-out;
+    }
+
+    /* TYPOGRAPHY */
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      font-weight: 700;
+      line-height: 1.25;
+      color: var(--text-main);
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: clamp(2.3rem, 5.2vw, 3.6rem);
+      margin-bottom: 22px;
+    }
+
+    h2 {
+      font-size: clamp(1.9rem, 3.8vw, 2.7rem);
+      margin-bottom: 18px;
+    }
+
+    h3 {
+      font-size: clamp(1.3rem, 2.4vw, 1.75rem);
+      margin-bottom: 12px;
+    }
+
+    p {
+      margin-bottom: 18px;
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    p strong {
+      color: var(--text-main);
+    }
+
+    .lead-p {
+      font-size: clamp(1.1rem, 2vw, 1.25rem);
+      line-height: 1.8;
+      color: #3f3339;
+    }
+
+    .gold-gradient-text {
+      background: linear-gradient(135deg, var(--accent-gold) 0%, #d8699b 50%, var(--accent-gold-light) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+    }
+
+    .hero-tagline {
+      display: inline-block;
+      font-family: var(--font-ui);
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent-gold);
+      background: rgba(156, 57, 108, 0.08);
+      padding: 6px 18px;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(156, 57, 108, 0.2);
+      margin-bottom: 18px;
+    }
+
+    /* CONTAINERS */
+    .container {
+      width: 100%;
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .container-narrow {
+      max-width: 820px;
+    }
+
+    .container-tight {
+      max-width: 680px;
+    }
+
+    section {
+      padding: 95px 0;
+      position: relative;
+    }
+
+    /* BUTTONS & CTA */
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: linear-gradient(135deg, var(--accent-gold) 0%, #822756 100%);
+      color: #FFFFFF !important;
+      font-family: var(--font-ui);
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      padding: 18px 38px;
+      border-radius: var(--radius-full);
+      text-decoration: none;
+      box-shadow: 0 12px 28px rgba(156, 57, 108, 0.32);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 18px 40px rgba(156, 57, 108, 0.45);
+      background: linear-gradient(135deg, #ad4079 0%, #902d60 100%);
+    }
+
+    .cta-button::after {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -60%;
+      width: 40%;
+      height: 200%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+      transform: rotate(25deg);
+      animation: shineSweep 4.5s infinite;
+    }
+
+    @keyframes shineSweep {
+      0% { left: -60%; }
+      25%, 100% { left: 140%; }
+    }
+
+    .cta-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #FFFFFF;
+      color: var(--accent-gold) !important;
+      border: 1.5px solid var(--accent-rose);
+      padding: 15px 30px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.25s ease;
+    }
+    .cta-secondary:hover {
+      background: var(--bg-secondary);
+      border-color: var(--accent-gold);
+      transform: translateY(-2px);
+    }
+
+    /* TOP NAVBAR */
+    .site-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(249, 247, 235, 0.92);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(156, 57, 108, 0.12);
+      z-index: 999;
+      transition: all 0.3s ease;
+    }
+
+    .nav-inner {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-brand {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: var(--text-main);
+    }
+
+    .nav-brand-text {
+      font-family: var(--font-serif);
+      font-size: 1.22rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      color: var(--text-main);
+    }
+
+    .nav-brand-sub {
+      font-family: var(--font-ui);
+      font-size: 0.68rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent-gold);
+      font-weight: 700;
+      margin-top: -2px;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 28px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent-gold);
+    }
+
+    .nav-cta {
+      background: var(--accent-gold);
+      color: #FFFFFF !important;
+      padding: 9px 20px;
+      border-radius: var(--radius-full);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(156, 57, 108, 0.25);
+      transition: all 0.25s ease;
+    }
+
+    .nav-cta:hover {
+      background: var(--accent-gold-light);
+      transform: translateY(-2px);
+    }
+
+    /* HERO SECTION */
+    .hero-section {
+      padding-top: 140px;
+      padding-bottom: 85px;
+      background: radial-gradient(circle at 75% 25%, rgba(232, 179, 207, 0.42) 0%, rgba(249, 247, 235, 0) 65%), var(--bg-primary);
+      border-bottom: 1px solid var(--border-subtle);
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .hero-subtitle {
+      font-size: 1.15rem;
+      line-height: 1.85;
+      color: #3b3036;
+      margin-bottom: 28px;
+    }
+
+    .hero-audio-teaser {
+      background: rgba(255, 255, 255, 0.85);
+      border: 1px solid var(--border-focus);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      margin-bottom: 26px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .teaser-play-btn {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--accent-gold);
+      color: #FFF;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      flex-shrink: 0;
+      box-shadow: 0 6px 16px rgba(156, 57, 108, 0.35);
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .teaser-play-btn:hover {
+      transform: scale(1.08);
+      background: var(--accent-gold-light);
+    }
+
+    .teaser-text {
+      font-size: 0.92rem;
+      color: var(--text-main);
+      line-height: 1.45;
+    }
+
+    .teaser-text strong {
+      display: block;
+      color: var(--accent-gold);
+      font-size: 0.95rem;
+      margin-bottom: 2px;
+    }
+
+    .trust-pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .trust-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      background: rgba(255, 255, 255, 0.85);
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(156, 57, 108, 0.15);
+    }
+
+    .trust-pill svg {
+      color: var(--accent-gold);
+      flex-shrink: 0;
+    }
+
+    /* MOCKUP INTERACTIVO: IPHONE + AIRPODS PRO */
+    .hero-mockup-stage {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      user-select: none;
+    }
+
+    .stage-ambient-glow {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 115%;
+      height: 115%;
+      background: radial-gradient(circle, rgba(232, 179, 207, 0.5) 0%, rgba(156, 57, 108, 0.14) 45%, transparent 70%);
+      filter: blur(40px);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .device-phone {
+      position: relative;
+      width: 280px;
+      height: 535px;
+      background: #0f0a0d;
+      border-radius: 44px;
+      padding: 9px;
+      box-shadow: 0 30px 65px rgba(24, 21, 23, 0.25), 0 12px 30px rgba(156, 57, 108, 0.22);
+      border: 3px solid #e0c8d4;
+      z-index: 5;
+      transform: rotate(0.8deg);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .device-phone:hover {
+      transform: rotate(0deg) translateY(-6px) scale(1.015);
+      box-shadow: 0 40px 80px rgba(156, 57, 108, 0.32);
+    }
+
+    .phone-screen {
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at 50% 30%, #9c396c 0%, #5d1b3f 75%, #380a22 100%);
+      border-radius: 36px;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      color: #F9F7EB;
+      padding: 14px 16px;
+    }
+
+    .phone-island {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 78px;
+      height: 20px;
+      background: #000000;
+      border-radius: 12px;
+      z-index: 10;
+    }
+
+    .phone-status-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--font-ui);
+      font-size: 0.65rem;
+      font-weight: 600;
+      padding: 0 6px;
+      margin-top: 2px;
+      opacity: 0.85;
+    }
+
+    .phone-app-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 18px;
+      font-family: var(--font-ui);
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: 0.85;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      padding-bottom: 8px;
+    }
+
+    .hypno-visualizer-stage {
+      position: relative;
+      width: 100%;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 14px 0 10px 0;
+      overflow: hidden;
+    }
+
+    .hypno-ring {
+      position: absolute;
+      border-radius: 50%;
+      border: 1.5px solid rgba(232, 179, 207, 0.55);
+      box-shadow: 0 0 15px rgba(232, 179, 207, 0.3);
+      pointer-events: none;
+      animation: hypnoExpand 4s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+    }
+    .hypno-ring.r1 { width: 45px; height: 45px; animation-delay: 0s; }
+    .hypno-ring.r2 { width: 90px; height: 90px; animation-delay: 1s; }
+    .hypno-ring.r3 { width: 135px; height: 135px; animation-delay: 2s; }
+    .hypno-ring.r4 { width: 175px; height: 175px; animation-delay: 3s; border-color: rgba(255, 215, 0, 0.35); }
+
+    @keyframes hypnoExpand {
+      0% { transform: scale(0.45); opacity: 1; border-width: 2.5px; }
+      50% { opacity: 0.8; }
+      100% { transform: scale(1.35); opacity: 0; border-width: 1px; }
+    }
+
+    .hypno-center-core {
+      position: relative;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #e8b3cf 0%, #b3548a 60%, #6e224a 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 25px rgba(232, 179, 207, 0.65);
+      z-index: 2;
+      animation: coreGlow 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes coreGlow {
+      0% { transform: scale(0.92); box-shadow: 0 0 16px rgba(232, 179, 207, 0.4); }
+      100% { transform: scale(1.08); box-shadow: 0 0 32px rgba(232, 179, 207, 0.8); }
+    }
+
+    .phone-live-waves {
+      position: absolute;
+      width: 100%;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      z-index: 3;
+      pointer-events: none;
+    }
+
+    .wave-line-bar {
+      width: 2.5px;
+      background: #F9F7EB;
+      border-radius: 2px;
+      opacity: 0.9;
+    }
+
+    .stage-playing .wave-line-bar:nth-child(odd) { animation: liveWave 0.7s infinite ease-in-out alternate; }
+    .stage-playing .wave-line-bar:nth-child(even) { animation: liveWave 1.1s infinite ease-in-out alternate 0.15s; }
+
+    @keyframes liveWave {
+      0% { height: 6px; opacity: 0.4; }
+      100% { height: 42px; opacity: 1; background: #fff; box-shadow: 0 0 8px #fff; }
+    }
+
+    .phone-track-meta {
+      text-align: center;
+      margin-top: 4px;
+    }
+
+    .phone-track-name {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #F9F7EB;
+      line-height: 1.2;
+    }
+
+    .phone-track-desc {
+      font-family: var(--font-ui);
+      font-size: 0.68rem;
+      color: rgba(249, 247, 235, 0.75);
+      margin-top: 3px;
+      letter-spacing: 0.05em;
+    }
+
+    .phone-progress-area {
+      margin-top: 14px;
+      padding: 0 4px;
+    }
+
+    .phone-scrub-bar {
+      width: 100%;
+      height: 4px;
+      background: rgba(255, 255, 255, 0.22);
+      border-radius: 2px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .phone-scrub-fill {
+      height: 100%;
+      width: 36%;
+      background: linear-gradient(90deg, #e8b3cf, #fff);
+      border-radius: 2px;
+      transition: width 0.3s ease;
+    }
+
+    .phone-time-labels {
+      display: flex;
+      justify-content: space-between;
+      font-family: var(--font-ui);
+      font-size: 0.6rem;
+      color: rgba(249, 247, 235, 0.6);
+      margin-top: 4px;
+    }
+
+    .phone-player-controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 22px;
+      margin-top: 12px;
+    }
+
+    .phone-btn-mini {
+      background: none;
+      border: none;
+      color: #F9F7EB;
+      opacity: 0.75;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .phone-btn-mini:hover {
+      opacity: 1;
+      transform: scale(1.15);
+    }
+
+    .phone-btn-play-main {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #F9F7EB;
+      color: var(--accent-gold);
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    .phone-btn-play-main:hover {
+      transform: scale(1.1);
+      background: #ffffff;
+      color: var(--accent-gold-light);
+    }
+
+    /* COMPANION AIRPODS PRO DOCK DEBAJO DEL CELULAR */
+    .mockup-airpods-dock {
+      position: relative;
+      margin-top: 22px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 6;
+      animation: floatAirpods 4.5s ease-in-out infinite;
+    }
+
+    @keyframes floatAirpods {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+
+    .airpods-case-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      text-align: center;
+    }
+
+    .airpods-open-img {
+      width: 160px;
+      height: 160px;
+      object-fit: contain;
+      border-radius: 28px;
+      background: #F9F7EB;
+      box-shadow: 0 16px 36px rgba(24, 21, 23, 0.12), 0 4px 14px rgba(156, 57, 108, 0.1);
+      border: 1.5px solid rgba(232, 179, 207, 0.65);
+      padding: 6px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .airpods-open-img:hover {
+      transform: scale(1.05) translateY(-2px);
+      box-shadow: 0 20px 42px rgba(156, 57, 108, 0.2);
+    }
+
+    .airpods-status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.96);
+      border: 1px solid rgba(232, 179, 207, 0.75);
+      padding: 6px 16px;
+      border-radius: var(--radius-full);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+      backdrop-filter: blur(8px);
+    }
+
+    .airpods-green-led {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #34c759;
+      box-shadow: 0 0 8px #34c759;
+      animation: pulseLed 2s infinite ease-in-out;
+    }
+
+    @keyframes pulseLed {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.45; transform: scale(0.8); }
+    }
+
+    .airpods-pill-text {
+      font-family: var(--font-ui);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: var(--accent-gold);
+    }
+
+    /* CARDS & CONTAINERS */
+    .feature-card {
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      padding: 36px 30px;
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--accent-rose);
+    }
+
+    /* BLOQUE 2: EL MOMENTO EXACTO */
+    .hesitation-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 42px 38px;
+      box-shadow: var(--shadow-md);
+      border: 1px solid rgba(156, 57, 108, 0.18);
+      position: relative;
+      overflow: hidden;
+      margin: 40px auto;
+    }
+
+    .hesitation-visual {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+      margin: 24px 0 32px 0;
+      padding: 24px;
+      background: var(--bg-primary);
+      border-radius: var(--radius-md);
+      border: 1px dashed var(--accent-rose);
+    }
+
+    .price-strike {
+      font-family: var(--font-serif);
+      font-size: 2.2rem;
+      color: var(--text-light);
+      text-decoration: line-through;
+      opacity: 0.6;
+    }
+
+    .arrow-icon {
+      color: var(--accent-gold);
+      font-size: 1.5rem;
+    }
+
+    .price-lowered {
+      font-family: var(--font-serif);
+      font-size: 2.5rem;
+      color: var(--accent-gold);
+      font-weight: 700;
+    }
+
+    .quote-callout {
+      border-left: 4px solid var(--accent-gold);
+      padding: 20px 24px;
+      background: rgba(156, 57, 108, 0.05);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      margin: 28px 0;
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 1.25rem;
+      color: var(--text-main);
+    }
+
+    /* BLOQUE 4: QUE RECIBES EN CONCRETO */
+    .delivery-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      margin-top: 40px;
+    }
+
+    .check-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .check-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 1.05rem;
+      color: #382c33;
+    }
+
+    .check-icon {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--accent-gold);
+      color: #FFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    .ai-transparency-box {
+      background: linear-gradient(135deg, rgba(156, 57, 108, 0.06) 0%, rgba(232, 179, 207, 0.14) 100%);
+      border: 1px solid var(--accent-rose);
+      border-radius: var(--radius-md);
+      padding: 28px 32px;
+      margin-top: 32px;
+      position: relative;
+    }
+
+    .ai-transparency-box h4 {
+      color: var(--accent-gold);
+      font-family: var(--font-ui);
+      font-size: 0.85rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    /* BLOQUE 5: EL MECANISMO EN 2 CAPAS */
+    .layers-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 45px;
+    }
+
+    .layer-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 38px 32px;
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-sm);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .layer-badge {
+      font-family: var(--font-ui);
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent-gold);
+      background: rgba(156, 57, 108, 0.08);
+      padding: 5px 14px;
+      border-radius: var(--radius-full);
+      display: inline-block;
+      margin-bottom: 16px;
+      align-self: flex-start;
+    }
+
+    .layer-bottom-pill {
+      margin-top: 24px;
+      padding: 12px 18px;
+      background: var(--bg-primary);
+      border-radius: var(--radius-sm);
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--accent-gold);
+      border-left: 3px solid var(--accent-gold);
+    }
+
+    /* BLOQUE 6: DEMOS DE AUDIO */
+    .demos-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin: 40px 0;
+    }
+
+    .demo-track-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-md);
+      padding: 30px 24px;
+      border: 1.5px solid var(--border-subtle);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.3s ease;
+    }
+
+    .demo-track-card:hover {
+      border-color: var(--accent-gold);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .demo-header {
+      margin-bottom: 16px;
+    }
+
+    .demo-canto-tag {
+      font-family: var(--font-ui);
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: var(--accent-gold);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .demo-title {
+      font-family: var(--font-serif);
+      font-size: 1.28rem;
+      color: var(--text-main);
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .demo-situation {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+      margin-bottom: 20px;
+    }
+
+    .demo-player-box {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .demo-play-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--accent-gold);
+      color: #FFF;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      flex-shrink: 0;
+      box-shadow: 0 4px 10px rgba(156, 57, 108, 0.25);
+      transition: transform 0.2s ease;
+    }
+
+    .demo-play-btn:hover {
+      transform: scale(1.1);
+    }
+
+    .demo-waves-mini {
+      flex: 1;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+
+    .demo-wave-bar {
+      flex: 1;
+      height: 6px;
+      background: var(--accent-rose);
+      border-radius: 2px;
+      transition: height 0.2s ease;
+    }
+
+    .demo-playing .demo-wave-bar:nth-child(1) { animation: demoWave 0.7s infinite alternate; }
+    .demo-playing .demo-wave-bar:nth-child(2) { animation: demoWave 0.9s infinite alternate 0.1s; }
+    .demo-playing .demo-wave-bar:nth-child(3) { animation: demoWave 1.2s infinite alternate 0.2s; }
+    .demo-playing .demo-wave-bar:nth-child(4) { animation: demoWave 0.8s infinite alternate 0.15s; }
+    .demo-playing .demo-wave-bar:nth-child(5) { animation: demoWave 1.1s infinite alternate 0.05s; }
+    .demo-playing .demo-wave-bar:nth-child(6) { animation: demoWave 0.7s infinite alternate 0.25s; }
+
+    @keyframes demoWave {
+      0% { height: 4px; background: var(--accent-rose); }
+      100% { height: 22px; background: var(--accent-gold); }
+    }
+
+    /* TRANSPARENCY CARD (COLD TRAFFIC) */
+    .cold-traffic-box {
+      background: linear-gradient(180deg, #FFFFFF 0%, #FAF3F6 100%);
+      border: 1.5px solid var(--accent-rose);
+      border-radius: var(--radius-lg);
+      padding: 44px 38px;
+      margin-top: 30px;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* BLOQUE 7: PASO A PASO */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+      margin-top: 45px;
+    }
+
+    .step-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-md);
+      padding: 30px 22px;
+      border: 1px solid var(--border-subtle);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .step-number {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--accent-rose);
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .step-title {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+
+    /* BLOQUE 8: LOS 3 MOMENTOS */
+    .moments-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 26px;
+      margin-top: 40px;
+    }
+
+    .moment-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-md);
+      padding: 34px 26px;
+      border-top: 4px solid var(--accent-gold);
+      border-left: 1px solid var(--border-subtle);
+      border-right: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .moment-title {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      color: var(--text-main);
+      margin-bottom: 12px;
+    }
+
+    /* BLOQUE 9: OBJECIONES */
+    .objections-list {
+      display: flex;
+      flex-direction: column;
+      gap: 26px;
+      margin-top: 40px;
+    }
+
+    .objection-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-md);
+      padding: 36px 34px;
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .objection-q {
+      font-family: var(--font-serif);
+      font-size: 1.45rem;
+      color: var(--accent-gold);
+      margin-bottom: 14px;
+    }
+
+    /* BLOQUE 10: AUTORIDAD / BIO */
+    .bio-wrapper {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .bio-photo-box {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 3px solid rgba(232, 179, 207, 0.6);
+      position: relative;
+    }
+
+    .bio-photo-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .bio-credentials-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 18px 0;
+    }
+
+    .cred-badge {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text-main);
+      background: var(--bg-secondary);
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(156, 57, 108, 0.15);
+    }
+
+    /* BLOQUE 11: TESTIMONIOS (WHATSAPP STYLE) */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 26px;
+      margin-top: 40px;
+    }
+
+    .wa-card {
+      background: #FFFFFF;
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid rgba(232, 179, 207, 0.5);
+      position: relative;
+    }
+
+    .wa-bubble {
+      background: #f1faee;
+      border-radius: 16px 16px 16px 4px;
+      padding: 16px 18px;
+      margin-bottom: 12px;
+      border: 1px solid #d8ebd3;
+      font-size: 0.95rem;
+      color: #1b262c;
+      line-height: 1.55;
+    }
+
+    .wa-bubble strong {
+      color: var(--accent-gold);
+      background: rgba(156, 57, 108, 0.08);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    .wa-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.78rem;
+      color: var(--text-light);
+    }
+
+    /* BLOQUE 12: FILTRO PARA QUIÉN ES / NO ES */
+    .filter-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-top: 45px;
+    }
+
+    .filter-box {
+      border-radius: var(--radius-lg);
+      padding: 38px 32px;
+      background: #FFFFFF;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .filter-box.positive {
+      border: 2px solid rgba(156, 57, 108, 0.3);
+      border-top: 6px solid var(--accent-gold);
+    }
+
+    .filter-box.negative {
+      border: 1px solid rgba(24, 21, 23, 0.12);
+      border-top: 6px solid #8e7a84;
+      background: #fdfbf8;
+    }
+
+    /* BLOQUE 13: PRECIO Y ANCLAJE */
+    .pricing-table-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 48px 40px;
+      border: 2px solid var(--accent-rose);
+      box-shadow: var(--shadow-lg);
+      max-width: 720px;
+      margin: 40px auto;
+      text-align: center;
+      position: relative;
+    }
+
+    .pricing-anchor-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(156, 57, 108, 0.12);
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .pricing-anchor-row.highlight {
+      border-bottom: none;
+      padding-top: 24px;
+      align-items: baseline;
+    }
+
+    .big-price {
+      font-family: var(--font-serif);
+      font-size: 3.6rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+      line-height: 1;
+    }
+
+    /* BLOQUE 14: GARANTÍA Y CUPOS */
+    .guarantee-box {
+      background: #FFFFFF;
+      border-radius: var(--radius-md);
+      padding: 36px;
+      border: 1.5px solid var(--accent-rose);
+      display: flex;
+      gap: 28px;
+      align-items: center;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 30px;
+    }
+
+    .guarantee-badge-gold {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent-rose) 0%, var(--accent-gold) 100%);
+      color: #FFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 8px 20px rgba(156, 57, 108, 0.3);
+    }
+
+    .urgency-counter-box {
+      background: rgba(156, 57, 108, 0.05);
+      border: 1px solid var(--border-focus);
+      border-radius: var(--radius-md);
+      padding: 24px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    /* BLOQUE 16: FAQ ACCORDION */
+    .faq-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 40px;
+    }
+
+    .faq-item {
+      background: #FFFFFF;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+      overflow: hidden;
+      transition: all 0.25s ease;
+    }
+
+    .faq-question {
+      width: 100%;
+      padding: 22px 26px;
+      background: none;
+      border: none;
+      text-align: left;
+      font-family: var(--font-serif);
+      font-size: 1.12rem;
+      font-weight: 700;
+      color: var(--text-main);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .faq-question:hover {
+      color: var(--accent-gold);
+    }
+
+    .faq-toggle-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--bg-primary);
+      color: var(--accent-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.active .faq-toggle-icon {
+      transform: rotate(45deg);
+      background: var(--accent-gold);
+      color: #FFF;
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 0 26px 24px 26px;
+      color: #4a3d45;
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    /* BLOQUE 17: CIERRE FINAL */
+    .final-cta-section {
+      background: linear-gradient(180deg, var(--bg-primary) 0%, #f6e8ef 100%);
+      padding: 110px 0;
+      text-align: center;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .disclaimer-box {
+      font-size: 0.8rem;
+      color: var(--text-light);
+      margin-top: 40px;
+      line-height: 1.6;
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* MOBILE STICKY BOTTOM BAR */
+    .mobile-sticky-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-top: 1px solid var(--border-focus);
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 -4px 18px rgba(0, 0, 0, 0.08);
+      z-index: 998;
+    }
+
+    .sticky-info-label {
+      font-family: var(--font-serif);
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--text-main);
+      display: block;
+    }
+
+    .sticky-info-price {
+      font-family: var(--font-ui);
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+    }
+
+    @media (min-width: 901px) {
+      .mobile-sticky-bar { display: none !important; }
+    }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .hero-grid { grid-template-columns: 1fr; text-align: center; }
+      .hero-audio-teaser { flex-direction: column; text-align: center; }
+      .trust-pill-row { justify-content: center; }
+      .bio-wrapper { grid-template-columns: 1fr; }
+      .demos-grid { grid-template-columns: 1fr; }
+      .moments-grid { grid-template-columns: 1fr; }
+      .steps-grid { grid-template-columns: 1fr 1fr; }
+      .filter-grid { grid-template-columns: 1fr; }
+      .delivery-grid { grid-template-columns: 1fr; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .layers-wrapper { grid-template-columns: 1fr; }
+      .guarantee-box { flex-direction: column; text-align: center; }
+    }
+
+    @media (max-width: 480px) {
+      .steps-grid { grid-template-columns: 1fr; }
+      .device-phone { width: 240px; height: 470px; }
+      .airpods-open-img { width: 125px; height: 125px; }
+      .hesitation-visual { flex-direction: column; gap: 10px; }
+      .pricing-table-card { padding: 32px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- READING PROGRESS BAR -->
+  <div id="scroll-progress"></div>
+
+  <!-- TOP STICKY NAVBAR -->
+  <header class="site-nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand">
+        <span class="nav-brand-text">Kirti Ranpreet</span>
+        <span class="nav-brand-sub">Canto Terapéutico</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#momento">El Origen</a></li>
+        <li><a href="#entregable">Qué Incluye</a></li>
+        <li><a href="#demos">Escuchar Demos</a></li>
+        <li><a href="#metodo">Cómo Funciona</a></li>
+        <li><a href="#faq">Preguntas</a></li>
+      </ul>
+      <a href="#precio" class="nav-cta">QUIERO MI CANCIÓN · USD 47</a>
+    </div>
+  </header>
+
+  <!-- ==================== BLOQUE 1: HERO ==================== -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <span class="hero-tagline">Canción Terapéutica Personalizada</span>
+          <h1>
+            Tu mente ya lo sabe.<br>
+            <span class="gold-gradient-text">Tu cuerpo todavía no.</span>
+          </h1>
+          <p class="hero-subtitle">
+            Sabes cuánto vale tu trabajo. Pero cuando llega el momento de escribir el precio, algo dentro de ti negocia contigo antes que el cliente. Una canción creada desde tu historia, tus palabras y tu proceso, para que tengas algo tuyo a lo que volver justo en ese momento.
+          </p>
+
+          <!-- AUDIO TEASER (FRAGMENTO DE 30 SEGUNDOS) -->
+          <div class="hero-audio-teaser">
+            <button class="teaser-play-btn" id="heroTeaserBtn" title="Reproducir muestra de 30 segundos">
+              <svg id="teaserPlayIcon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+              <svg id="teaserPauseIcon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+            </button>
+            <div class="teaser-text">
+              <strong>▶ Fragmento de 30 segundos</strong>
+              Escúchalo antes de seguir leyendo. Treinta segundos explican esto mejor que toda esta página.
+            </div>
+          </div>
+
+          <div>
+            <a href="#precio" class="cta-button">
+              <span>QUIERO MI CANCIÓN — USD 47</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+
+          <div class="trust-pill-row">
+            <span class="trust-pill">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Entrega en hasta 5 días hábiles
+            </span>
+            <span class="trust-pill">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Creada solo para ti
+            </span>
+            <span class="trust-pill">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Si no te representa, te devuelvo los USD 47
+            </span>
+          </div>
+        </div>
+
+        <!-- MOCKUP CELULAR + AIRPODS PRO DEBAJO -->
+        <div class="hero-mockup-stage">
+          <div class="stage-ambient-glow"></div>
+
+          <!-- SMARTPHONE CON ONDAS EN MOVIMIENTO -->
+          <div class="device-phone stage-playing" id="mockupPhone">
+            <div class="phone-island"></div>
+            <div class="phone-screen">
+              <div class="phone-status-bar">
+                <span>9:41</span>
+                <span>432 Hz ✦</span>
+                <span>● 100%</span>
+              </div>
+
+              <div class="phone-app-header">
+                <span>ELEGIRTE</span>
+                <span style="color: #e8b3cf; font-weight: 700;">CANTO TERAPÉUTICO</span>
+              </div>
+
+              <div class="hypno-visualizer-stage">
+                <div class="hypno-ring r1"></div>
+                <div class="hypno-ring r2"></div>
+                <div class="hypno-ring r3"></div>
+                <div class="hypno-ring r4"></div>
+
+                <div class="hypno-center-core">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F9F7EB" stroke-width="2">
+                    <circle cx="12" cy="12" r="9"/>
+                    <path d="M12 3v3M12 18v3M3 12h3M18 12h3"/>
+                  </svg>
+                </div>
+
+                <div class="phone-live-waves">
+                  <div class="wave-line-bar" style="height: 14px;"></div>
+                  <div class="wave-line-bar" style="height: 24px;"></div>
+                  <div class="wave-line-bar" style="height: 40px;"></div>
+                  <div class="wave-line-bar" style="height: 30px;"></div>
+                  <div class="wave-line-bar" style="height: 48px;"></div>
+                  <div class="wave-line-bar" style="height: 34px;"></div>
+                  <div class="wave-line-bar" style="height: 22px;"></div>
+                  <div class="wave-line-bar" style="height: 42px;"></div>
+                  <div class="wave-line-bar" style="height: 26px;"></div>
+                  <div class="wave-line-bar" style="height: 16px;"></div>
+                </div>
+              </div>
+
+              <div class="phone-track-meta">
+                <div class="phone-track-name">Tu Canción Terapéutica</div>
+                <div class="phone-track-desc">Kirti Ranpreet · Reprogramación Subconsciente</div>
+              </div>
+
+              <div class="phone-progress-area">
+                <div class="phone-scrub-bar">
+                  <div class="phone-scrub-fill" id="phoneScrubFill"></div>
+                </div>
+                <div class="phone-time-labels">
+                  <span id="phoneLiveTimer">01:14</span>
+                  <span>04:30</span>
+                </div>
+              </div>
+
+              <div class="phone-player-controls">
+                <button class="phone-btn-mini" title="-15 segundos">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 4v6h6"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+                </button>
+                <button class="phone-btn-play-main" id="phoneMainPlayBtn" title="Reproducir atmósfera terapéutica">
+                  <svg id="phonePlayIcon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+                  <svg id="phonePauseIcon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+                </button>
+                <button class="phone-btn-mini" title="+15 segundos">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- COMPANION AIRPODS PRO DEBAJO DEL CELULAR -->
+          <div class="mockup-airpods-dock">
+            <div class="airpods-case-wrapper">
+              <img src="https://kirtiranpreet.github.io/hipnosis-elegirte/airpods_pro.jpg" alt="Apple AirPods Pro - Audio Theta 432 Hz" class="airpods-open-img">
+              <div class="airpods-status-pill">
+                <span class="airpods-green-led"></span>
+                <span class="airpods-pill-text">Para escuchar cada vez que lo necesites</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BLOQUE 2: EL MOMENTO EXACTO ==================== -->
+  <section id="momento" style="background: var(--bg-secondary);">
+    <div class="container container-narrow">
+      <div style="text-align: center; margin-bottom: 20px;">
+        <span class="hero-tagline">El Momento Exacto</span>
+        <h2>El problema no es lo que piensas.<br><span class="gold-gradient-text">Es lo que pasa tres segundos después.</span></h2>
+      </div>
+
+      <div class="hesitation-card">
+        <div class="hesitation-visual">
+          <div class="price-strike">USD 800</div>
+          <div class="arrow-icon">➔</div>
+          <div class="price-lowered">USD 600</div>
+        </div>
+
+        <p class="lead-p" style="margin-bottom: 18px;">
+          Escribes USD 800 en la propuesta.<br>
+          La miras.<br>
+          La borras.<br>
+          Escribes USD 600.
+        </p>
+        <p style="color: #4a3c44; font-size: 1.05rem; line-height: 1.8;">
+          Nadie te pidió un descuento. Lo hiciste tú, sola, en silencio, y después te pasaste el día explicándote por qué había sido «lo más prudente».
+        </p>
+        <p style="color: #4a3c44; font-size: 1.05rem; line-height: 1.8;">
+          O llega la oportunidad que llevabas meses diciendo que querías: el cliente grande, la entrevista, la invitación, la colaboración. Y antes del entusiasmo aparece otra cosa:
+        </p>
+        <div class="quote-callout">
+          «¿Y si no estoy a la altura?»
+        </div>
+        <p style="color: #4a3c44; font-size: 1.05rem; line-height: 1.8;">
+          Entonces pospones. Perfeccionas. Grabas el video quince veces. Trabajas de más y cobras de menos. Te preparas «un poco más».
+        </p>
+        <p style="font-size: 1.15rem; color: var(--text-main); font-weight: 700; margin-top: 24px;">
+          No porque no sepas qué hacer. Porque una cosa es querer una realidad nueva y otra muy distinta es sentirte segura sosteniéndola.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BLOQUE 3: INFORMACIÓN VS REACCIÓN ==================== -->
+  <section>
+    <div class="container container-narrow">
+      <div style="text-align: center; margin-bottom: 40px;">
+        <span class="hero-tagline">El Gran Malentendido</span>
+        <h2>No te falta información.<br><span class="gold-gradient-text">Te sobra.</span></h2>
+        <p class="lead-p">
+          Leíste los libros. Escuchaste los podcasts. Hiciste los cursos. Podrías explicarle a otra mujer, con absoluta precisión, qué es el síndrome del impostor, el autosabotaje, las creencias limitantes y el merecimiento.
+        </p>
+      </div>
+
+      <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 36px 32px; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm); margin-bottom: 30px;">
+        <h4 style="font-family: var(--font-serif); font-size: 1.25rem; margin-bottom: 18px; color: var(--text-main);">Y aun así:</h4>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 14px;">
+          <li style="display: flex; gap: 12px; font-size: 1.05rem; color: #42353d;">
+            <span style="color: var(--accent-gold); font-weight: 800;">—</span>
+            <span>Sigue apareciendo el nudo en el estómago cuando dices tu precio.</span>
+          </li>
+          <li style="display: flex; gap: 12px; font-size: 1.05rem; color: #42353d;">
+            <span style="color: var(--accent-gold); font-weight: 800;">—</span>
+            <span>Sigues aconsejando a otras que se muestren mientras tú borras la publicación.</span>
+          </li>
+          <li style="display: flex; gap: 12px; font-size: 1.05rem; color: #42353d;">
+            <span style="color: var(--accent-gold); font-weight: 800;">—</span>
+            <span>Sigue apareciendo el freno justo cuando algo empieza a funcionar.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div style="background: var(--bg-secondary); border-left: 4px solid var(--accent-gold); padding: 26px 30px; border-radius: 0 var(--radius-md) var(--radius-md) 0;">
+        <p style="font-size: 1.15rem; color: var(--text-main); line-height: 1.8; margin-bottom: 8px; font-weight: 600;">
+          Tu mente ya aprendió la lección. Lo que sigue apareciendo es la vieja reacción.
+        </p>
+        <p style="font-size: 1rem; color: var(--text-muted); margin: 0;">
+          Y la reacción no vive en el mismo lugar que la información. Por eso la solución no era darte otro concepto que entender.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BLOQUE 4: QUÉ ES EXACTAMENTE ==================== -->
+  <section id="entregable" style="background: #FFFFFF; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+    <div class="container">
+      <div style="text-align: center; max-width: 780px; margin: 0 auto 40px auto;">
+        <span class="hero-tagline">Claridad del Entregable</span>
+        <h2>Qué recibes, en concreto</h2>
+        <p class="lead-p">
+          Es una canción de 3 a 5 minutos, creada específicamente a partir de tus respuestas, que recibes en formato digital MP3 de alta fidelidad por correo electrónico y que es tuya para siempre.
+        </p>
+      </div>
+
+      <div class="delivery-grid">
+        <div class="feature-card">
+          <h3 style="color: var(--accent-gold); margin-bottom: 18px;">Lo que NO es:</h3>
+          <ul class="check-list">
+            <li style="color: var(--text-light); text-decoration: line-through;">
+              <span style="color: #e04b4b; font-weight: bold;">✕</span>
+              No es una canción elegida al azar de una biblioteca pública.
+            </li>
+            <li style="color: var(--text-light); text-decoration: line-through;">
+              <span style="color: #e04b4b; font-weight: bold;">✕</span>
+              No es una meditación que ya escucharon otras 500 personas.
+            </li>
+            <li style="color: var(--text-light); text-decoration: line-through;">
+              <span style="color: #e04b4b; font-weight: bold;">✕</span>
+              No es una letra prediseñada con tu nombre insertado.
+            </li>
+          </ul>
+        </div>
+
+        <div class="feature-card" style="border: 2px solid var(--accent-rose);">
+          <h3 style="color: var(--text-main); margin-bottom: 18px;">Tu entrega incluye:</h3>
+          <ul class="check-list">
+            <li>
+              <div class="check-icon">✓</div>
+              <span><strong>Tu concepto individual:</strong> construido desde tu situación real y bloqueo exacto.</span>
+            </li>
+            <li>
+              <div class="check-icon">✓</div>
+              <span><strong>Letra escrita desde tus propias palabras:</strong> frases y anclas de poder que tu cuerpo reconoce.</span>
+            </li>
+            <li>
+              <div class="check-icon">✓</div>
+              <span><strong>Composición y arreglo armónico personalizado:</strong> frecuencia binaural que predispone a la apertura.</span>
+            </li>
+            <li>
+              <div class="check-icon">✓</div>
+              <span><strong>Producción vocal inmersiva:</strong> melodía cantada y diseñada para entrar sin resistencia mental.</span>
+            </li>
+            <li>
+              <div class="check-icon">✓</div>
+              <span><strong>Archivo MP3 en alta fidelidad:</strong> descarga permanente para tu móvil, reloj o auriculares.</span>
+            </li>
+            <li>
+              <div class="check-icon">✓</div>
+              <span><strong>Guía breve de integración (los 3 momentos):</strong> cómo y cuándo activarla para maximizar su efecto.</span>
+            </li>
+            <li>
+              <div class="check-icon">✓</div>
+              <span><strong>1 ronda de ajuste incluida:</strong> si algo se aleja de tu formulario, se afina sin coste.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- AI TRANSPARENCY CARD -->
+      <div class="ai-transparency-box">
+        <h4>Transparencia Total</h4>
+        <p style="color: #382c33; font-size: 1.05rem; margin: 0;">
+          Y te lo digo claro, porque prefiero que lo sepas por mí: <strong>la música se produce con herramientas de inteligencia artificial a partir del concepto, la letra y la intención que escribo yo desde tus respuestas</strong>. La tecnología pone el sonido. El trabajo terapéutico lo pongo yo.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BLOQUE 5: EL MECANISMO ==================== -->
+  <section id="metodo">
+    <div class="container">
+      <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+        <span class="hero-tagline">Neuroacústica & Memoria Somática</span>
+        <h2>¿Y si esa asociación dejara de ser casualidad?</h2>
+        <p class="lead-p">
+          Piensa en una canción que sonaba en un momento importante de tu vida. Han pasado diez años. Suenan las primeras notas. Y algo aparece: un lugar, una persona, una sensación física en el pecho. Antes incluso de que lo hayas pensado.
+        </p>
+        <p style="color: var(--text-muted); font-size: 1.05rem;">
+          Ya sabes, por experiencia propia, que la música te cambia el estado. Nunca lo elegiste. Sencillamente ocurrió. La pregunta que dio origen a este trabajo fue esta: <strong>¿Y si en lugar de dejar eso al azar, construyéramos una pieza a propósito, alrededor de aquello que quieres recordar y practicar?</strong>
+        </p>
+      </div>
+
+      <div class="layers-wrapper">
+        <div class="layer-card">
+          <div>
+            <span class="layer-badge">Primera Capa</span>
+            <h3 style="color: var(--accent-gold);">Eleva tu frecuencia</h3>
+            <p style="color: #4a3b43; font-size: 1.02rem; line-height: 1.7;">
+              La música te mueve el estado antes de que tu cabeza opine. No tienes que creer nada, ni esforzarte, ni entender nada nuevo. Solo escuchar.
+            </p>
+          </div>
+          <div class="layer-bottom-pill">
+            ✦ Esta es la parte que <strong>abre la puerta</strong>.
+          </div>
+        </div>
+
+        <div class="layer-card">
+          <div>
+            <span class="layer-badge">Segunda Capa</span>
+            <h3 style="color: var(--accent-gold);">Te reprograma</h3>
+            <p style="color: #4a3b43; font-size: 1.02rem; line-height: 1.7;">
+              Dentro de esa música van tus palabras, construidas desde tu situación real y repetidas con la métrica y estructura que hace que se queden en el subconsciente.
+            </p>
+          </div>
+          <div class="layer-bottom-pill">
+            ✦ Esta es la parte que <strong>instala el nuevo patrón</strong>.
+          </div>
+        </div>
+      </div>
+
+      <div style="max-width: 780px; margin: 40px auto 0 auto; text-align: center; background: #FFFFFF; padding: 26px 30px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+        <p style="font-size: 1.08rem; color: var(--text-main); margin: 0; line-height: 1.8;">
+          Ninguna de las dos capas funciona sola. Una música preciosa sin tu mensaje te deja un rato bien y nada más. Tu mensaje sin la música es otra afirmación que tu cabeza discute antes de terminar de leerla.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BLOQUE 6: DEMOS ==================== -->
+  <section id="demos" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div style="text-align: center; max-width: 800px; margin: 0 auto 30px auto;">
+        <span class="hero-tagline">Muestras de Audio</span>
+        <h2>Escucha antes de decidir</h2>
+        <p class="lead-p">
+          No quiero explicarte durante una página entera cómo suena esto. Estas tres situaciones distintas demuestran que cada proceso produce una pieza completamente diferente:
+        </p>
+      </div>
+
+      <div class="demos-grid">
+        <!-- DEMO 1 -->
+        <div class="demo-track-card" id="demoCard1">
+          <div>
+            <div class="demo-header">
+              <span class="demo-canto-tag">Canto · Caso Real</span>
+              <div class="demo-title">«Sostener Mi Valor»</div>
+            </div>
+            <p class="demo-situation">
+              Creado para una mujer que bajaba sus precios cada vez que percibía una pequeña pausa de silencio del otro lado.
+            </p>
+          </div>
+          <div class="demo-player-box">
+            <button class="demo-play-btn" onclick="toggleDemo(1, 432)" title="Reproducir fragmento">
+              <svg id="demoIcon1" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+            </button>
+            <div class="demo-waves-mini">
+              <div class="demo-wave-bar"></div>
+              <div class="demo-wave-bar"></div>
+              <div class="demo-wave-bar"></div>
+              <div class="demo-wave-bar"></div>
+              <div class="demo-wave-bar"></div>
+              <div class="demo-wave-bar"></div>
+            </div>
+            <span style="font-size: 0.75rem; font-weight: 700; color: var(--accent-gold);">432 Hz</span>
+          </div>
+        </div>
+
+        <!-- DEMO 2 -->
+        <div class="demo-track-card" id="demoCard2">
+          <div>
+            <div class="demo-header">
+              <span class="demo-canto-tag">Canto · Caso Real</span>
+              <div class="demo-title">«El Salto al Escenario»</div>
+            </div>
+            <p class="demo-situation">
+              Creado para una mujer que llevaba siete meses posponiendo un lanzamiento que ya estaba completamente terminado.
+            </p>
+          </div>
+          <div class="demo-player-box">
+            <button class="demo-play-btn" onclick="toggleDemo(2, 528)" title="Reproducir fragmento">
+              <svg id="demoIcon2" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+            </button>
+            <div class="demo-waves-mini">
+              <div class="demo-wave-bar"></div>
+              <div class="demo-wave-bar"></div>
+              <div class="demo-wave-bar"></div>
+              <div class="demo-wave-bar"></div>
+              <div class="demo-wave-bar"></div>
+              <div class="demo-wave-bar"></div>
+            </div>
+            <span style="font-size: 0.75rem; font-weight: 700; color: var(--accent-gold);">528 Hz</span>
+          </div>
+        </div>
+
+        <!-- DEMO 3 -->
+        <div class="demo-track-card" id="demoCard3">
+          <div>
+            <div class="demo-header">
+              <span class="demo-canto-tag">Canto · Caso Real</span>
+              <div class="demo-title">«Permiso para Brillar»</div>
+            </div>
+            <p class="demo-situation">
+              Creado para una mujer que empezó a ganar más que su pareja y dejó de hablar de su negocio en casa por culpa.
+            </p>
+          </div>
+          <div class="demo-player-box">
+            <button class="demo-play-btn" onclick="toggleDemo(3, 639)" title="Reproducir fragmento">
+              <svg id="demoIcon3" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+            </button>
+            <div class="demo-waves-mini">
+              <div class="demo-wave-bar"></div>
+              <div class="demo-wave-bar"></div>
+              <div class="demo-wave-bar"></div>
+              <div class="demo-wave-bar"></div>
+              <div class="demo-wave-bar"></div>
+              <div class="demo-wave-bar"></div>
+            </div>
+            <span style="font-size: 0.75rem; font-weight: 700; color: var(--accent-gold);">639 Hz</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLD TRAFFIC HONESTY CARD -->
+      <div class="cold-traffic-box">
+        <h3 style="margin-bottom: 14px;">No me conoces. Y probablemente no deberías creerme todavía.</h3>
+        <p style="max-width: 700px; margin: 0 auto 18px auto; font-size: 1.05rem;">
+          Llegaste aquí desde un anuncio o recomendación. No sabes quién soy, no sabes si esto sirve, y ya has comprado antes cosas que prometían mucho y terminaron en una carpeta sin abrir.
+        </p>
+        <p style="max-width: 700px; margin: 0 auto 24px auto; font-size: 1.05rem; font-weight: 600; color: var(--text-main);">
+          Así que no te voy a pedir que confíes en mí a ciegas. Te voy a pedir dos minutos: escucha los fragmentos de arriba. En dos minutos vas a saber si esto te toca algo o no, y esa respuesta vale más que cualquier cosa que yo pueda escribirte aquí.
+        </p>
+        <div style="display: inline-block; background: #FFFFFF; padding: 12px 24px; border-radius: var(--radius-full); border: 1.5px solid var(--accent-rose); font-weight: 700; color: var(--accent-gold);">
+          Son USD 47 y te los devuelvo si la canción no te representa. El riesgo no está de tu lado.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BLOQUE 7: CÓMO SE CREA ==================== -->
+  <section>
+    <div class="container">
+      <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+        <span class="hero-tagline">El Proceso Artesanal</span>
+        <h2>Así se crea el tuyo</h2>
+        <p class="lead-p">Un proceso simple, cuidado y 100% confidencial de inicio a fin:</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">01</div>
+          <div class="step-title">Haces tu pedido</div>
+          <p style="font-size: 0.95rem; color: var(--text-muted); margin: 0;">
+            Compra segura por USD 47. Recibes el acceso al formulario de diagnóstico de forma inmediata en tu correo.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">02</div>
+          <div class="step-title">Me cuentas tu historia</div>
+          <p style="font-size: 0.95rem; color: var(--text-muted); margin: 0;">
+            Un cuestionario guiado de 10 minutos donde vemos qué estás viviendo, qué patrón se repite y cómo quieres sentirte.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">03</div>
+          <div class="step-title">Creo tu pieza</div>
+          <p style="font-size: 0.95rem; color: var(--text-muted); margin: 0;">
+            Trabajo tus respuestas una por una. Tu historia es la materia prima del concepto, de la letra y del clima musical.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">04</div>
+          <div class="step-title">Lo recibes</div>
+          <p style="font-size: 0.95rem; color: var(--text-muted); margin: 0;">
+            En un máximo de 5 días hábiles, directamente en tu email en formato MP3 listo para guardar en tus dispositivos.
+          </p>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 48px;">
+        <a href="#precio" class="cta-button">
+          <span>QUIERO CREAR MI CANTO TERAPÉUTICO — USD 47</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BLOQUE 8: CÓMO SE USA (LOS 3 MOMENTOS) ==================== -->
+  <section style="background: var(--bg-secondary);">
+    <div class="container">
+      <div style="text-align: center; max-width: 760px; margin: 0 auto 30px auto;">
+        <span class="hero-tagline">Integración Diaria</span>
+        <h2>Los 3 momentos de tu Canto</h2>
+        <p class="lead-p">
+          Tu Canto no está hecho para escucharlo una vez y emocionarte. Está hecho para volver.
+        </p>
+      </div>
+
+      <div class="moments-grid">
+        <div class="moment-card">
+          <span style="font-size: 1.6rem; display: block; margin-bottom: 8px;">🚪</span>
+          <div class="moment-title">1. El momento del umbral</div>
+          <p style="font-size: 0.98rem; color: var(--text-muted); line-height: 1.7;">
+            Justo antes de decir tu precio, de darle a publicar, de entrar a esa reunión decisiva. No después. <strong>Antes</strong>, cuando el cuerpo necesita recordar su centro.
+          </p>
+        </div>
+
+        <div class="moment-card">
+          <span style="font-size: 1.6rem; display: block; margin-bottom: 8px;">☀️</span>
+          <div class="moment-title">2. El ritual diario</div>
+          <p style="font-size: 0.98rem; color: var(--text-muted); line-height: 1.7;">
+            Al comenzar el día, durante 21 días seguidos. Aquí no buscas euforia ni esfuerzo: buscas repetición neuromuscular y serenidad sostenida.
+          </p>
+        </div>
+
+        <div class="moment-card">
+          <span style="font-size: 1.6rem; display: block; margin-bottom: 8px;">🌿</span>
+          <div class="moment-title">3. El momento de la caída</div>
+          <p style="font-size: 0.98rem; color: var(--text-muted); line-height: 1.7;">
+            Cuando el viejo patrón volvió a ganar. En lugar de castigarte mentalmente durante tres días, tienes algo tangible y cariñoso a lo que regresar.
+          </p>
+        </div>
+      </div>
+
+      <p style="text-align: center; margin-top: 36px; font-family: var(--font-serif); font-size: 1.25rem; font-style: italic; color: var(--text-main);">
+        Una pieza que no te explica otra vez quién quieres ser. Te ayuda a recordarlo cuando más fácil es olvidarlo.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== BLOQUE 9: OBJECIONES ==================== -->
+  <section>
+    <div class="container container-narrow">
+      <div style="text-align: center; margin-bottom: 30px;">
+        <span class="hero-tagline">Preguntas Transparentes</span>
+        <h2>Hablemos de lo que dudas</h2>
+      </div>
+
+      <div class="objections-list">
+        <div class="objection-card">
+          <div class="objection-q">«Ya probé afirmaciones, visualizaciones y meditaciones»</div>
+          <p style="color: #42353d; line-height: 1.8;">
+            Entonces ya conoces la distancia entre entender una frase y sentir que esa frase te pertenece en el cuerpo.
+          </p>
+          <p style="color: #42353d; line-height: 1.8;">
+            Una afirmación genérica dice: <em>«Merezco abundancia»</em>. Pero quizá ese ni siquiera es tu conflicto. Quizá recibes dinero sin problema y lo que no puedes es decir tu precio sin justificarlo. Otra mujer cobra perfectamente, pero se esconde cuando la miran demasiado. Otra gana bien y se siente culpable cuando supera a su entorno.
+          </p>
+          <p style="color: var(--accent-gold); font-weight: 700; margin: 0;">
+            Las tres dirían «tengo un tema con el merecimiento», pero necesitan escuchar cosas radicalmente distintas. Tu Canto no empieza con una frase hecha: empieza contigo.
+          </p>
+        </div>
+
+        <div class="objection-card">
+          <div class="objection-q">«Pero música gratis hay de sobra en internet»</div>
+          <p style="color: #42353d; line-height: 1.8;">
+            Toda la que quieras. Spotify está lleno. YouTube también. Si una playlist te alcanza, úsala. Lo digo en serio.
+          </p>
+          <p style="color: #42353d; line-height: 1.8; margin: 0;">
+            La diferencia es simple: <strong>una playlist habla de un estado anímico general. Tu Canto habla de tu proceso íntimo.</strong> Una afirmación gratuita tiene que servirle a miles de personas. Tu pieza solo tiene que hablarle a una.
+          </p>
+        </div>
+
+        <div class="objection-card">
+          <div class="objection-q">«¿En serio una canción?»</div>
+          <p style="color: #42353d; line-height: 1.8;">
+            Es una pregunta justa, y te la voy a responder sin adornos: <strong>una canción no toma decisiones por ti</strong>. No sustituye tu trabajo. No reemplaza atención médica o psicológica. No hace desaparecer tus inseguridades mientras duermes.
+          </p>
+          <p style="color: var(--text-main); font-weight: 700; font-size: 1.05rem; margin: 0;">
+            Lo que sí hace es darte una forma rápida, bella y repetible de volver al estado desde el que quieres decidir. Nada más que eso. Y, si conoces el momento del que estamos hablando, nada menos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BLOQUE 10: AUTORIDAD / BIO ==================== -->
+  <section style="background: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+    <div class="container">
+      <div class="bio-wrapper">
+        <div class="bio-photo-box">
+          <img src="https://kirtiranpreet.github.io/hipnosis-elegirte/kirti_ranpreet.jpg" alt="Kirti Ranpreet · Canto Terapéutico e Hipnosis">
+        </div>
+
+        <div>
+          <span class="hero-tagline">Quién crea tu Canto</span>
+          <h2>Kirti Ranpreet</h2>
+          <p style="font-size: 1.12rem; color: var(--accent-gold); font-weight: 600; margin-bottom: 16px;">
+            No llegué a esto porque me guste la música. Llegué después de 26 años viendo repetirse lo mismo en mujeres brillantes.
+          </p>
+          <p style="color: #42353d; line-height: 1.8;">
+            Sabían exactamente qué tenían que hacer y seguían encontrándose con la misma parálisis o reacción automática en el momento de hacerlo.
+          </p>
+
+          <div class="bio-credentials-row">
+            <span class="cred-badge">26 años empresaria</span>
+            <span class="cred-badge">4 países</span>
+            <span class="cred-badge">Terapia de Sonido</span>
+            <span class="cred-badge">Hipnosis Clínica</span>
+            <span class="cred-badge">Constelaciones</span>
+            <span class="cred-badge">PNL & Coaching</span>
+          </div>
+
+          <p style="color: #42353d; line-height: 1.8;">
+            Todo ese recorrido terminó en una sola pregunta: <strong>¿Cómo convertir aquello que una mujer necesita recordar en algo que la acompañe mucho después de terminar una sesión?</strong>
+          </p>
+          <p style="color: #42353d; line-height: 1.8; margin: 0;">
+            De ahí nació el Canto Terapéutico: un anclaje sonoro vivo que no requiere tu esfuerzo cognitivo, sino tu permiso para dejarte sostener.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BLOQUE 11: TESTIMONIOS ==================== -->
+  <section>
+    <div class="container">
+      <div style="text-align: center; max-width: 760px; margin: 0 auto;">
+        <span class="hero-tagline">Historias Reales</span>
+        <h2>Lo que cuentan quienes ya lo escucharon</h2>
+        <p class="lead-p">Reacciones reales en momentos decisivos:</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="wa-card">
+          <div class="wa-bubble">
+            «Kirti, lo escuché en el coche 10 minutos antes de mandar la propuesta de 1.800€. <strong>Por primera vez en mi vida no me tembló el pulso ni bajé el precio</strong>. Me lo aceptaron sin pestañear.»
+          </div>
+          <div class="wa-meta">
+            <strong>— Elena M. · Consultora</strong>
+            <span>10:42 AM · WhatsApp</span>
+          </div>
+        </div>
+
+        <div class="wa-card">
+          <div class="wa-bubble">
+            «Llevaba meses dando vueltas al lanzamiento. Escuchar mis propias palabras cantadas con esa música <strong>me sacó el nudo de la garganta al instante</strong>. Ya salí en vivo.»
+          </div>
+          <div class="wa-meta">
+            <strong>— Sofía R. · Mentora</strong>
+            <span>18:15 PM · Mensaje Directo</span>
+          </div>
+        </div>
+
+        <div class="wa-card">
+          <div class="wa-bubble">
+            «No es que te sientas eufórica. Es que <strong>te devuelve una calma sólida</strong>. Cuando aparece el síndrome del impostor, pongo mis auriculares y regreso a mí en 3 minutos.»
+          </div>
+          <div class="wa-meta">
+            <strong>— Carmen V. · Psicóloga</strong>
+            <span>12:04 PM · WhatsApp</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BLOQUE 12: FILTRO ==================== -->
+  <section style="background: var(--bg-secondary);">
+    <div class="container">
+      <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+        <span class="hero-tagline">Claridad & Filtro</span>
+        <h2>¿Es esto para ti?</h2>
+      </div>
+
+      <div class="filter-grid">
+        <div class="filter-box positive">
+          <h3 style="color: var(--accent-gold); margin-bottom: 20px;">Para quién SÍ es:</h3>
+          <ul class="check-list">
+            <li><div class="check-icon">✓</div><span>Sabes lo que vale tu trabajo y aun así te tensas al decir el precio.</span></li>
+            <li><div class="check-icon">✓</div><span>Quieres mostrarte más y algo te frena en el momento de publicar.</span></li>
+            <li><div class="check-icon">✓</div><span>Conseguiste lo que pedías y, cuando llegó, apareció el impostor.</span></li>
+            <li><div class="check-icon">✓</div><span>Te descubres aplazando lanzamientos o perfeccionando cosas ya listas.</span></li>
+            <li><div class="check-icon">✓</div><span>Has trabajado mucho en ti y hay situaciones donde vuelves a la vieja reacción.</span></li>
+            <li><div class="check-icon">✓</div><span>Entras en una etapa nueva de tu negocio y quieres un ancla personal para habitarla.</span></li>
+          </ul>
+        </div>
+
+        <div class="filter-box negative">
+          <h3 style="color: #6d5b65; margin-bottom: 20px;">Para quién NO es:</h3>
+          <ul class="check-list">
+            <li><span style="color: #9c396c; font-weight: bold;">✕</span><span>No lo compres si esperas una solución mágica que tome decisiones por ti.</span></li>
+            <li><span style="color: #9c396c; font-weight: bold;">✕</span><span>No lo compres como sustituto de tratamiento médico, psiquiátrico o psicológico.</span></li>
+            <li><span style="color: #9c396c; font-weight: bold;">✕</span><span>No lo compres si buscas una canción comercial y tu único criterio es pop o radial.</span></li>
+            <li><span style="color: #9c396c; font-weight: bold;">✕</span><span>No lo necesitas si las meditaciones y playlists genéricas ya te resuelven todo.</span></li>
+          </ul>
+          <p style="font-size: 0.92rem; margin-top: 20px; color: #5a4b53; font-style: italic;">
+            Esto es para quien sabe que las decisiones siguen siendo suyas y quiere una herramienta personal a la que volver cuando aparece la vieja reacción.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BLOQUE 13: PRECIO Y ANCLAJE ==================== -->
+  <section id="precio">
+    <div class="container">
+      <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+        <span class="hero-tagline">Tu Inversión</span>
+        <h2>Por qué USD 47</h2>
+        <p class="lead-p">
+          Una propuesta honesta para que el precio no sea otra conversación que negocies contigo misma.
+        </p>
+      </div>
+
+      <div class="pricing-table-card">
+        <div class="pricing-anchor-row">
+          <span>Una sesión individual de reprogramación conmigo:</span>
+          <strong>USD 250</strong>
+        </div>
+        <div class="pricing-anchor-row">
+          <span>Un compositor que cree una canción a medida de estudio:</span>
+          <strong>USD 800 – USD 1.500</strong>
+        </div>
+        <div class="pricing-anchor-row highlight">
+          <div style="text-align: left;">
+            <span style="font-family: var(--font-serif); font-size: 1.35rem; color: var(--text-main); font-weight: 700; display: block;">Tu Canto Terapéutico Personalizado:</span>
+            <span style="font-size: 0.88rem; color: var(--accent-gold); font-weight: 600;">Entrega en 5 días hábiles · Tuyo para siempre</span>
+          </div>
+          <div class="big-price">USD 47</div>
+        </div>
+
+        <p style="font-size: 1rem; color: #52424b; margin: 26px 0; line-height: 1.7;">
+          No estás pagando por escuchar una canción durante cinco minutos.<br>
+          <strong>Estás pagando por el proceso de convertir aquello que quieres trabajar en algo que será tuyo para siempre.</strong>
+        </p>
+
+        <div>
+          <a href="https://pay.hotmart.com/" class="cta-button" style="width: 100%; max-width: 440px;">
+            <span>QUIERO CREAR MI CANTO TERAPÉUTICO</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+
+        <div style="display: flex; justify-content: center; gap: 16px; margin-top: 20px; font-size: 0.82rem; color: var(--text-light);">
+          <span>🔒 Pago 100% encriptado</span>
+          <span>⚡ Acceso inmediato al formulario</span>
+          <span>✨ 14 días de garantía</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BLOQUE 14: RIESGO Y ESCASEZ ==================== -->
+  <section style="background: var(--bg-secondary);">
+    <div class="container container-narrow">
+      <div class="guarantee-box">
+        <div class="guarantee-badge-gold">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        </div>
+        <div>
+          <h3 style="color: var(--text-main); margin-bottom: 8px;">¿Y si no me gusta?</h3>
+          <p style="color: #4a3b43; font-size: 1rem; line-height: 1.7; margin-bottom: 12px;">
+            Es la pregunta que yo también haría antes de comprar algo tan personal. Cuanto más específica seas en tu formulario, más material tengo para crearla. Escúchala: <strong>si no te representa, me escribes dentro de los 14 días y te devuelvo los USD 47 sin preguntas</strong>.
+          </p>
+          <p style="color: var(--accent-gold); font-weight: 700; font-size: 0.95rem; margin: 0;">
+            La canción se queda contigo igual. Está hecha con tu historia y no se la puedo dar a nadie más; retenerla no tendría sentido. El riesgo económico queda 100% asumido por mí.
+          </p>
+        </div>
+      </div>
+
+      <div class="urgency-counter-box">
+        <div>
+          <strong style="color: var(--accent-gold); font-size: 1.05rem; display: block; margin-bottom: 4px;">Por qué hay cupos mensuales limitados:</strong>
+          <span style="font-size: 0.95rem; color: var(--text-muted);">
+            Leer tu formulario, entender tu patrón y escribir la letra exacta es un trabajo que hago yo, una por una.
+          </span>
+        </div>
+        <div style="background: #FFFFFF; padding: 10px 18px; border-radius: var(--radius-md); border: 1.5px solid var(--accent-gold); text-align: center; flex-shrink: 0;">
+          <span style="font-size: 0.72rem; text-transform: uppercase; font-weight: 800; color: var(--accent-gold); display: block;">Disponibles</span>
+          <span style="font-family: var(--font-serif); font-size: 1.6rem; font-weight: 700; color: var(--text-main);">12 cupos</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BLOQUE 15: CIERRE EMOCIONAL ==================== -->
+  <section>
+    <div class="container container-narrow" style="text-align: center;">
+      <span class="hero-tagline">Perspectiva Real</span>
+      <h2>Una pregunta antes de irte</h2>
+      <p class="lead-p" style="font-family: var(--font-serif); font-style: italic; font-size: 1.45rem; color: var(--text-main); margin-bottom: 28px;">
+        ¿Cuánto te cuesta realmente esa vieja reacción?
+      </p>
+
+      <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 36px 32px; border: 1px solid var(--border-subtle); text-align: left; margin-bottom: 30px; box-shadow: var(--shadow-sm);">
+        <p style="font-size: 1.05rem; color: #42353d; line-height: 1.8;">No emocionalmente. En decisiones concretas:</p>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; margin: 16px 0;">
+          <li style="color: var(--accent-gold); font-weight: 600;">➔ ¿Cuánto cuesta bajar USD 200 de una propuesta que el cliente ni siquiera cuestionó?</li>
+          <li style="color: var(--accent-gold); font-weight: 600;">➔ ¿Cuánto cuesta aplazar un lanzamiento tres meses?</li>
+          <li style="color: var(--accent-gold); font-weight: 600;">➔ ¿Cuánto cuesta no publicar porque «todavía no está perfecto»?</li>
+          <li style="color: var(--accent-gold); font-weight: 600;">➔ ¿Cuánto cuesta trabajar el doble para sentir que mereces lo que cobras?</li>
+        </ul>
+        <p style="font-size: 1.05rem; color: #42353d; line-height: 1.8; margin-top: 18px;">
+          Una propuesta al mes. Un lanzamiento al año. Haz la cuenta y después vuelve a mirar los <strong>USD 47</strong>.
+        </p>
+      </div>
+
+      <p style="font-size: 1.15rem; color: var(--text-main); font-weight: 600;">
+        Si ya reconoces el patrón, llegó el momento de dejar de depender solo de entenderlo.<br>
+        Y empezar a construir otra forma de responder cuando aparece.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== BLOQUE 16: FAQ ==================== -->
+  <section id="faq" style="background: var(--bg-secondary);">
+    <div class="container container-narrow">
+      <div style="text-align: center; margin-bottom: 30px;">
+        <span class="hero-tagline">Respuestas Claras</span>
+        <h2>Preguntas Frecuentes</h2>
+      </div>
+
+      <div class="faq-wrapper">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Qué recibo exactamente?</span>
+            <div class="faq-toggle-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            Una pieza musical de 3 a 5 minutos en formato digital MP3 de alta resolución, creada exclusivamente desde tus respuestas y enviada directamente a tu correo electrónico.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cuánto tarda la entrega?</span>
+            <div class="faq-toggle-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            Un máximo de 5 días hábiles a partir del momento en que envías tu formulario de diagnóstico completo.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Puedo elegir el estilo musical?</span>
+            <div class="faq-toggle-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            Sí. En el formulario indicas qué estilos conectan contigo (acústico, cinemático, piano íntimo, ambient, rítmico) y cuáles prefieres evitar para que la experiencia sea 100% afín a ti.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿La canción se hace con inteligencia artificial?</span>
+            <div class="faq-toggle-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            La instrumentación y mezcla sí. El concepto terapéutico, la letra y el mensaje de reprogramación subconsciente los escribo yo desde tus respuestas, una por una. Lo que hace que tu pieza te toque no es quién produce el sintetizador: es quién comprendió tu historia.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Puedo escuchar ejemplos antes de comprar?</span>
+            <div class="faq-toggle-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            Sí, tienes tres demos interactivos en la sección de arriba de esta página. Te muestran la calidad sonora; la tuya será única porque se teje con tus propias palabras.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Esto sustituye terapia?</span>
+            <div class="faq-toggle-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            No. Es una herramienta somática y emocional de acompañamiento y bienestar personal. No sustituye diagnóstico, psicoterapia ni ningún tratamiento médico o psiquiátrico.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Tengo que escucharla todos los días?</span>
+            <div class="faq-toggle-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            No es una obligación rígida. Lo ideal es integrarla durante 21 días al despertar para crear la red neuronal, y luego usarla como ancla en los momentos del umbral o cuando sientas que la vieja duda regresa.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Puedo regalársela a alguien?</span>
+            <div class="faq-toggle-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            Sí. Al completar la compra, simplemente indicas en el formulario el nombre y las circunstancias de la persona homenajeada para que la pieza hable de su mundo.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Puedo pedir cambios si algo no encaja?</span>
+            <div class="faq-toggle-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            Sí. Si al recibirla sientes que algo se desvió de lo que indicaste en el formulario, tienes una ronda de ajuste sin coste. Y si aun así no te representa, te devuelvo los USD 47 dentro de los primeros 14 días.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Y si mi caso es muy específico o complejo?</span>
+            <div class="faq-toggle-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            Mucho mejor. Cuanto más específico sea tu caso, más poderosa y transformadora es la pieza. Las letras genéricas de internet son las que no funcionan; tu realidad es la clave del resultado.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cómo sé que funcionará para mí?</span>
+            <div class="faq-toggle-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            No sería honesto garantizar una reacción idéntica en cada persona. Lo que sí garantizo es una pieza creada artesanalmente desde tu situación y respaldada por mi garantía total de 14 días.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BLOQUE 17: CIERRE FINAL ==================== -->
+  <section class="final-cta-section">
+    <div class="container container-narrow">
+      <span class="hero-tagline">El Siguiente Paso</span>
+      <h2>
+        Tu mente ya lo sabe.<br>
+        <span class="gold-gradient-text">Ahora dale a tu cuerpo algo que pueda recordar.</span>
+      </h2>
+
+      <p class="lead-p" style="margin: 22px auto 36px auto; max-width: 680px;">
+        Sabe lo que quieres. Sabe cuánto has trabajado. Sabe lo que vales. No necesitas pelear con la versión anterior de ti ni pasar otras cien horas acumulando información.<br>
+        <strong>Puedes empezar hoy creando algo nuevo a lo que volver.</strong>
+      </p>
+
+      <div style="background: #FFFFFF; border-radius: var(--radius-lg); padding: 40px; border: 2px solid var(--accent-rose); box-shadow: var(--shadow-lg); max-width: 580px; margin: 0 auto;">
+        <h3 style="font-size: 1.5rem; margin-bottom: 6px;">Canción Terapéutica Personalizada</h3>
+        <p style="color: var(--accent-gold); font-weight: 700; margin-bottom: 20px;">
+          USD 47 · Entrega en hasta 5 días hábiles · Cupos limitados
+        </p>
+
+        <a href="#precio" class="cta-button" style="width: 100%; margin-bottom: 16px;">
+          <span>QUIERO MI CANTO TERAPÉUTICO — USD 47</span>
+        </a>
+
+        <div style="margin-top: 14px;">
+          <a href="https://wa.me/" target="_blank" class="cta-secondary" style="font-size: 0.9rem;">
+            <span>¿Dudas antes de comprar? Hablar por WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="disclaimer-box">
+        El Canto Terapéutico es una experiencia personalizada de bienestar y desarrollo personal. No constituye ni sustituye atención médica, psicológica o psiquiátrica.
+      </div>
+    </div>
+  </section>
+
+  <!-- MOBILE STICKY BOTTOM BAR -->
+  <div class="mobile-sticky-bar">
+    <div>
+      <span class="sticky-info-label">Canto Terapéutico</span>
+      <span class="sticky-info-price">USD 47 · Entrega en 5 días</span>
+    </div>
+    <a href="#precio" class="nav-cta" style="padding: 10px 18px;">QUIERO EL MÍO</a>
+  </div>
+
+  <!-- JAVASCRIPT: ACCORDION, AUDIO ENGINE & SCROLL TRACKING -->
+  <script>
+    (function() {
+      // 1. SCROLL PROGRESS
+      window.addEventListener('scroll', function() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        var prog = document.getElementById('scroll-progress');
+        if (prog) prog.style.width = scrolled + '%';
+      });
+
+      // 2. FAQ ACCORDION
+      var faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(function(item) {
+        var btn = item.querySelector('.faq-question');
+        btn.addEventListener('click', function() {
+          var isActive = item.classList.contains('active');
+          faqItems.forEach(function(el) { el.classList.remove('active'); });
+          if (!isActive) item.classList.add('active');
+        });
+      });
+
+      // 3. WEB AUDIO ENGINE (DEMOS & HERO TEASER)
+      var audioCtx = null;
+      var activeOsc1 = null, activeOsc2 = null, activeGain = null;
+      var currentDemoPlaying = null;
+
+      function getAudioContext() {
+        var AudioContext = window.AudioContext || window.webkitAudioContext;
+        if (!audioCtx) audioCtx = new AudioContext();
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+        return audioCtx;
+      }
+
+      function stopCurrentAudio() {
+        if (activeGain && audioCtx) {
+          activeGain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.4);
+          setTimeout(function() {
+            if (activeOsc1) { activeOsc1.stop(); activeOsc1.disconnect(); }
+            if (activeOsc2) { activeOsc2.stop(); activeOsc2.disconnect(); }
+            activeOsc1 = null; activeOsc2 = null; activeGain = null;
+          }, 400);
+        }
+        // Reset all demo icons and cards
+        for (var i = 1; i <= 3; i++) {
+          var card = document.getElementById('demoCard' + i);
+          var icon = document.getElementById('demoIcon' + i);
+          if (card) card.classList.remove('demo-playing');
+          if (icon) icon.innerHTML = '<polygon points="6 4 20 12 6 20 6 4"></polygon>';
+        }
+        var teaserIcon = document.getElementById('teaserPlayIcon');
+        var teaserPause = document.getElementById('teaserPauseIcon');
+        if (teaserIcon) teaserIcon.style.display = 'block';
+        if (teaserPause) teaserPause.style.display = 'none';
+
+        var phonePlayIcon = document.getElementById('phonePlayIcon');
+        var phonePauseIcon = document.getElementById('phonePauseIcon');
+        var phonePhone = document.getElementById('mockupPhone');
+        if (phonePlayIcon) phonePlayIcon.style.display = 'block';
+        if (phonePauseIcon) phonePauseIcon.style.display = 'none';
+        if (phonePhone) phonePhone.classList.remove('stage-playing');
+
+        currentDemoPlaying = null;
+      }
+
+      window.toggleDemo = function(num, baseFreq) {
+        if (currentDemoPlaying === num) {
+          stopCurrentAudio();
+          return;
+        }
+
+        stopCurrentAudio();
+        currentDemoPlaying = num;
+
+        var ctx = getAudioContext();
+        activeOsc1 = ctx.createOscillator();
+        activeOsc2 = ctx.createOscillator();
+        activeGain = ctx.createGain();
+
+        activeOsc1.type = 'sine';
+        activeOsc1.frequency.setValueAtTime(baseFreq, ctx.currentTime);
+
+        // Binaural harmonic 5 Hz theta difference
+        activeOsc2.type = 'sine';
+        activeOsc2.frequency.setValueAtTime(baseFreq + 5.5, ctx.currentTime);
+
+        var filter = ctx.createBiquadFilter();
+        filter.type = 'lowpass';
+        filter.frequency.setValueAtTime(550, ctx.currentTime);
+
+        activeGain.gain.setValueAtTime(0.001, ctx.currentTime);
+        activeGain.gain.exponentialRampToValueAtTime(0.12, ctx.currentTime + 1.2);
+
+        activeOsc1.connect(filter);
+        activeOsc2.connect(filter);
+        filter.connect(activeGain);
+        activeGain.connect(ctx.destination);
+
+        activeOsc1.start();
+        activeOsc2.start();
+
+        var card = document.getElementById('demoCard' + num);
+        var icon = document.getElementById('demoIcon' + num);
+        if (card) card.classList.add('demo-playing');
+        if (icon) icon.innerHTML = '<rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect>';
+      };
+
+      // Hero teaser play button
+      var heroBtn = document.getElementById('heroTeaserBtn');
+      var phoneMainBtn = document.getElementById('phoneMainPlayBtn');
+
+      function toggleHeroAudio() {
+        if (currentDemoPlaying === 'hero') {
+          stopCurrentAudio();
+        } else {
+          stopCurrentAudio();
+          currentDemoPlaying = 'hero';
+          var ctx = getAudioContext();
+          activeOsc1 = ctx.createOscillator();
+          activeOsc2 = ctx.createOscillator();
+          activeGain = ctx.createGain();
+
+          activeOsc1.type = 'sine';
+          activeOsc1.frequency.setValueAtTime(216, ctx.currentTime);
+          activeOsc2.type = 'sine';
+          activeOsc2.frequency.setValueAtTime(222, ctx.currentTime); // 6Hz theta
+
+          var filter = ctx.createBiquadFilter();
+          filter.type = 'lowpass';
+          filter.frequency.setValueAtTime(480, ctx.currentTime);
+
+          activeGain.gain.setValueAtTime(0.001, ctx.currentTime);
+          activeGain.gain.exponentialRampToValueAtTime(0.14, ctx.currentTime + 1.5);
+
+          activeOsc1.connect(filter);
+          activeOsc2.connect(filter);
+          filter.connect(activeGain);
+          activeGain.connect(ctx.destination);
+
+          activeOsc1.start();
+          activeOsc2.start();
+
+          var teaserIcon = document.getElementById('teaserPlayIcon');
+          var teaserPause = document.getElementById('teaserPauseIcon');
+          if (teaserIcon) teaserIcon.style.display = 'none';
+          if (teaserPause) teaserPause.style.display = 'block';
+
+          var phonePlayIcon = document.getElementById('phonePlayIcon');
+          var phonePauseIcon = document.getElementById('phonePauseIcon');
+          var phonePhone = document.getElementById('mockupPhone');
+          if (phonePlayIcon) phonePlayIcon.style.display = 'none';
+          if (phonePauseIcon) phonePauseIcon.style.display = 'block';
+          if (phonePhone) phonePhone.classList.add('stage-playing');
+        }
+      }
+
+      if (heroBtn) heroBtn.addEventListener('click', toggleHeroAudio);
+      if (phoneMainBtn) phoneMainBtn.addEventListener('click', toggleHeroAudio);
+
+    })();
+  </script>
+</body>
+</html>
