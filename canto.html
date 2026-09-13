@@ -439,51 +439,22 @@
        ============================================================ */
     .vinyl-master-showcase {
       position: relative;
-      width: 440px;
+      width: 380px;
       height: 380px;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 24px;
+      margin: 0 auto 24px auto;
     }
 
-    /* CARÁTULA DE DISCO DE FONDO (ALBUM COVER JACKET) */
-    .vinyl-album-cover {
-      position: absolute;
-      left: 10px;
-      top: 25px;
-      width: 260px;
-      height: 320px;
-      background: linear-gradient(145deg, #2b1122 0%, #150912 100%);
-      border-radius: 20px;
-      border: 2px solid rgba(232, 179, 207, 0.25);
-      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
-      padding: 22px 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      z-index: 1;
-      overflow: hidden;
-      transform: rotate(-6deg);
-      transition: all 0.3s ease;
-      opacity: 0.9;
-    }
-
-    .vinyl-album-cover:hover {
-      transform: rotate(-3deg) translateY(-4px);
-      opacity: 1;
-    }
-
-    /* DISCO DE VINILO GIRATORIO PROTAGONISTA EN PRIMER PLANO */
+    /* DISCO DE VINILO GIRATORIO PROTAGONISTA CENTRADO */
     .spinning-vinyl-disc {
-      position: absolute;
-      right: 15px;
-      top: 15px;
-      width: 330px;
-      height: 330px;
+      position: relative;
+      width: 360px;
+      height: 360px;
       border-radius: 50%;
-      background: radial-gradient(circle, #1e171b 0%, #0d090b 50%, #180f15 75%, #050405 100%);
-      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.55), 0 8px 24px rgba(156, 57, 108, 0.25), inset 0 0 25px rgba(255, 255, 255, 0.08);
+      background: radial-gradient(circle, #1a1622 0%, #0d0a12 45%, #160e18 70%, #050306 100%);
+      box-shadow: 0 25px 65px rgba(0, 0, 0, 0.55), 0 8px 25px rgba(156, 57, 108, 0.25), inset 0 0 25px rgba(255, 255, 255, 0.08);
       border: 2px solid rgba(255, 255, 255, 0.1);
       display: flex;
       align-items: center;
@@ -519,48 +490,80 @@
       pointer-events: none;
     }
 
+    /* ETIQUETA CENTRAL VINILO INSPIRADA EN EL SINGLE DE REFERENCIA */
     .vinyl-center-label {
-      width: 126px;
-      height: 126px;
+      width: 154px;
+      height: 154px;
       border-radius: 50%;
-      background: radial-gradient(circle, #e8b3cf 0%, #b3548a 55%, #6e224a 100%);
+      background: radial-gradient(circle, #cf3467 0%, #8f1c42 60%, #4f0a22 100%);
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
       color: #F9F7EB;
-      box-shadow: 0 0 20px rgba(156, 57, 108, 0.7), inset 0 0 12px rgba(0, 0, 0, 0.35);
-      border: 2.5px solid rgba(212, 175, 55, 0.75);
+      box-shadow: 0 0 22px rgba(156, 57, 108, 0.8), inset 0 0 14px rgba(0, 0, 0, 0.4);
+      border: 3px solid #d4af37;
       position: relative;
       z-index: 4;
     }
 
-    .vinyl-label-brand {
+    .vinyl-label-curved-title {
       font-family: var(--font-ui);
-      font-size: 0.6rem;
-      letter-spacing: 0.16em;
-      font-weight: 800;
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      font-weight: 900;
       color: #FFFFFF;
-      text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+      text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+      text-transform: uppercase;
     }
 
-    .vinyl-label-title {
+    .vinyl-label-side {
+      font-family: var(--font-ui);
+      font-size: 0.52rem;
+      letter-spacing: 0.14em;
+      color: #ffd700;
+      font-weight: 700;
+      margin: 1px 0 2px 0;
+    }
+
+    .vinyl-label-heart-logo {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 215, 0, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 2px auto;
+    }
+
+    .vinyl-label-brand-name {
       font-family: var(--font-serif);
-      font-size: 0.76rem;
+      font-size: 0.82rem;
       font-weight: 700;
       line-height: 1.1;
-      margin: 3px 0;
+      margin: 2px 0 1px 0;
       color: #FFFFFF;
-      text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+      text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+      letter-spacing: 0.04em;
     }
 
-    .vinyl-label-freq {
+    .vinyl-label-freq-tag {
       font-family: var(--font-ui);
-      font-size: 0.55rem;
-      letter-spacing: 0.12em;
+      font-size: 0.52rem;
+      letter-spacing: 0.1em;
       color: #ffd700;
       font-weight: 800;
+    }
+
+    .vinyl-label-footer-sub {
+      font-family: var(--font-ui);
+      font-size: 0.44rem;
+      color: rgba(255, 255, 255, 0.75);
+      letter-spacing: 0.06em;
+      margin-top: 1px;
     }
 
     .vinyl-spindle-hole {
@@ -569,15 +572,15 @@
       height: 15px;
       border-radius: 50%;
       background: #080608;
-      border: 1.8px solid rgba(212, 175, 55, 0.8);
+      border: 1.8px solid #FFFFFF;
       box-shadow: inset 0 0 4px rgba(0,0,0,0.9);
     }
 
     /* BRAZO DE AGUJA DE TOCADISCOS DORADO */
     .vinyl-tonearm {
       position: absolute;
-      right: 0px;
-      top: 0px;
+      right: -5px;
+      top: 5px;
       width: 60px;
       height: 110px;
       pointer-events: none;
@@ -621,6 +624,185 @@
       transform: rotate(20deg);
       box-shadow: 0 2px 6px rgba(0,0,0,0.5);
     }
+
+    /* ============================================================
+       BLOQUE 4: IPAD PRO MOCKUP (REPRODUCTOR CON MOVIMIENTO DE MÚSICA)
+       ============================================================ */
+    .ipad-showcase-container {
+      max-width: 820px;
+      margin: 36px auto 44px auto;
+    }
+
+    .ipad-device-frame {
+      background: #1e1b1d;
+      border-radius: 36px;
+      padding: 16px;
+      box-shadow: 0 30px 80px rgba(24, 21, 23, 0.28), 0 10px 30px rgba(156, 57, 108, 0.18), inset 0 0 0 1.5px rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      position: relative;
+    }
+
+    .ipad-camera-dot {
+      position: absolute;
+      top: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #0d0b0e;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .ipad-screen-display {
+      background: linear-gradient(135deg, #180913 0%, #2e1223 50%, #150811 100%);
+      border-radius: 22px;
+      padding: 24px 26px;
+      overflow: hidden;
+      color: #F9F7EB;
+      box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.6);
+    }
+
+    .ipad-status-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--font-ui);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      color: rgba(249, 247, 235, 0.7);
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      margin-bottom: 20px;
+    }
+
+    .ipad-app-brand {
+      color: var(--accent-gold);
+      font-weight: 700;
+    }
+
+    .ipad-player-split {
+      display: grid;
+      grid-template-columns: 270px 1fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .ipad-jacket-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 18px;
+      border: 1.5px solid rgba(232, 179, 207, 0.25);
+      padding: 20px 18px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      backdrop-filter: blur(10px);
+    }
+
+    .ipad-music-visualizer-side {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 16px;
+      padding: 10px 14px;
+    }
+
+    .ipad-live-indicator {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-ui);
+      font-size: 0.68rem;
+      letter-spacing: 0.14em;
+      font-weight: 700;
+      color: var(--accent-gold);
+    }
+
+    .ipad-soundwaves-grid {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      height: 65px;
+      padding: 10px 16px;
+      background: rgba(0, 0, 0, 0.25);
+      border-radius: 14px;
+      border: 1px solid rgba(232, 179, 207, 0.12);
+      justify-content: space-between;
+    }
+
+    .ipad-vwave {
+      width: 5px;
+      height: 15px;
+      background: linear-gradient(to top, var(--accent-gold) 0%, #e8b3cf 100%);
+      border-radius: 3px;
+      animation: ipadWaveMotion 1.2s infinite ease-in-out alternate;
+    }
+
+    @keyframes ipadWaveMotion {
+      0% { height: 8px; opacity: 0.4; }
+      50% { height: 48px; opacity: 1; background: linear-gradient(to top, var(--accent-gold) 0%, #b3548a 100%); }
+      100% { height: 18px; opacity: 0.7; }
+    }
+
+    .ipad-scrubber-module {
+      margin-top: 4px;
+    }
+
+    .ipad-time-display {
+      display: flex;
+      justify-content: space-between;
+      font-family: var(--font-ui);
+      font-size: 0.68rem;
+      color: rgba(249, 247, 235, 0.7);
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    .ipad-bar-track {
+      width: 100%;
+      height: 6px;
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .ipad-bar-fill {
+      width: 48%;
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent-gold) 0%, #e8b3cf 100%);
+      border-radius: 4px;
+      animation: scrubAdvance 8s linear infinite alternate;
+    }
+
+    @keyframes scrubAdvance {
+      0% { width: 35%; }
+      100% { width: 75%; }
+    }
+
+    .ipad-device-badges {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 4px;
+    }
+
+    .ipad-spec-chip {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 5px 12px;
+      border-radius: var(--radius-full);
+      font-family: var(--font-ui);
+      font-size: 0.7rem;
+      color: #F9F7EB;
+      font-weight: 600;
+    }
+
+    .ipad-spec-chip svg {
+      color: #25d366;
     }
 
     .cover-gold-badge {
@@ -2173,34 +2355,9 @@
         <div class="hero-mockup-stage">
           <div class="stage-ambient-glow"></div>
 
-          <!-- SHOWCASE MASTER: DISCO DE VINILO + PORTADA COLECCIONISTA -->
+          <!-- SHOWCASE MASTER: DISCO DE VINILO GIRATORIO 432 HZ (STANDALONE CENTRADO) -->
           <div class="vinyl-master-showcase">
-            <!-- CARÁTULA DEL ÁLBUM EDICIÓN PRIVADA (EN EL FONDO) -->
-            <div class="vinyl-album-cover">
-              <div class="cover-gold-badge">Edición Privada · 1/1</div>
-              <div class="cover-artwork">
-                <div class="cymatics-circle c1"></div>
-                <div class="cymatics-circle c2"></div>
-                <div class="cymatics-circle c3"></div>
-                <div class="cymatics-core">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F9F7EB" stroke-width="2">
-                    <circle cx="12" cy="12" r="9"/>
-                    <path d="M12 3v3M12 18v3M3 12h3M18 12h3"/>
-                  </svg>
-                </div>
-              </div>
-              <div class="cover-details">
-                <span class="cover-tag">Obra Somática Personal</span>
-                <h4 class="cover-album-title">Tu Canción</h4>
-                <p class="cover-album-sub">Kirti Ranpreet · Reprogramación Subconsciente</p>
-              </div>
-              <div class="cover-bottom-bar">
-                <span class="cover-spec">Frecuencia Madre 432 Hz</span>
-                <span class="cover-spec">Audio Hi-Res Master</span>
-              </div>
-            </div>
-
-            <!-- DISCO DE VINILO GIRATORIO 432 HZ (PROTAGONISTA EN EL FRENTE) -->
+            <!-- DISCO DE VINILO GIRATORIO CON BRANDING EN EL CENTRO -->
             <div class="spinning-vinyl-disc" id="vinylDisc">
               <div class="vinyl-groove g1"></div>
               <div class="vinyl-groove g2"></div>
@@ -2210,9 +2367,16 @@
               <div class="vinyl-groove g6"></div>
               <div class="vinyl-sheen"></div>
               <div class="vinyl-center-label">
-                <span class="vinyl-label-brand">KIRTI RANPREET</span>
-                <span class="vinyl-label-title">CANTO TERAPÉUTICO</span>
-                <span class="vinyl-label-freq">432 Hz · LADO A</span>
+                <span class="vinyl-label-curved-title">CANCIÓN TERAPÉUTICA</span>
+                <span class="vinyl-label-side">LADO A · 432 HZ</span>
+                <div class="vinyl-label-heart-logo">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="#ffd700" stroke="#FFFFFF" stroke-width="1.2">
+                    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                  </svg>
+                </div>
+                <span class="vinyl-label-brand-name">Kirti Ranpreet</span>
+                <span class="vinyl-label-freq-tag">ELEGIRTE · SOMÁTICO</span>
+                <span class="vinyl-label-footer-sub">Reprogramación Subconsciente</span>
                 <div class="vinyl-spindle-hole"></div>
               </div>
             </div>
@@ -2437,6 +2601,96 @@
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
             Descarga & Propiedad Para Siempre
           </span>
+        </div>
+      </div>
+
+      <!-- ==================== IPAD PRO MOCKUP: ENTREGA DIGITAL CON MOVIMIENTO DE MÚSICA ==================== -->
+      <div class="ipad-showcase-container">
+        <div class="ipad-device-frame">
+          <div class="ipad-camera-dot"></div>
+          <div class="ipad-screen-display">
+            <div class="ipad-status-header">
+              <span class="ipad-status-time">9:41 AM</span>
+              <span class="ipad-app-brand">✦ ELEGIRTE AUDIO PRO · FRECUENCIA SOMÁTICA 432 HZ</span>
+              <span class="ipad-status-battery">● 100%</span>
+            </div>
+
+            <div class="ipad-player-split">
+              <!-- Lado izquierdo: Carátula de edición privada con arte cymatics animado -->
+              <div class="ipad-jacket-card">
+                <div class="cover-gold-badge">Edición Privada · 1/1</div>
+                <div class="cover-artwork">
+                  <div class="cymatics-circle c1"></div>
+                  <div class="cymatics-circle c2"></div>
+                  <div class="cymatics-circle c3"></div>
+                  <div class="cymatics-core">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F9F7EB" stroke-width="2">
+                      <circle cx="12" cy="12" r="9"/>
+                      <path d="M12 3v3M12 18v3M3 12h3M18 12h3"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="cover-details">
+                  <span class="cover-tag">Obra Somática Personal</span>
+                  <h4 class="cover-album-title">Tu Canción</h4>
+                  <p class="cover-album-sub">Kirti Ranpreet · Reprogramación Subconsciente</p>
+                </div>
+                <div class="cover-bottom-bar">
+                  <span class="cover-spec">Frecuencia Madre 432 Hz</span>
+                  <span class="cover-spec">Audio Hi-Res Master</span>
+                </div>
+              </div>
+
+              <!-- Lado derecho: Visualizador y espectrograma con movimiento de la música -->
+              <div class="ipad-music-visualizer-side">
+                <div class="ipad-live-indicator">
+                  <span class="console-live-dot"></span>
+                  <span>ESPECTROGRAMA ACTIVO · AUDIO THETA SOMÁTICO</span>
+                </div>
+
+                <!-- ONDAS DE ECUALIZADOR EN MOVIMIENTO CONTINUO -->
+                <div class="ipad-soundwaves-grid">
+                  <div class="ipad-vwave" style="animation-delay: 0.1s;"></div>
+                  <div class="ipad-vwave" style="animation-delay: 0.35s;"></div>
+                  <div class="ipad-vwave" style="animation-delay: 0.18s;"></div>
+                  <div class="ipad-vwave" style="animation-delay: 0.5s;"></div>
+                  <div class="ipad-vwave" style="animation-delay: 0.22s;"></div>
+                  <div class="ipad-vwave" style="animation-delay: 0.4s;"></div>
+                  <div class="ipad-vwave" style="animation-delay: 0.65s;"></div>
+                  <div class="ipad-vwave" style="animation-delay: 0.28s;"></div>
+                  <div class="ipad-vwave" style="animation-delay: 0.45s;"></div>
+                  <div class="ipad-vwave" style="animation-delay: 0.12s;"></div>
+                  <div class="ipad-vwave" style="animation-delay: 0.55s;"></div>
+                  <div class="ipad-vwave" style="animation-delay: 0.3s;"></div>
+                  <div class="ipad-vwave" style="animation-delay: 0.6s;"></div>
+                  <div class="ipad-vwave" style="animation-delay: 0.25s;"></div>
+                  <div class="ipad-vwave" style="animation-delay: 0.48s;"></div>
+                  <div class="ipad-vwave" style="animation-delay: 0.15s;"></div>
+                </div>
+
+                <div class="ipad-scrubber-module">
+                  <div class="ipad-time-display">
+                    <span>01:42</span>
+                    <span>04:30</span>
+                  </div>
+                  <div class="ipad-bar-track">
+                    <div class="ipad-bar-fill"></div>
+                  </div>
+                </div>
+
+                <div class="ipad-device-badges">
+                  <div class="ipad-spec-chip">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Formato MP3 320 kbps</span>
+                  </div>
+                  <div class="ipad-spec-chip">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Compatible iPad, iPhone, Android, Mac, PC</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
