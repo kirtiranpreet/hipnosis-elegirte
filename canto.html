@@ -62,9 +62,15 @@
     html {
       scroll-behavior: smooth;
       font-size: 16px;
+      margin: 0;
+      padding: 0;
+      width: 100%;
     }
 
     body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
       background-color: var(--bg-primary);
       color: var(--text-main);
       font-family: var(--font-body);
@@ -2240,7 +2246,6 @@
       <ul class="nav-links">
         <li><a href="#momento">El Origen</a></li>
         <li><a href="#entregable">Qué Incluye</a></li>
-        <li><a href="#demos">Escuchar Demos</a></li>
         <li><a href="#metodo">Cómo Funciona</a></li>
         <li><a href="#faq">Preguntas</a></li>
       </ul>
@@ -2806,116 +2811,6 @@
     </div>
   </section>
 
-  <!-- ==================== BLOQUE 6: DEMOS ==================== -->
-  <section id="demos" style="background: var(--bg-secondary);">
-    <div class="container">
-      <div style="text-align: center; max-width: 800px; margin: 0 auto 30px auto;">
-        <span class="hero-tagline">Muestras de Audio</span>
-        <h2>Escucha antes de decidir</h2>
-        <p class="lead-p">
-          No quiero explicarte durante una página entera cómo suena esto. Estas tres situaciones distintas demuestran que cada proceso produce una pieza completamente diferente:
-        </p>
-      </div>
-
-      <div class="demos-grid">
-        <!-- DEMO 1 -->
-        <div class="demo-track-card" id="demoCard1">
-          <div>
-            <div class="demo-header">
-              <span class="demo-canto-tag">Canto · Caso Real</span>
-              <div class="demo-title">«Sostener Mi Valor»</div>
-            </div>
-            <p class="demo-situation">
-              Creado para una mujer que bajaba sus precios cada vez que percibía una pequeña pausa de silencio del otro lado.
-            </p>
-          </div>
-          <div class="demo-player-box">
-            <button class="demo-play-btn" onclick="toggleDemo(1, 432)" title="Reproducir fragmento">
-              <svg id="demoIcon1" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
-            </button>
-            <div class="demo-waves-mini">
-              <div class="demo-wave-bar"></div>
-              <div class="demo-wave-bar"></div>
-              <div class="demo-wave-bar"></div>
-              <div class="demo-wave-bar"></div>
-              <div class="demo-wave-bar"></div>
-              <div class="demo-wave-bar"></div>
-            </div>
-            <span style="font-size: 0.75rem; font-weight: 700; color: var(--accent-gold);">432 Hz</span>
-          </div>
-        </div>
-
-        <!-- DEMO 2 -->
-        <div class="demo-track-card" id="demoCard2">
-          <div>
-            <div class="demo-header">
-              <span class="demo-canto-tag">Canto · Caso Real</span>
-              <div class="demo-title">«El Salto al Escenario»</div>
-            </div>
-            <p class="demo-situation">
-              Creado para una mujer que llevaba siete meses posponiendo un lanzamiento que ya estaba completamente terminado.
-            </p>
-          </div>
-          <div class="demo-player-box">
-            <button class="demo-play-btn" onclick="toggleDemo(2, 528)" title="Reproducir fragmento">
-              <svg id="demoIcon2" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
-            </button>
-            <div class="demo-waves-mini">
-              <div class="demo-wave-bar"></div>
-              <div class="demo-wave-bar"></div>
-              <div class="demo-wave-bar"></div>
-              <div class="demo-wave-bar"></div>
-              <div class="demo-wave-bar"></div>
-              <div class="demo-wave-bar"></div>
-            </div>
-            <span style="font-size: 0.75rem; font-weight: 700; color: var(--accent-gold);">528 Hz</span>
-          </div>
-        </div>
-
-        <!-- DEMO 3 -->
-        <div class="demo-track-card" id="demoCard3">
-          <div>
-            <div class="demo-header">
-              <span class="demo-canto-tag">Canto · Caso Real</span>
-              <div class="demo-title">«Permiso para Brillar»</div>
-            </div>
-            <p class="demo-situation">
-              Creado para una mujer que empezó a ganar más que su pareja y dejó de hablar de su negocio en casa por culpa.
-            </p>
-          </div>
-          <div class="demo-player-box">
-            <button class="demo-play-btn" onclick="toggleDemo(3, 639)" title="Reproducir fragmento">
-              <svg id="demoIcon3" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
-            </button>
-            <div class="demo-waves-mini">
-              <div class="demo-wave-bar"></div>
-              <div class="demo-wave-bar"></div>
-              <div class="demo-wave-bar"></div>
-              <div class="demo-wave-bar"></div>
-              <div class="demo-wave-bar"></div>
-              <div class="demo-wave-bar"></div>
-            </div>
-            <span style="font-size: 0.75rem; font-weight: 700; color: var(--accent-gold);">639 Hz</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- COLD TRAFFIC HONESTY CARD -->
-      <div class="cold-traffic-box">
-        <h3 style="margin-bottom: 14px;">No me conoces. Y probablemente no deberías creerme todavía.</h3>
-        <p style="max-width: 700px; margin: 0 auto 18px auto; font-size: 1.05rem;">
-          Llegaste aquí desde un anuncio o recomendación. No sabes quién soy, no sabes si esto sirve, y ya has comprado antes cosas que prometían mucho y terminaron en una carpeta sin abrir.
-        </p>
-        <p style="max-width: 700px; margin: 0 auto 24px auto; font-size: 1.05rem; font-weight: 600; color: var(--text-main);">
-          Así que no te voy a pedir que confíes en mí a ciegas. Te voy a pedir dos minutos: escucha los fragmentos de arriba. En dos minutos vas a saber si esto te toca algo o no, y esa respuesta vale más que cualquier cosa que yo pueda escribirte aquí.
-        </p>
-        <div style="display: inline-block; background: #FFFFFF; padding: 12px 24px; border-radius: var(--radius-full); border: 1.5px solid var(--accent-rose); font-weight: 700; color: var(--accent-gold);">
-          Son USD 47 y te los devuelvo si la canción no te representa. El riesgo no está de tu lado.
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ==================== BLOQUE 7: CÓMO SE CREA ==================== -->
   <section>
     <div class="container">
@@ -3080,7 +2975,7 @@
     <div class="container">
       <div class="bio-wrapper">
         <div class="bio-photo-box">
-          <img src="kirti_ranpreet.jpg" alt="Kirti Ranpreet · Canto Terapéutico e Hipnosis">
+          <img src="https://kirtiranpreet.github.io/hipnosis-elegirte/kirti_ranpreet.jpg" alt="Kirti Ranpreet · Canto Terapéutico e Hipnosis">
         </div>
 
         <div>
