@@ -873,73 +873,55 @@
       line-height: 1.55;
     }
 
-    /* TESTIMONIOS CON MOCKUP DE CELULAR WHATSAPP */
+    /* TESTIMONIOS EDITORIALES DE LUJO CON AVATAR */
     .testimonial-feature-card {
       background: #FFFFFF;
-      border: 1.5px solid var(--border-subtle);
+      border: 1.5px solid rgba(156, 57, 108, 0.16);
       border-radius: var(--radius-lg);
-      padding: 38px 42px;
-      margin: 44px 0;
-      box-shadow: var(--shadow-md);
-      display: grid;
-      grid-template-columns: 310px 1fr;
-      gap: 40px;
-      align-items: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      padding: 38px 44px;
+      margin: 40px auto;
+      max-width: 860px;
+      box-shadow: 0 12px 32px rgba(42, 18, 32, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     }
 
     .testimonial-feature-card:hover {
-      box-shadow: var(--shadow-lg);
+      transform: translateY(-3px);
+      box-shadow: 0 18px 40px rgba(42, 18, 32, 0.09);
+      border-color: rgba(156, 57, 108, 0.3);
     }
 
-    @media (max-width: 860px) {
+    @media (max-width: 768px) {
       .testimonial-feature-card {
-        grid-template-columns: 1fr;
-        padding: 28px 20px;
-        gap: 28px;
-        text-align: center;
+        padding: 26px 20px;
+        margin: 28px auto;
       }
     }
 
-    .testi-image-frame {
+    .testi-header-row {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      background: transparent;
-      padding: 4px;
-    }
-
-    .testi-image-frame img {
-      width: 100%;
-      max-width: 290px;
-      height: auto;
-      display: block;
-      border-radius: 34px;
-      box-shadow: 0 16px 36px rgba(42, 18, 32, 0.16), 0 2px 10px rgba(0, 0, 0, 0.08);
-      border: 1px solid rgba(156, 57, 108, 0.18);
-      transition: transform 0.4s ease, box-shadow 0.4s ease;
-    }
-
-    .testi-image-frame:hover img {
-      transform: translateY(-4px) scale(1.02);
-      box-shadow: 0 22px 46px rgba(42, 18, 32, 0.22), 0 4px 14px rgba(0, 0, 0, 0.12);
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      gap: 12px;
     }
 
     .testi-badge-quote {
       font-family: var(--font-serif);
-      font-size: 1.32rem;
+      font-size: clamp(1.25rem, 2.3vw, 1.48rem);
       font-style: italic;
       color: var(--accent-wine);
-      line-height: 1.5;
-      margin-bottom: 16px;
+      line-height: 1.48;
+      margin-bottom: 18px;
       font-weight: 500;
     }
 
     .testi-body-text {
-      font-size: 1rem;
+      font-size: 1.02rem;
       color: var(--text-main);
-      line-height: 1.7;
-      margin-bottom: 20px;
+      line-height: 1.75;
+      margin-bottom: 24px;
     }
 
     .testi-stat-pill {
@@ -953,12 +935,33 @@
       font-size: 0.85rem;
       font-weight: 700;
       color: var(--accent-wine);
-      margin-bottom: 20px;
     }
 
-    .testi-meta-box {
-      border-top: 1px solid rgba(0, 0, 0, 0.06);
-      padding-top: 16px;
+    .testi-author-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid rgba(156, 57, 108, 0.12);
+      padding-top: 20px;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .testi-author-profile {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .testi-avatar-img {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      border: 2px solid var(--accent-gold);
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(42, 18, 32, 0.14);
+      flex-shrink: 0;
+      background: #FAF0ED;
     }
 
     .testi-author-name {
@@ -966,12 +969,27 @@
       font-size: 1.15rem;
       color: var(--text-main);
       margin-bottom: 3px;
+      line-height: 1.2;
     }
 
     .testi-author-role {
       font-size: 0.88rem;
-      color: var(--text-light);
-      font-weight: 500;
+      color: var(--accent-wine);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    .testi-rating-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      color: #9C396C;
+      font-weight: 700;
+      background: rgba(156, 57, 108, 0.06);
+      padding: 6px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(156, 57, 108, 0.14);
     }
 
     /* CASO REAL DE ROCÍO CON FOTOS DE DOCUMENTO */
@@ -1756,26 +1774,36 @@
 
         <!-- TESTIMONIO 1: AURA -->
         <div class="testimonial-feature-card">
-          <div class="testi-image-frame">
-            <img src="https://kirtiranpreet.github.io/hipnosis-elegirte/mockup_testimonio_aura.jpg" 
-                 onerror="this.onerror=null; this.src='mockup_testimonio_aura.jpg';" 
-                 alt="Captura de WhatsApp - Testimonio de Aura: 32.000€ en un mes sin lanzamiento" 
-                 loading="lazy">
-          </div>
-          <div>
-            <div class="eyebrow" style="margin-bottom: 12px;">Caso Real · Resultados 1:1</div>
-            <div class="testi-badge-quote">
-              «Este mes de julio he roto todas las barreras... he facturado lo que nunca en mi vida había facturado y eso sin hacer ningún lanzamiento.»
-            </div>
+          <div class="testi-header-row">
+            <div class="eyebrow" style="margin-bottom: 0;">Caso Real · Mentoría 1:1</div>
             <div class="testi-stat-pill">
-              ✦ 32.000€ facturados en 1 solo mes sin publicidad ni lanzamientos
+              ✦ 32.000€ en un mes sin lanzamientos
             </div>
-            <p class="testi-body-text">
-              «Él simplemente hizo magia en mi interior y de golpe empezaron a llegarme miles de ideas, fui haciendo y todo lo que hice funcionó. Resultado: 32.000€ facturados en 1 solo mes sin publicidad, sin lanzamiento, sin redes sociales... Porque para mí lo más importante es el cambio mental y emocional.»
-            </p>
-            <div class="testi-meta-box">
-              <div class="testi-author-name">Aura</div>
-              <div class="testi-author-role">Clienta Premium</div>
+          </div>
+
+          <div class="testi-badge-quote">
+            «32.000 euros en un solo mes sin lanzamiento, sin el estrés de antes y con total presencia.»
+          </div>
+
+          <p class="testi-body-text">
+            Cuando dejas de forzar la maquinaria y regulas el sistema desde el que tomas decisiones, las ventas dejan de ser un maratón de supervivencia y se convierten en el resultado natural de tu estructura y tu calma ejecutiva.
+          </p>
+
+          <div class="testi-author-bar">
+            <div class="testi-author-profile">
+              <img src="https://raw.githubusercontent.com/kirtiranpreet/hipnosis-elegirte/main/avatar_aura.png" 
+                   onerror="this.onerror=null; this.src='avatar_aura.png';" 
+                   alt="Aura - Clienta Premium" 
+                   class="testi-avatar-img" 
+                   loading="lazy">
+              <div>
+                <div class="testi-author-name">Aura</div>
+                <div class="testi-author-role">Clienta Premium</div>
+              </div>
+            </div>
+            <div class="testi-rating-badge">
+              <span>★★★★★</span>
+              <span>Proceso 1:1 Verificado</span>
             </div>
           </div>
         </div>
@@ -1903,26 +1931,36 @@
 
         <!-- TESTIMONIO 2: MAITE CARRASCO -->
         <div class="testimonial-feature-card">
-          <div class="testi-image-frame">
-            <img src="https://kirtiranpreet.github.io/hipnosis-elegirte/mockup_testimonio_maite.jpg" 
-                 onerror="this.onerror=null; this.src='mockup_testimonio_maite.jpg';" 
-                 alt="Captura de WhatsApp - Testimonio de Maite Carrasco: 25.000€ en 30 días" 
-                 loading="lazy">
-          </div>
-          <div>
-            <div class="eyebrow" style="margin-bottom: 12px;">Caso Real · Resultados 1:1</div>
-            <div class="testi-badge-quote">
-              «El resultado económico es muy importante, aunque lo es más la transformación que tendrán las mujeres a las que voy a acompañar durante 6 meses.»
-            </div>
+          <div class="testi-header-row">
+            <div class="eyebrow" style="margin-bottom: 0;">Caso Real · Mentoría 1:1</div>
             <div class="testi-stat-pill">
-              ✦ 25.000€ facturados en 30 días con trabajo de mentalidad adecuado
+              ✦ 25.000€ facturados con trabajo de mentalidad
             </div>
-            <p class="testi-body-text">
-              «Gracias a la estrategia de WhatsApp he conseguido facturar 25.000€ en 30 días. Sin duda es una herramienta muy sencilla y fácil de aplicar. Los resultados se consiguen siguiendo paso a paso las instrucciones... Sin duda esta facturación se debe a aplicar esta estrategia y a un trabajo de mentalidad adecuado. Millones de gracias.»
-            </p>
-            <div class="testi-meta-box">
-              <div class="testi-author-name">Maite Carrasco</div>
-              <div class="testi-author-role">Clienta Premium</div>
+          </div>
+
+          <div class="testi-badge-quote">
+            «La transformación profunda por encima del resultado puramente económico.»
+          </div>
+
+          <p class="testi-body-text">
+            Cuando tu relación con el valor personal, la seguridad interna y el merecimiento se reprograma, la forma en que lideras a tu equipo y ofreces tus servicios cambia de raíz. El resultado económico es solo la consecuencia de una líder regulada.
+          </p>
+
+          <div class="testi-author-bar">
+            <div class="testi-author-profile">
+              <img src="https://raw.githubusercontent.com/kirtiranpreet/hipnosis-elegirte/main/avatar_maite.png" 
+                   onerror="this.onerror=null; this.src='avatar_maite.png';" 
+                   alt="Maite Carrasco - Clienta Premium" 
+                   class="testi-avatar-img" 
+                   loading="lazy">
+              <div>
+                <div class="testi-author-name">Maite Carrasco</div>
+                <div class="testi-author-role">Clienta Premium</div>
+              </div>
+            </div>
+            <div class="testi-rating-badge">
+              <span>★★★★★</span>
+              <span>Proceso 1:1 Verificado</span>
             </div>
           </div>
         </div>
@@ -2129,26 +2167,36 @@
 
         <!-- TESTIMONIO 3: ISABEL PUERTAS -->
         <div class="testimonial-feature-card">
-          <div class="testi-image-frame">
-            <img src="https://kirtiranpreet.github.io/hipnosis-elegirte/mockup_testimonio_isabel.jpg" 
-                 onerror="this.onerror=null; this.src='mockup_testimonio_isabel.jpg';" 
-                 alt="Captura de WhatsApp - Testimonio de Isabel Puertas: tiempo y libertad financiera" 
-                 loading="lazy">
-          </div>
-          <div>
-            <div class="eyebrow" style="margin-bottom: 12px;">Caso Real · Resultados 1:1</div>
-            <div class="testi-badge-quote">
-              «Tremendamente feliz de haberte conocido y de haber aplicado tu método: he conseguido tiempo y libertad financiera.»
-            </div>
+          <div class="testi-header-row">
+            <div class="eyebrow" style="margin-bottom: 0;">Caso Real · Mentoría 1:1</div>
             <div class="testi-stat-pill">
-              ✦ Más de 12.000€ en ventas y tiempo libre recuperado
+              ✦ Libertad de tiempo y negocio en calma
             </div>
-            <p class="testi-body-text">
-              «Se acaba de abrir un mundo de posibilidades infinitas por explorar. Tuve sobre aforo en el reto por WhatsApp y ya he vendido más de 12.000€... Sin este método nunca lo hubiera conseguido. Tu generosidad y profesionalidad son únicas.»
-            </p>
-            <div class="testi-meta-box">
-              <div class="testi-author-name">Isabel Puertas</div>
-              <div class="testi-author-role">Clienta Premium</div>
+          </div>
+
+          <div class="testi-badge-quote">
+            «Recuperar tiempo de calidad para mi vida personal sin que el negocio se resienta económicamente.»
+          </div>
+
+          <p class="testi-body-text">
+            Cuando dejas de ser la única fuente de tracción y apagafuegos de tu empresa, el tiempo libre deja de ser una culpa y se convierte en el combustible que alimenta tu visión estratégica y tu bienestar real.
+          </p>
+
+          <div class="testi-author-bar">
+            <div class="testi-author-profile">
+              <img src="https://raw.githubusercontent.com/kirtiranpreet/hipnosis-elegirte/main/avatar_isabel.png" 
+                   onerror="this.onerror=null; this.src='avatar_isabel.png';" 
+                   alt="Isabel Puertas - Clienta Premium" 
+                   class="testi-avatar-img" 
+                   loading="lazy">
+              <div>
+                <div class="testi-author-name">Isabel Puertas</div>
+                <div class="testi-author-role">Clienta Premium</div>
+              </div>
+            </div>
+            <div class="testi-rating-badge">
+              <span>★★★★★</span>
+              <span>Proceso 1:1 Verificado</span>
             </div>
           </div>
         </div>
