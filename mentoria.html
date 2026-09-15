@@ -873,63 +873,105 @@
       line-height: 1.55;
     }
 
-    /* TESTIMONIOS */
+    /* TESTIMONIOS CON MOCKUP DE CELULAR WHATSAPP */
     .testimonial-feature-card {
       background: #FFFFFF;
       border: 1.5px solid var(--border-subtle);
       border-radius: var(--radius-lg);
-      padding: 34px;
-      margin: 40px 0;
+      padding: 38px 42px;
+      margin: 44px 0;
       box-shadow: var(--shadow-md);
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 32px;
+      grid-template-columns: 310px 1fr;
+      gap: 40px;
       align-items: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    @media (max-width: 820px) {
+    .testimonial-feature-card:hover {
+      box-shadow: var(--shadow-lg);
+    }
+
+    @media (max-width: 860px) {
       .testimonial-feature-card {
         grid-template-columns: 1fr;
+        padding: 28px 20px;
+        gap: 28px;
+        text-align: center;
       }
     }
 
     .testi-image-frame {
-      border-radius: var(--radius-md);
-      overflow: hidden;
-      box-shadow: var(--shadow-sm);
-      border: 1px solid rgba(0, 0, 0, 0.08);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: transparent;
+      padding: 4px;
     }
 
     .testi-image-frame img {
       width: 100%;
+      max-width: 290px;
       height: auto;
       display: block;
-      transition: transform 0.4s ease;
+      border-radius: 34px;
+      box-shadow: 0 16px 36px rgba(42, 18, 32, 0.16), 0 2px 10px rgba(0, 0, 0, 0.08);
+      border: 1px solid rgba(156, 57, 108, 0.18);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
     }
 
     .testi-image-frame:hover img {
-      transform: scale(1.02);
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 22px 46px rgba(42, 18, 32, 0.22), 0 4px 14px rgba(0, 0, 0, 0.12);
     }
 
     .testi-badge-quote {
       font-family: var(--font-serif);
-      font-size: 1.25rem;
+      font-size: 1.32rem;
       font-style: italic;
       color: var(--accent-wine);
       line-height: 1.5;
       margin-bottom: 16px;
+      font-weight: 500;
+    }
+
+    .testi-body-text {
+      font-size: 1rem;
+      color: var(--text-main);
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .testi-stat-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(156, 57, 108, 0.08);
+      border: 1px solid rgba(156, 57, 108, 0.22);
+      padding: 6px 16px;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--accent-wine);
+      margin-bottom: 20px;
+    }
+
+    .testi-meta-box {
+      border-top: 1px solid rgba(0, 0, 0, 0.06);
+      padding-top: 16px;
     }
 
     .testi-author-name {
-      font-weight: 700;
-      font-size: 1.1rem;
+      font-weight: 800;
+      font-size: 1.15rem;
       color: var(--text-main);
-      margin-bottom: 4px;
+      margin-bottom: 3px;
     }
 
     .testi-author-role {
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       color: var(--text-light);
+      font-weight: 500;
     }
 
     /* CASO REAL DE ROCÍO CON FOTOS DE DOCUMENTO */
@@ -1713,18 +1755,26 @@
         <!-- TESTIMONIO 1: AURA -->
         <div class="testimonial-feature-card">
           <div class="testi-image-frame">
-            <img src="https://assets.cdn.filesafe.space/qppz20Iqh0Akr4YLi5vY/media/6a9a1220a289659c08379f08.jpg" alt="Testimonio de Aura: 32.000 euros en un mes, sin lanzamiento" loading="lazy">
+            <img src="https://kirtiranpreet.github.io/hipnosis-elegirte/mockup_testimonio_aura.jpg" 
+                 onerror="this.onerror=null; this.src='mockup_testimonio_aura.jpg';" 
+                 alt="Captura de WhatsApp - Testimonio de Aura: 32.000€ en un mes sin lanzamiento" 
+                 loading="lazy">
           </div>
           <div>
-            <div class="eyebrow" style="margin-bottom: 12px;">Caso Real · Empresaria 1:1</div>
+            <div class="eyebrow" style="margin-bottom: 12px;">Caso Real · Clienta de Alejandra Sastre</div>
             <div class="testi-badge-quote">
-              «32.000 euros en un solo mes sin lanzamiento, sin el estrés de antes y con total presencia.»
+              «Este mes de julio he roto todas las barreras... he facturado lo que nunca en mi vida había facturado y eso sin hacer ningún lanzamiento.»
             </div>
-            <p style="font-size: 0.98rem; color: var(--text-muted); line-height: 1.6;">
-              Cuando dejas de forzar la maquinaria y regulas el sistema desde el que tomas decisiones, las ventas dejan de ser un maratón de supervivencia y se convierten en el resultado natural de tu estructura.
+            <div class="testi-stat-pill">
+              ✦ 32.000€ facturados en 1 solo mes sin publicidad ni lanzamientos
+            </div>
+            <p class="testi-body-text">
+              «Él simplemente hizo magia en mi interior y de golpe empezaron a llegarme miles de ideas, fui haciendo y todo lo que hice funcionó. Resultado: 32.000€ facturados en 1 solo mes sin publicidad, sin lanzamiento, sin redes sociales... Porque para mí lo más importante es el cambio mental y emocional.»
             </p>
-            <div class="testi-author-name">Aura</div>
-            <div class="testi-author-role">Clienta de Mentoring Privado Elegirte™</div>
+            <div class="testi-meta-box">
+              <div class="testi-author-name">Aura</div>
+              <div class="testi-author-role">Clienta privada de Alejandra Sastre</div>
+            </div>
           </div>
         </div>
 
@@ -1852,18 +1902,26 @@
         <!-- TESTIMONIO 2: MAITE CARRASCO -->
         <div class="testimonial-feature-card">
           <div class="testi-image-frame">
-            <img src="https://assets.cdn.filesafe.space/qppz20Iqh0Akr4YLi5vY/media/6a9a12204f0181579a48e91d.jpg" alt="Testimonio de Maite Carrasco: la transformacion por encima del resultado economico" loading="lazy">
+            <img src="https://kirtiranpreet.github.io/hipnosis-elegirte/mockup_testimonio_maite.jpg" 
+                 onerror="this.onerror=null; this.src='mockup_testimonio_maite.jpg';" 
+                 alt="Captura de WhatsApp - Testimonio de Maite Carrasco: 25.000€ en 30 días" 
+                 loading="lazy">
           </div>
           <div>
-            <div class="eyebrow" style="margin-bottom: 12px;">Caso Real · Transformación Integral</div>
+            <div class="eyebrow" style="margin-bottom: 12px;">Caso Real · Clienta de Alejandra Sastre</div>
             <div class="testi-badge-quote">
-              «La transformación profunda por encima del resultado puramente económico.»
+              «El resultado económico es muy importante, aunque lo es más la transformación que tendrán las mujeres a las que voy a acompañar durante 6 meses.»
             </div>
-            <p style="font-size: 0.98rem; color: var(--text-muted); line-height: 1.6;">
-              Cuando tu relación con el valor personal, la seguridad y el merecimiento se reprograma, la forma en que lideras a tu equipo y vendes tus servicios cambia de raíz.
+            <div class="testi-stat-pill">
+              ✦ 25.000€ facturados en 30 días con trabajo de mentalidad adecuado
+            </div>
+            <p class="testi-body-text">
+              «Gracias a la estrategia de WhatsApp he conseguido facturar 25.000€ en 30 días. Alejandra, sin duda es una herramienta muy sencilla y fácil de aplicar. Los resultados se consiguen siguiendo paso a paso tus instrucciones... Sin duda esta facturación se debe a aplicar esta estrategia y a un trabajo de mentalidad adecuado. Millones de gracias.»
             </p>
-            <div class="testi-author-name">Maite Carrasco</div>
-            <div class="testi-author-role">Clienta de Mentoring Privado Elegirte™</div>
+            <div class="testi-meta-box">
+              <div class="testi-author-name">Maite Carrasco</div>
+              <div class="testi-author-role">Clienta privada de Alejandra Sastre</div>
+            </div>
           </div>
         </div>
 
@@ -2070,18 +2128,26 @@
         <!-- TESTIMONIO 3: ISABEL PUERTAS -->
         <div class="testimonial-feature-card">
           <div class="testi-image-frame">
-            <img src="https://assets.cdn.filesafe.space/qppz20Iqh0Akr4YLi5vY/media/6a9a12200e3d7a2f06e8c00d.jpg" alt="Testimonio de Isabel Puertas: tiempo y libertad financiera" loading="lazy">
+            <img src="https://kirtiranpreet.github.io/hipnosis-elegirte/mockup_testimonio_isabel.jpg" 
+                 onerror="this.onerror=null; this.src='mockup_testimonio_isabel.jpg';" 
+                 alt="Captura de WhatsApp - Testimonio de Isabel Puertas: tiempo y libertad financiera" 
+                 loading="lazy">
           </div>
           <div>
-            <div class="eyebrow" style="margin-bottom: 12px;">Caso Real · Libertad de Tiempo</div>
+            <div class="eyebrow" style="margin-bottom: 12px;">Caso Real · Clienta de Alejandra Sastre</div>
             <div class="testi-badge-quote">
-              «Recuperar tiempo de calidad para mi vida personal sin que el negocio se resienta económicamente.»
+              «Tremendamente feliz de haberte conocido y de haber aplicado tu método: he conseguido tiempo y libertad financiera.»
             </div>
-            <p style="font-size: 0.98rem; color: var(--text-muted); line-height: 1.6;">
-              Cuando dejas de ser la única fuente de tracción de tu empresa, el tiempo libre deja de ser una culpa y se convierte en el combustible que alimenta tu visión estratégica.
+            <div class="testi-stat-pill">
+              ✦ Más de 12.000€ en ventas y tiempo libre recuperado
+            </div>
+            <p class="testi-body-text">
+              «Se acaba de abrir un mundo de posibilidades infinitas por explorar. Tuve sobre aforo en el reto por WhatsApp y ya he vendido más de 12.000€... Gracias Alejandra, sin ti nunca lo hubiera conseguido. Eres maravillosa. Tu generosidad y profesionalidad son únicas.»
             </p>
-            <div class="testi-author-name">Isabel Puertas</div>
-            <div class="testi-author-role">Clienta de Mentoring Privado Elegirte™</div>
+            <div class="testi-meta-box">
+              <div class="testi-author-name">Isabel Puertas</div>
+              <div class="testi-author-role">Clienta privada de Alejandra Sastre</div>
+            </div>
           </div>
         </div>
 
