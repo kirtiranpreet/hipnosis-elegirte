@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ELEGIRTE™ · Mentoring Privado 1:1 de Alto Nivel para Empresarias | Kirti Ranpreet</title>
+  <title>ELEGIRTE™ · Mentoring Privado 1:1 para Empresarias | Kirti Ranpreet</title>
   <meta name="description" content="Un proceso privado de 12 semanas para empresarias que ya saben generar dinero y están listas para crecer sin que eso siga significando más de ellas.">
 
   <!-- Google Fonts: Playfair Display + Plus Jakarta Sans + Cinzel -->
@@ -13,45 +13,48 @@
 
   <style>
     /* =========================================================
-       SISTEMA DE DISEÑO EDITORIAL DE LUJO: ELEGIRTE
+       SISTEMA DE DISEÑO EDITORIAL DE LUJO: ELEGIRTE (VINO & ORO)
        ========================================================= */
     :root {
       --bg-primary: #F9F7EB;
-      --bg-secondary: #F4EBEF;
+      --bg-secondary: #F6EDF2;
       --bg-surface: #FFFFFF;
-      --bg-dark: #1A1116;
-      --bg-dark-card: #251620;
-      --bg-dark-accent: #331B2B;
+      --bg-card-highlight: #FFFDF8;
+      
+      /* TONOS VINO / BURDEOS DE LUJO (SIN MARRONES) */
+      --hero-wine-deep: #4A1230;
+      --hero-wine-rich: #63173F;
+      --hero-wine-light: #7E1E51;
 
-      --text-main: #181517;
-      --text-muted: #5e4f5a;
-      --text-light: #8e7a84;
-      --text-inverse: #F9F7EB;
-      --text-inverse-muted: #d4c2cb;
+      --text-main: #1C151A;
+      --text-muted: #564751;
+      --text-light: #877480;
+      --text-inverse: #FAF8EE;
+      --text-inverse-muted: #E2D3DC;
 
-      --accent-wine: #9c396c;
-      --accent-wine-dark: #6e224a;
-      --accent-wine-light: #bd4b87;
-      --accent-blush: #e8b3cf;
-      --accent-gold: #d4af37;
-      --accent-gold-light: #f7e7a9;
-      --accent-gold-dark: #a9793e;
+      --accent-wine: #9C396C;
+      --accent-wine-dark: #6E224A;
+      --accent-wine-light: #B84782;
+      --accent-blush: #F2C7DD;
+      
+      --accent-gold: #D4AF37;
+      --accent-gold-light: #F7E7A9;
+      --accent-gold-dark: #A9793E;
 
       --green-live: #25D366;
-      --green-glow: rgba(37, 211, 102, 0.4);
+      --green-glow: rgba(37, 211, 102, 0.45);
 
-      --border-subtle: rgba(156, 57, 108, 0.14);
-      --border-focus: rgba(156, 57, 108, 0.45);
-      --border-gold: rgba(212, 175, 55, 0.35);
+      --border-subtle: rgba(156, 57, 108, 0.15);
+      --border-focus: rgba(156, 57, 108, 0.4);
+      --border-gold: rgba(212, 175, 55, 0.4);
 
-      --shadow-sm: 0 4px 14px rgba(24, 21, 23, 0.05);
-      --shadow-md: 0 14px 34px rgba(24, 21, 23, 0.08);
-      --shadow-lg: 0 24px 60px rgba(156, 57, 108, 0.15);
-      --shadow-glow: 0 0 35px rgba(232, 179, 207, 0.5);
+      --shadow-sm: 0 4px 14px rgba(74, 18, 48, 0.05);
+      --shadow-md: 0 14px 35px rgba(74, 18, 48, 0.08);
+      --shadow-lg: 0 24px 60px rgba(156, 57, 108, 0.16);
 
       --radius-sm: 10px;
       --radius-md: 18px;
-      --radius-lg: 28px;
+      --radius-lg: 26px;
       --radius-full: 9999px;
 
       --font-serif: 'Playfair Display', Georgia, serif;
@@ -86,7 +89,7 @@
       overflow-x: hidden;
     }
 
-    /* COMPATIBILIDAD DIRECTA CON GOHIGHLEVEL (GHL RESET) */
+    /* COMPATIBILIDAD CON GOHIGHLEVEL */
     .c-section, .c-row, .c-column, .hl_page-creator--content, .hl_wrapper {
       max-width: 100% !important;
       padding-left: 0 !important;
@@ -104,7 +107,7 @@
       background: linear-gradient(90deg, var(--accent-wine), var(--accent-gold), var(--accent-wine-light));
       z-index: 9999;
       transition: width 0.1s ease-out;
-      box-shadow: 0 0 10px rgba(212, 175, 55, 0.7);
+      box-shadow: 0 0 12px rgba(212, 175, 55, 0.8);
     }
 
     /* STICKY LUXURY NAVIGATION */
@@ -113,9 +116,9 @@
       top: 0;
       left: 0;
       width: 100%;
-      background: rgba(249, 247, 235, 0.88);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
+      background: rgba(249, 247, 235, 0.92);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
       border-bottom: 1px solid rgba(156, 57, 108, 0.12);
       z-index: 1000;
       padding: 12px 24px;
@@ -140,7 +143,7 @@
 
     .nav-brand-title {
       font-family: var(--font-serif);
-      font-size: 1.15rem;
+      font-size: 1.18rem;
       font-weight: 700;
       letter-spacing: 0.04em;
       color: var(--accent-wine);
@@ -194,9 +197,9 @@
       background: linear-gradient(135deg, var(--accent-wine) 0%, var(--accent-wine-dark) 100%);
       color: #FFFFFF !important;
       text-decoration: none;
-      padding: 8px 18px;
+      padding: 8px 20px;
       border-radius: var(--radius-full);
-      font-size: 0.82rem;
+      font-size: 0.84rem;
       font-weight: 700;
       letter-spacing: 0.03em;
       box-shadow: 0 4px 14px rgba(156, 57, 108, 0.28);
@@ -216,7 +219,7 @@
       .nav-status-pill { display: none; }
     }
 
-    /* TYPOGRAPHY SYSTEM */
+    /* TYPOGRAPHY */
     h1, h2, h3, h4 {
       font-family: var(--font-serif);
       font-weight: 700;
@@ -227,7 +230,7 @@
 
     h1 {
       font-size: clamp(2.3rem, 5vw, 3.8rem);
-      margin-bottom: 24px;
+      margin-bottom: 22px;
     }
 
     h2 {
@@ -268,11 +271,11 @@
       -webkit-text-fill-color: transparent;
     }
 
-    /* CONTAINERS & LAYOUT */
+    /* LAYOUT CONTAINERS */
     .page-wrap {
       width: 100%;
       overflow-x: hidden;
-      padding-top: 60px; /* Space for fixed nav */
+      padding-top: 60px;
     }
 
     .container {
@@ -282,88 +285,253 @@
     }
 
     .container-narrow {
-      max-width: 820px;
+      max-width: 840px;
       margin: 0 auto;
       padding: 0 24px;
     }
 
     .section-pad {
-      padding: 95px 0;
+      padding: 90px 0;
       position: relative;
-    }
-
-    .section-pad-sm {
-      padding: 65px 0;
     }
 
     .bg-ivory { background-color: var(--bg-primary); }
     .bg-silk { background-color: var(--bg-secondary); }
     .bg-surface { background-color: var(--bg-surface); }
-    .bg-dark {
-      background-color: var(--bg-dark);
-      color: var(--text-inverse);
+
+    /* HERO: COLOR BORGOÑA / VINO ELEGANTE (SIN TONOS MARRONES) */
+    .hero-section {
+      background: linear-gradient(180deg, var(--hero-wine-deep) 0%, #320C21 100%);
+      color: #FFFFFF;
+      padding: 55px 0 85px;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.25);
     }
 
-    .bg-dark h1, .bg-dark h2, .bg-dark h3, .bg-dark h4 {
-      color: var(--text-inverse);
+    .hero-pre-hook {
+      font-family: var(--font-serif);
+      font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+      color: #F8E2EE;
+      line-height: 1.55;
+      margin-bottom: 18px;
+      font-style: italic;
+      border-left: 3px solid var(--accent-gold);
+      padding-left: 18px;
+      text-align: left;
+      max-width: 820px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    .bg-dark p {
-      color: var(--text-inverse-muted);
-    }
-
-    /* AMBIENT BACKGROUND GLOWS */
-    .ambient-glow {
-      position: absolute;
-      width: 650px;
-      height: 650px;
-      border-radius: 50%;
-      pointer-events: none;
-      filter: blur(120px);
-      opacity: 0.35;
-      z-index: 0;
-    }
-
-    .ambient-top-left {
-      top: -150px;
-      left: -150px;
-      background: radial-gradient(circle, var(--accent-blush) 0%, rgba(249, 247, 235, 0) 70%);
-    }
-
-    .ambient-bottom-right {
-      bottom: -150px;
-      right: -150px;
-      background: radial-gradient(circle, rgba(156, 57, 108, 0.3) 0%, rgba(249, 247, 235, 0) 70%);
-    }
-
-    .ambient-dark-wine {
-      background: radial-gradient(circle, rgba(156, 57, 108, 0.45) 0%, rgba(26, 17, 22, 0) 70%);
-    }
-
-    /* BADGES & EYEBROWS */
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 0.8rem;
+    .hero-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2.3rem, 5.2vw, 3.8rem);
       font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--accent-wine);
-      margin-bottom: 16px;
-      padding: 5px 14px;
-      background: rgba(156, 57, 108, 0.08);
-      border-radius: var(--radius-full);
-      border: 1px solid rgba(156, 57, 108, 0.18);
+      line-height: 1.2;
+      color: #FFFFFF;
+      margin-bottom: 22px;
+      letter-spacing: -0.02em;
     }
 
-    .eyebrow-dark {
+    .hero-title span.highlight {
+      background: linear-gradient(135deg, #F9EAB8 0%, #D4AF37 50%, #F2C7DD 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-style: italic;
+    }
+
+    .hero-lede {
+      font-size: clamp(1.08rem, 2vw, 1.26rem);
+      color: #EADCE5;
+      line-height: 1.7;
+      margin-bottom: 34px;
+      max-width: 820px;
+    }
+
+    /* RECUADRO DEL VIDEO AJUSTADO (SIN EXCESO DE AIRE) */
+    .video-compact-wrapper {
+      max-width: 420px;
+      margin: 20px auto 35px;
+      position: relative;
+    }
+
+    .video-phone-frame {
+      border-radius: 26px;
+      padding: 5px;
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.45) 0%, rgba(156, 57, 108, 0.55) 100%);
+      box-shadow: 0 16px 45px rgba(0, 0, 0, 0.45), 0 0 25px rgba(156, 57, 108, 0.35);
+    }
+
+    .video-inner-bezel {
+      border-radius: 21px;
+      overflow: hidden;
+      background: #000000;
+      line-height: 0;
+    }
+
+    /* RECUADROS EDITORIALES DE LUJO (REEMPLAZAN TODOS LOS MARRONES OSCUROS) */
+    .editorial-highlight-card {
+      background: #FFFFFF;
+      border: 1.5px solid rgba(156, 57, 108, 0.22);
+      border-left: 5px solid var(--accent-wine);
+      border-radius: var(--radius-md);
+      padding: 28px 32px;
+      margin: 32px 0;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+    }
+
+    .editorial-wine-card {
+      background: linear-gradient(135deg, #6E224A 0%, #8C2B5F 100%);
+      color: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 34px 38px;
+      margin: 32px 0;
+      box-shadow: 0 14px 40px rgba(110, 34, 74, 0.25);
+      border: 1.5px solid rgba(212, 175, 55, 0.35);
+    }
+
+    .editorial-wine-card p {
+      color: #F8EBF2;
+    }
+
+    /* DIAGNÓSTICO INTERACTIVO: CUADRICULA 2X2 EQUILIBRADA */
+    .interactive-check-box {
+      background: rgba(255, 255, 255, 0.07);
+      border: 1.5px solid rgba(242, 199, 221, 0.25);
+      border-radius: var(--radius-lg);
+      padding: 34px;
+      margin: 32px 0 24px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      text-align: left;
+    }
+
+    .check-box-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 22px;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .check-box-title {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+
+    .check-counter-pill {
+      background: rgba(212, 175, 55, 0.18);
+      border: 1px solid var(--accent-gold);
       color: var(--accent-gold-light);
-      background: rgba(212, 175, 55, 0.12);
-      border-color: rgba(212, 175, 55, 0.28);
+      padding: 5px 14px;
+      border-radius: var(--radius-full);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      transition: all 0.3s ease;
     }
 
-    /* BUTTONS & CTAS */
+    .check-counter-pill.active {
+      background: var(--accent-gold);
+      color: #4A1230;
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.7);
+    }
+
+    /* GRID 2x2 RIGUROSO EN DESKTOP */
+    .grid-2x2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    @media (max-width: 768px) {
+      .grid-2x2 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .check-item-card {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      cursor: pointer;
+      transition: all 0.28s ease;
+      user-select: none;
+    }
+
+    .check-item-card:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(242, 199, 221, 0.4);
+      transform: translateY(-2px);
+    }
+
+    .check-item-card.selected {
+      background: linear-gradient(135deg, rgba(156, 57, 108, 0.45) 0%, rgba(99, 23, 63, 0.6) 100%);
+      border-color: var(--accent-blush);
+      box-shadow: 0 8px 24px rgba(156, 57, 108, 0.35);
+    }
+
+    .check-custom-circle {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: 2px solid rgba(242, 199, 221, 0.45);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+      transition: all 0.25s ease;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .check-item-card.selected .check-custom-circle {
+      background: var(--accent-gold);
+      border-color: var(--accent-gold);
+    }
+
+    .check-custom-circle svg {
+      width: 13px;
+      height: 13px;
+      fill: #4A1230;
+      opacity: 0;
+      transform: scale(0.5);
+      transition: all 0.2s ease;
+    }
+
+    .check-item-card.selected .check-custom-circle svg {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .check-card-text {
+      font-size: 0.98rem;
+      color: #F8EDF3;
+      line-height: 1.55;
+    }
+
+    .check-box-feedback {
+      margin-top: 22px;
+      padding: 16px 22px;
+      border-radius: var(--radius-sm);
+      background: rgba(156, 57, 108, 0.25);
+      border-left: 3px solid var(--accent-gold);
+      font-size: 0.96rem;
+      color: #FDF4F8;
+      display: none;
+      animation: fadeIn 0.4s ease forwards;
+    }
+
+    /* BOTONES & CTAS */
     .btn-luxury {
       display: inline-flex;
       align-items: center;
@@ -372,12 +540,12 @@
       background: linear-gradient(135deg, var(--accent-wine) 0%, var(--accent-wine-dark) 100%);
       color: #FFFFFF !important;
       text-decoration: none;
-      padding: 20px 38px;
+      padding: 20px 40px;
       border-radius: var(--radius-full);
-      font-size: 1.08rem;
+      font-size: 1.1rem;
       font-weight: 700;
       letter-spacing: 0.03em;
-      box-shadow: 0 12px 32px rgba(156, 57, 108, 0.38);
+      box-shadow: 0 12px 34px rgba(156, 57, 108, 0.38);
       transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
       position: relative;
       overflow: hidden;
@@ -409,469 +577,158 @@
       flex-shrink: 0;
     }
 
-    .cta-subtext {
-      margin-top: 12px;
-      font-size: 0.85rem;
-      color: var(--text-light);
-      display: flex;
+    /* BADGES */
+    .eyebrow {
+      display: inline-flex;
       align-items: center;
-      justify-content: center;
       gap: 8px;
-    }
-
-    .cta-subtext-dark {
-      color: var(--text-inverse-muted);
-    }
-
-    /* HERO SECTION */
-    .hero-section {
-      background: linear-gradient(180deg, #251620 0%, #1A1116 100%);
-      color: #FFFFFF;
-      padding: 60px 0 100px;
-      position: relative;
-      overflow: hidden;
-      border-bottom: 1px solid rgba(212, 175, 55, 0.15);
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 40px;
-      position: relative;
-      z-index: 2;
-    }
-
-    .hero-pre-hook {
-      font-family: var(--font-serif);
-      font-size: clamp(1.15rem, 2.2vw, 1.45rem);
-      color: #f7e2ee;
-      line-height: 1.5;
-      margin-bottom: 18px;
-      font-style: italic;
-      border-left: 3px solid var(--accent-gold);
-      padding-left: 18px;
-    }
-
-    .hero-title {
-      font-family: var(--font-serif);
-      font-size: clamp(2.3rem, 5.2vw, 3.9rem);
+      font-size: 0.8rem;
       font-weight: 700;
-      line-height: 1.2;
-      color: #FFFFFF;
-      margin-bottom: 24px;
-      letter-spacing: -0.02em;
-    }
-
-    .hero-title span.highlight {
-      background: linear-gradient(135deg, #f7e7a9 0%, #d4af37 50%, #e8b3cf 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-style: italic;
-    }
-
-    .hero-lede {
-      font-size: clamp(1.1rem, 2vw, 1.3rem);
-      color: #dfced9;
-      line-height: 1.7;
-      margin-bottom: 36px;
-      max-width: 820px;
-    }
-
-    /* VIDEO PLAYER WRAPPERS */
-    .video-luxury-frame {
-      max-width: 520px;
-      margin: 0 auto 40px;
-      border-radius: var(--radius-lg);
-      padding: 10px;
-      background: linear-gradient(135deg, rgba(212, 175, 55, 0.35) 0%, rgba(156, 57, 108, 0.4) 100%);
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55), 0 0 35px rgba(156, 57, 108, 0.35);
-      position: relative;
-    }
-
-    .video-inner-container {
-      border-radius: calc(var(--radius-lg) - 6px);
-      overflow: hidden;
-      background-color: #000000;
-      position: relative;
-    }
-
-    .video-luxury-wide {
-      max-width: 860px;
-      margin: 36px auto;
-      border-radius: var(--radius-lg);
-      padding: 10px;
-      background: linear-gradient(135deg, rgba(212, 175, 55, 0.3) 0%, rgba(156, 57, 108, 0.25) 100%);
-      box-shadow: 0 20px 60px rgba(24, 21, 23, 0.15);
-    }
-
-    /* DYNAMIC INTERACTIVE CHECKLIST: DIAGNÓSTICO RÁPIDO */
-    .interactive-check-box {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(232, 179, 207, 0.2);
-      border-radius: var(--radius-lg);
-      padding: 34px;
-      margin: 40px 0 30px;
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-    }
-
-    .check-box-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 24px;
-      flex-wrap: wrap;
-      gap: 14px;
-    }
-
-    .check-box-title {
-      font-family: var(--font-serif);
-      font-size: 1.4rem;
-      color: #FFFFFF;
-      font-weight: 600;
-    }
-
-    .check-counter-pill {
-      background: rgba(212, 175, 55, 0.2);
-      border: 1px solid var(--accent-gold);
-      color: var(--accent-gold-light);
-      padding: 6px 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent-wine);
+      margin-bottom: 16px;
+      padding: 5px 14px;
+      background: rgba(156, 57, 108, 0.08);
       border-radius: var(--radius-full);
-      font-size: 0.85rem;
-      font-weight: 700;
-      letter-spacing: 0.03em;
-      transition: all 0.3s ease;
+      border: 1px solid rgba(156, 57, 108, 0.18);
     }
 
-    .check-counter-pill.active {
-      background: var(--accent-gold);
-      color: #1A1116;
-      box-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
+    .eyebrow-dark {
+      color: var(--accent-gold-light);
+      background: rgba(212, 175, 55, 0.15);
+      border-color: rgba(212, 175, 55, 0.3);
     }
 
-    .check-interactive-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 16px;
-    }
-
-    .check-item-card {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: var(--radius-md);
-      padding: 20px 22px;
-      display: flex;
-      align-items: flex-start;
-      gap: 14px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      user-select: none;
-    }
-
-    .check-item-card:hover {
-      background: rgba(255, 255, 255, 0.08);
-      border-color: rgba(232, 179, 207, 0.35);
-      transform: translateY(-2px);
-    }
-
-    .check-item-card.selected {
-      background: linear-gradient(135deg, rgba(156, 57, 108, 0.35) 0%, rgba(85, 27, 59, 0.5) 100%);
-      border-color: var(--accent-blush);
-      box-shadow: 0 8px 24px rgba(156, 57, 108, 0.35);
-    }
-
-    .check-custom-circle {
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
-      border: 2px solid rgba(232, 179, 207, 0.4);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      margin-top: 2px;
-      transition: all 0.25s ease;
-      background: rgba(0, 0, 0, 0.2);
-    }
-
-    .check-item-card.selected .check-custom-circle {
-      background: var(--accent-gold);
-      border-color: var(--accent-gold);
-    }
-
-    .check-custom-circle svg {
-      width: 13px;
-      height: 13px;
-      fill: #1A1116;
-      opacity: 0;
-      transform: scale(0.5);
-      transition: all 0.2s ease;
-    }
-
-    .check-item-card.selected .check-custom-circle svg {
-      opacity: 1;
-      transform: scale(1);
-    }
-
-    .check-card-text {
-      font-size: 0.98rem;
-      color: #ece4e9;
-      line-height: 1.5;
-    }
-
-    .check-box-feedback {
-      margin-top: 22px;
-      padding: 14px 20px;
-      border-radius: var(--radius-sm);
-      background: rgba(156, 57, 108, 0.2);
-      border-left: 3px solid var(--accent-gold);
-      font-size: 0.95rem;
-      color: #f7e8ef;
-      display: none;
-      animation: fadeIn 0.4s ease forwards;
-    }
-
-    /* DYNAMIC SVG DIAGRAM 1: EL PATRÓN / LA MONTAÑA RUSA DE INGRESOS */
-    .pattern-diagram-wrap {
-      background: var(--bg-surface);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-lg);
-      padding: 38px;
-      margin: 40px 0;
-      box-shadow: var(--shadow-md);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .diagram-top-bar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 24px;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-
-    .diagram-legend {
-      display: flex;
-      gap: 20px;
-      font-size: 0.85rem;
-      font-weight: 600;
-    }
-
-    .legend-item {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .legend-dot-stress {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: #e93d3d;
-    }
-
-    .legend-dot-elegirte {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: var(--accent-wine);
-    }
-
-    .svg-chart-container {
-      width: 100%;
-      height: auto;
-      max-height: 280px;
-    }
-
-    /* DYNAMIC SVG DIAGRAM 2: EL VERDADERO TECHO (CUELLO DE BOTELLA) */
-    .ceiling-diagram-container {
-      background: linear-gradient(180deg, #FFFFFF 0%, #FAF6F8 100%);
+    /* NUEVO GRÁFICO DINÁMICO E INTERACTIVO: EL PATRÓN (CON MOVIMIENTO) */
+    .chart-interactive-card {
+      background: #FFFFFF;
       border: 1.5px solid var(--border-subtle);
       border-radius: var(--radius-lg);
-      padding: 40px;
-      margin: 45px 0;
+      padding: 36px 32px;
+      margin: 38px 0;
       box-shadow: var(--shadow-md);
-    }
-
-    .ceiling-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-      gap: 16px;
-      margin-top: 30px;
-    }
-
-    .ceiling-force-card {
-      background: #FFFFFF;
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-md);
-      padding: 22px;
-      text-align: center;
-      transition: all 0.3s ease;
       position: relative;
+      overflow: hidden;
     }
 
-    .ceiling-force-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-md);
-      border-color: var(--accent-wine);
-    }
-
-    .ceiling-force-icon {
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background: rgba(156, 57, 108, 0.08);
+    .chart-header {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      justify-content: center;
-      margin: 0 auto 12px;
-      color: var(--accent-wine);
-      font-size: 1.2rem;
-      font-weight: 700;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      gap: 16px;
     }
 
-    .ceiling-force-title {
-      font-weight: 700;
-      font-size: 1.05rem;
-      color: var(--text-main);
-      margin-bottom: 6px;
-    }
-
-    .ceiling-force-arrow {
-      font-size: 1.1rem;
-      color: #e93d3d;
-      margin: 6px 0;
-      font-weight: 800;
-    }
-
-    .ceiling-force-impact {
-      font-size: 0.9rem;
-      color: var(--text-muted);
-      line-height: 1.4;
-    }
-
-    .ceiling-bottleneck-summary {
-      margin-top: 28px;
-      background: #251620;
-      color: #FFFFFF;
-      border-radius: var(--radius-md);
-      padding: 24px 30px;
+    .chart-legend {
       display: flex;
-      align-items: center;
       gap: 20px;
-      border: 1px solid rgba(212, 175, 55, 0.3);
+      font-size: 0.86rem;
+      font-weight: 600;
     }
 
-    .bottleneck-icon {
-      font-size: 2.2rem;
-      flex-shrink: 0;
+    .legend-badge-stress {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #C53030;
     }
 
-    .bottleneck-text {
-      font-size: 1.05rem;
-      line-height: 1.6;
-      color: #F9F7EB;
+    .legend-badge-elegirte {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--accent-wine);
     }
 
-    .bottleneck-text strong {
-      color: var(--accent-gold-light);
+    .chart-svg-box {
+      width: 100%;
+      height: auto;
+      max-height: 290px;
     }
 
-    /* THE TWO COLUMNS: LO QUE SÍ QUIERES */
-    .desires-split-grid {
+    /* INTERACTIVE STAGES FOR CHART */
+    .chart-interactive-nodes {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 28px;
-      margin: 40px 0;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 24px;
     }
 
     @media (max-width: 768px) {
-      .desires-split-grid {
-        grid-template-columns: 1fr;
+      .chart-interactive-nodes {
+        grid-template-columns: 1fr 1fr;
       }
     }
 
-    .desire-column-card {
-      border-radius: var(--radius-lg);
-      padding: 38px 32px;
-      box-shadow: var(--shadow-sm);
+    .chart-node-pill {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 14px 12px;
+      text-align: center;
+      cursor: pointer;
       transition: all 0.3s ease;
     }
 
-    .desire-col-left {
+    .chart-node-pill:hover, .chart-node-pill.active {
       background: #FFFFFF;
-      border: 1.5px solid var(--border-subtle);
+      border-color: var(--accent-wine);
+      box-shadow: 0 4px 16px rgba(156, 57, 108, 0.15);
+      transform: translateY(-2px);
     }
 
-    .desire-col-right {
-      background: linear-gradient(135deg, rgba(156, 57, 108, 0.06) 0%, rgba(244, 235, 239, 0.8) 100%);
-      border: 1.5px solid rgba(156, 57, 108, 0.3);
-      position: relative;
-    }
-
-    .desire-col-right::before {
-      content: 'NUEVO PARADIGMA';
-      position: absolute;
-      top: 14px;
-      right: 20px;
-      font-size: 0.7rem;
-      font-weight: 800;
-      letter-spacing: 0.1em;
-      color: var(--accent-wine);
-      background: rgba(156, 57, 108, 0.12);
-      padding: 3px 10px;
-      border-radius: var(--radius-full);
-    }
-
-    .desire-list {
-      list-style: none;
-      margin-top: 20px;
-    }
-
-    .desire-list-item {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 14px;
-      font-size: 1.05rem;
-      font-weight: 600;
+    .chart-node-title {
+      font-weight: 700;
+      font-size: 0.88rem;
       color: var(--text-main);
+      margin-bottom: 4px;
     }
 
-    .desire-bullet-check {
-      width: 22px;
-      height: 22px;
-      border-radius: 50%;
-      background: rgba(156, 57, 108, 0.12);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      color: var(--accent-wine);
-      font-weight: 800;
-      font-size: 0.8rem;
+    .chart-node-sub {
+      font-size: 0.78rem;
+      color: var(--text-light);
     }
 
-    .desire-bullet-gold {
-      background: rgba(212, 175, 55, 0.2);
-      color: var(--accent-gold-dark);
+    /* ANIMACIONES DEL GRÁFICO */
+    .path-stress {
+      stroke-dasharray: 1200;
+      stroke-dashoffset: 1200;
+      animation: drawLine 2.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     }
 
-    /* INTERACTIVE 5 PHASES ROADMAP (EL PROCESO ELEGIRTE) */
+    .path-elegirte {
+      stroke-dasharray: 800;
+      stroke-dashoffset: 800;
+      animation: drawLine 2.2s 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+
+    .pulsing-node {
+      animation: pulseNode 2s infinite ease-in-out;
+    }
+
+    @keyframes drawLine {
+      to { stroke-dashoffset: 0; }
+    }
+
+    @keyframes pulseNode {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.35); }
+    }
+
+    /* 5 FASES INTERACTIVAS: MEJORA DE LEGIBILIDAD DE LOS TEXTOS */
     .roadmap-interactive-box {
-      margin: 45px 0;
-      position: relative;
+      margin: 40px 0;
     }
 
     .phases-stepper-nav {
       display: flex;
       justify-content: space-between;
       gap: 10px;
-      margin-bottom: 30px;
+      margin-bottom: 28px;
       overflow-x: auto;
-      padding-bottom: 12px;
+      padding-bottom: 10px;
       -webkit-overflow-scrolling: touch;
     }
 
@@ -881,14 +738,14 @@
       background: #FFFFFF;
       border: 1.5px solid var(--border-subtle);
       border-radius: var(--radius-md);
-      padding: 16px 14px;
+      padding: 16px 12px;
       text-align: center;
       cursor: pointer;
       transition: all 0.3s ease;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 6px;
+      gap: 5px;
     }
 
     .stepper-tab-btn:hover {
@@ -905,7 +762,7 @@
 
     .stepper-tab-num {
       font-family: var(--font-display);
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       font-weight: 700;
       letter-spacing: 0.08em;
       opacity: 0.85;
@@ -921,7 +778,7 @@
       background: #FFFFFF;
       border: 1.5px solid var(--border-subtle);
       border-radius: var(--radius-lg);
-      padding: 45px;
+      padding: 42px 40px;
       box-shadow: var(--shadow-md);
       display: none;
       animation: fadeIn 0.4s ease forwards;
@@ -934,7 +791,7 @@
     .phase-badge {
       display: inline-block;
       font-family: var(--font-display);
-      font-size: 0.85rem;
+      font-size: 0.84rem;
       font-weight: 700;
       letter-spacing: 0.1em;
       color: var(--accent-wine);
@@ -945,7 +802,7 @@
     }
 
     .phase-headline {
-      font-size: 1.6rem;
+      font-size: 1.65rem;
       margin-bottom: 16px;
       color: var(--text-main);
     }
@@ -957,55 +814,76 @@
       margin-bottom: 24px;
     }
 
-    .phase-bullets-box {
-      background: var(--bg-primary);
+    /* REDISEÑO DE "QUÉ TRANSFORMAMOS AQUÍ" CON ALTA LEGIBILIDAD */
+    .phase-enhanced-box {
+      background: #FDF9FB;
+      border: 1.5px solid rgba(156, 57, 108, 0.2);
       border-radius: var(--radius-md);
-      padding: 24px 28px;
-      margin-top: 20px;
-      border-left: 4px solid var(--accent-wine);
+      padding: 26px 28px;
+      margin-top: 24px;
     }
 
-    .phase-bullets-title {
-      font-size: 0.95rem;
-      font-weight: 700;
+    .phase-enhanced-title {
+      font-size: 0.92rem;
+      font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.08em;
       color: var(--accent-wine);
-      margin-bottom: 14px;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
 
     .phase-bullets-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 12px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
     }
 
-    .phase-bullet-item {
+    @media (max-width: 768px) {
+      .phase-bullets-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .phase-bullet-card {
+      background: #FFFFFF;
+      border: 1px solid rgba(156, 57, 108, 0.14);
+      border-radius: var(--radius-sm);
+      padding: 16px 18px;
       display: flex;
       align-items: flex-start;
-      gap: 10px;
-      font-size: 0.98rem;
-      color: var(--text-main);
+      gap: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
     }
 
-    .phase-bullet-item::before {
-      content: '✦';
-      color: var(--accent-gold);
-      font-size: 0.85rem;
-      margin-top: 2px;
+    .phase-bullet-icon {
+      color: var(--accent-gold-dark);
+      font-size: 1.1rem;
+      font-weight: 800;
+      flex-shrink: 0;
+      line-height: 1.3;
     }
 
-    /* TESTIMONIAL CARDS WITH SCREENSHOTS & PHOTOS */
+    .phase-bullet-text {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #241A20;
+      line-height: 1.55;
+    }
+
+    /* TESTIMONIOS */
     .testimonial-feature-card {
       background: #FFFFFF;
       border: 1.5px solid var(--border-subtle);
       border-radius: var(--radius-lg);
-      padding: 36px;
-      margin: 45px 0;
+      padding: 34px;
+      margin: 40px 0;
       box-shadow: var(--shadow-md);
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 34px;
+      gap: 32px;
       align-items: center;
     }
 
@@ -1020,7 +898,6 @@
       overflow: hidden;
       box-shadow: var(--shadow-sm);
       border: 1px solid rgba(0, 0, 0, 0.08);
-      position: relative;
     }
 
     .testi-image-frame img {
@@ -1055,78 +932,22 @@
       color: var(--text-light);
     }
 
-    /* BENTO GRID: LOS 5 ENTREGABLES */
-    .deliverables-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 24px;
-      margin: 45px 0;
-    }
-
-    .deliverable-card {
-      background: #FFFFFF;
-      border: 1.5px solid var(--border-subtle);
-      border-radius: var(--radius-lg);
-      padding: 34px 28px;
-      box-shadow: var(--shadow-sm);
-      transition: all 0.35s ease;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .deliverable-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-md);
-      border-color: var(--accent-wine);
-    }
-
-    .deliverable-card.featured {
-      background: linear-gradient(135deg, rgba(156, 57, 108, 0.05) 0%, rgba(255, 255, 255, 1) 100%);
-      border: 2px solid var(--accent-wine);
-    }
-
-    .deliverable-icon-box {
-      width: 52px;
-      height: 52px;
-      border-radius: var(--radius-md);
-      background: rgba(156, 57, 108, 0.08);
-      color: var(--accent-wine);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.4rem;
-      margin-bottom: 20px;
-    }
-
-    .deliverable-title {
-      font-size: 1.3rem;
-      font-family: var(--font-serif);
-      margin-bottom: 12px;
-      color: var(--text-main);
-    }
-
-    .deliverable-text {
-      font-size: 1rem;
-      color: var(--text-muted);
-      line-height: 1.65;
-    }
-
-    /* CASE STUDY: ROCÍO (BEFORE / AFTER) */
+    /* CASO REAL DE ROCÍO CON FOTOS DE DOCUMENTO */
     .rocio-case-card {
       background: #FFFFFF;
       border: 1.5px solid var(--border-subtle);
       border-radius: var(--radius-lg);
-      padding: 40px;
-      margin: 45px 0;
+      padding: 38px;
+      margin: 40px 0;
       box-shadow: var(--shadow-md);
     }
 
     .rocio-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 36px;
+      gap: 34px;
       align-items: center;
-      margin-top: 28px;
+      margin-top: 26px;
     }
 
     @media (max-width: 820px) {
@@ -1151,7 +972,7 @@
     .rocio-comparison-col {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 18px;
     }
 
     .rocio-state-box {
@@ -1160,12 +981,12 @@
     }
 
     .state-before {
-      background: #fff5f5;
-      border-left: 4px solid #e93d3d;
+      background: #FFF5F5;
+      border-left: 4px solid #E93D3D;
     }
 
     .state-after {
-      background: #f4faf6;
+      background: #F4FAF6;
       border-left: 4px solid #25D366;
     }
 
@@ -1177,12 +998,12 @@
       margin-bottom: 8px;
     }
 
-    .state-before .state-title { color: #c53030; }
-    .state-after .state-title { color: #22543d; }
+    .state-before .state-title { color: #C53030; }
+    .state-after .state-title { color: #22543D; }
 
     /* ACCORDION FAQ */
     .accordion-wrap {
-      margin: 36px 0;
+      margin: 34px 0;
       display: flex;
       flex-direction: column;
       gap: 14px;
@@ -1203,7 +1024,7 @@
     .faq-btn {
       width: 100%;
       text-align: left;
-      padding: 24px 28px;
+      padding: 22px 26px;
       background: none;
       border: none;
       outline: none;
@@ -1213,7 +1034,7 @@
       align-items: center;
       gap: 16px;
       font-family: var(--font-serif);
-      font-size: 1.22rem;
+      font-size: 1.2rem;
       font-weight: 700;
       color: var(--text-main);
       transition: color 0.2s ease;
@@ -1248,11 +1069,11 @@
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.4s cubic-bezier(0, 1, 0, 1);
-      padding: 0 28px;
+      padding: 0 26px;
     }
 
     .faq-panel-inner {
-      padding-bottom: 24px;
+      padding-bottom: 22px;
       font-size: 1.05rem;
       color: var(--text-muted);
       line-height: 1.7;
@@ -1267,9 +1088,9 @@
     .bio-kirti-grid {
       display: grid;
       grid-template-columns: 1fr 1.3fr;
-      gap: 45px;
+      gap: 40px;
       align-items: center;
-      margin: 40px 0;
+      margin: 36px 0;
     }
 
     @media (max-width: 820px) {
@@ -1283,7 +1104,6 @@
       overflow: hidden;
       border: 2px solid rgba(212, 175, 55, 0.4);
       box-shadow: var(--shadow-lg);
-      position: relative;
     }
 
     .bio-kirti-photo-frame img {
@@ -1292,30 +1112,12 @@
       display: block;
     }
 
-    .bio-kirti-content {
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
-    }
-
-    .bio-quote-callout {
-      background: #FFFFFF;
-      border-left: 4px solid var(--accent-wine);
-      border-radius: 0 var(--radius-md) var(--radius-md) 0;
-      padding: 20px 24px;
-      font-family: var(--font-serif);
-      font-size: 1.15rem;
-      font-style: italic;
-      color: var(--accent-wine);
-      box-shadow: var(--shadow-sm);
-    }
-
-    /* FILTER GRID: PARA QUIÉN SÍ / PARA QUIÉN NO */
+    /* FILTROS DE ADMISIÓN */
     .filter-columns-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 30px;
-      margin: 40px 0;
+      gap: 28px;
+      margin: 36px 0;
     }
 
     @media (max-width: 768px) {
@@ -1326,7 +1128,7 @@
 
     .filter-card {
       border-radius: var(--radius-lg);
-      padding: 38px 32px;
+      padding: 36px 30px;
       box-shadow: var(--shadow-sm);
     }
 
@@ -1345,7 +1147,7 @@
       content: '✦ RECOMENDADO';
       position: absolute;
       top: -12px;
-      right: 28px;
+      right: 26px;
       background: var(--accent-wine);
       color: #FFFFFF;
       font-size: 0.72rem;
@@ -1357,7 +1159,7 @@
 
     .filter-list {
       list-style: none;
-      margin-top: 20px;
+      margin-top: 18px;
       display: flex;
       flex-direction: column;
       gap: 14px;
@@ -1372,25 +1174,11 @@
       color: var(--text-main);
     }
 
-    .filter-icon-no {
-      color: #e93d3d;
-      font-weight: 800;
-      font-size: 1.1rem;
-      flex-shrink: 0;
-    }
-
-    .filter-icon-yes {
-      color: #25D366;
-      font-weight: 800;
-      font-size: 1.1rem;
-      flex-shrink: 0;
-    }
-
-    /* FINAL INVITATION FOOTER & DISCLAIMER */
+    /* FOOTER LEGAL */
     .footer-legal {
-      background: #110B0E;
-      color: #9c8a94;
-      padding: 60px 0 40px;
+      background: #1A0712;
+      color: #A6929F;
+      padding: 55px 0 35px;
       font-size: 0.85rem;
       line-height: 1.8;
       border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -1400,12 +1188,12 @@
       display: flex;
       gap: 20px;
       justify-content: center;
-      margin: 24px 0;
+      margin: 22px 0;
       flex-wrap: wrap;
     }
 
     .footer-links a {
-      color: #dfced9;
+      color: #EADCE5;
       text-decoration: none;
       font-size: 0.85rem;
       transition: color 0.2s;
@@ -1415,13 +1203,13 @@
       color: var(--accent-gold);
     }
 
-    /* STICKY BOTTOM MOBILE BAR */
+    /* STICKY BOTTOM BAR */
     .mobile-sticky-bar {
       position: fixed;
       bottom: 0;
       left: 0;
       width: 100%;
-      background: rgba(26, 17, 22, 0.94);
+      background: rgba(74, 18, 48, 0.95);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       padding: 12px 20px;
@@ -1517,112 +1305,112 @@
   <div class="page-wrap">
 
     <!-- =========================================================
-         00 · HERO SECTION (DARK LUXURY + VIDEO + INTERACTIVE CHECK)
+         00 · HERO SECTION (VINO BURDEOS DE LUJO + VIDEO COMPACTO)
          ========================================================= -->
     <section class="hero-section" id="hero">
-      <div class="ambient-glow ambient-top-left ambient-dark-wine"></div>
-      <div class="ambient-glow ambient-bottom-right ambient-dark-wine"></div>
-      
       <div class="container">
-        <div class="hero-grid">
+        <div class="text-center mx-auto" style="max-width: 920px;">
           
-          <div class="text-center mx-auto" style="max-width: 920px;">
-            <div class="eyebrow eyebrow-dark">
-              ✦ PROCESO PRIVADO DE 12 SEMANAS PARA EMPRESARIAS
-            </div>
+          <div class="eyebrow eyebrow-dark">
+            ✦ PROCESO PRIVADO DE 12 SEMANAS PARA EMPRESARIAS
+          </div>
 
-            <div class="hero-pre-hook">
-              «Facturas. Vendes. Tienes clientes. Quizás incluso equipo.<br>
-              Entonces, ¿por qué sigues sintiendo que si tú paras, todo se para?»
-            </div>
+          <div class="hero-pre-hook">
+            «Facturas. Vendes. Tienes clientes. Quizás incluso equipo.<br>
+            Entonces, ¿por qué sigues sintiendo que si tú paras, todo se para?»
+          </div>
 
-            <h1 class="hero-title">
-              Ya aprendiste a hacer dinero.<br>
-              <span class="highlight">Ahora aprende a hacerlo sin perderte a ti en el proceso.</span>
-            </h1>
+          <h1 class="hero-title">
+            Ya aprendiste a hacer dinero.<br>
+            <span class="highlight">Ahora aprende a hacerlo sin perderte a ti en el proceso.</span>
+          </h1>
 
-            <p class="hero-lede mx-auto">
-              Un proceso privado de 12 semanas para empresarias que ya saben generar dinero — y están listas para crecer sin que eso siga significando más de ellas.
-            </p>
+          <p class="hero-lede mx-auto">
+            Un proceso privado de 12 semanas para empresarias que ya saben generar dinero — y están listas para crecer sin que eso siga significando más de ellas.
+          </p>
 
-            <!-- VTURB SMARTPLAYER 1 (VERTICAL 9:16) -->
-            <div class="video-luxury-frame">
-              <div class="video-inner-container">
-                <vturb-smartplayer id="vid-6aa1bdebc9d1ce6265821890" style="display: block; margin: 0 auto; width: 100%; max-width: 520px;">
+          <!-- RECUADRO DEL VIDEO AJUSTADO Y COMPACTO (SIN AIRE VACÍO) -->
+          <div class="video-compact-wrapper">
+            <div class="video-phone-frame">
+              <div class="video-inner-bezel">
+                <vturb-smartplayer id="vid-6aa1bdebc9d1ce6265821890" style="display: block; margin: 0 auto; width: 100%;">
                   <div class="vturb-player-placeholder" style="position: relative; width: 100%; padding: 177.77777777777777% 0 0; z-index: 0; background-color: black;"></div>
                 </vturb-smartplayer>
               </div>
             </div>
-            <script type="text/javascript">
-              var s=document.createElement("script");
-              s.src="https://scripts.converteai.net/85a17713-447f-4f3c-8be2-6e9dc8e25e7c/players/6aa1bdebc9d1ce6265821890/v4/player.js";
-              s.async=!0;
-              document.head.appendChild(s);
-            </script>
+          </div>
+          <script type="text/javascript">
+            var s=document.createElement("script");
+            s.src="https://scripts.converteai.net/85a17713-447f-4f3c-8be2-6e9dc8e25e7c/players/6aa1bdebc9d1ce6265821890/v4/player.js";
+            s.async=!0;
+            document.head.appendChild(s);
+          </script>
 
-            <!-- INTERACTIVE SELF-DIAGNOSTIC CHECKLIST -->
-            <div class="interactive-check-box text-left" id="diagnostic-widget">
-              <div class="check-box-header">
-                <div class="check-box-title">¿Te reconoces en alguna de estas situaciones?</div>
-                <div class="check-counter-pill" id="symptom-counter">0 de 4 identificadas</div>
-              </div>
+          <!-- DIAGNÓSTICO RÁPIDO INTERACTIVO: EXACTAMENTE 2x2 EN DESKTOP -->
+          <div class="interactive-check-box" id="diagnostic-widget">
+            <div class="check-box-header">
+              <div class="check-box-title">¿Te reconoces en alguna de estas situaciones?</div>
+              <div class="check-counter-pill" id="symptom-counter">0 de 4 identificadas</div>
+            </div>
 
-              <div class="check-interactive-grid">
-                <div class="check-item-card" onclick="toggleSymptom(this)">
-                  <div class="check-custom-circle">
-                    <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                  </div>
-                  <div class="check-card-text">
-                    <strong>Incertidumbre recurrente:</strong> Tienes meses excelentes, pero vuelves a preocuparte por el siguiente.
-                  </div>
+            <div class="grid-2x2">
+              <div class="check-item-card" onclick="toggleSymptom(this)">
+                <div class="check-custom-circle">
+                  <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
                 </div>
-
-                <div class="check-item-card" onclick="toggleSymptom(this)">
-                  <div class="check-custom-circle">
-                    <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                  </div>
-                  <div class="check-card-text">
-                    <strong>Cuello de botella:</strong> Tienes equipo, pero demasiadas decisiones siguen pasando exclusivamente por ti.
-                  </div>
-                </div>
-
-                <div class="check-item-card" onclick="toggleSymptom(this)">
-                  <div class="check-custom-circle">
-                    <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                  </div>
-                  <div class="check-card-text">
-                    <strong>Límite de energía:</strong> Quieres crecer económicamente, pero ya no estás dispuesta a entregar más horas por ello.
-                  </div>
-                </div>
-
-                <div class="check-item-card" onclick="toggleSymptom(this)">
-                  <div class="check-custom-circle">
-                    <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                  </div>
-                  <div class="check-card-text">
-                    <strong>Otro paradigma:</strong> Sabes que tu siguiente nivel necesita algo profundamente distinto a simplemente "hacer más".
-                  </div>
+                <div class="check-card-text">
+                  <strong style="display: block; margin-bottom: 3px; color: #FFFFFF;">Incertidumbre recurrente:</strong>
+                  Tienes meses excelentes, pero vuelves a preocuparte intensamente por el siguiente.
                 </div>
               </div>
 
-              <div class="check-box-feedback" id="diagnostic-feedback">
-                <strong>✦ Elegirte fue creada exactamente para esta etapa:</strong> Cuando el cuello de botella ya no es tu capacidad técnica de vender, sino el modelo interno sobre el que sostienes tu negocio.
+              <div class="check-item-card" onclick="toggleSymptom(this)">
+                <div class="check-custom-circle">
+                  <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                </div>
+                <div class="check-card-text">
+                  <strong style="display: block; margin-bottom: 3px; color: #FFFFFF;">Cuello de botella:</strong>
+                  Tienes equipo, pero demasiadas decisiones siguen pasando exclusivamente por ti.
+                </div>
+              </div>
+
+              <div class="check-item-card" onclick="toggleSymptom(this)">
+                <div class="check-custom-circle">
+                  <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                </div>
+                <div class="check-card-text">
+                  <strong style="display: block; margin-bottom: 3px; color: #FFFFFF;">Límite de energía:</strong>
+                  Quieres crecer económicamente, pero ya no estás dispuesta a entregar más horas por ello.
+                </div>
+              </div>
+
+              <div class="check-item-card" onclick="toggleSymptom(this)">
+                <div class="check-custom-circle">
+                  <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                </div>
+                <div class="check-card-text">
+                  <strong style="display: block; margin-bottom: 3px; color: #FFFFFF;">Otro paradigma:</strong>
+                  Sabes que tu siguiente nivel necesita algo profundamente distinto a simplemente "hacer más".
+                </div>
               </div>
             </div>
 
-            <!-- HERO CTA -->
-            <div style="margin-top: 32px;">
-              <a href="https://wa.me/34611405518?text=Hola%2C%20me%20gustar%C3%ADa%20postularme%20al%20mentoring" class="btn-luxury">
-                <svg class="btn-whatsapp-icon" viewBox="0 0 24 24">
-                  <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
-                </svg>
-                Postularme para Elegirte 1:1
-              </a>
-              <div class="cta-subtext cta-subtext-dark">
-                <span>✦ 12 semanas privadas</span> · <span>WhatsApp directo</span> · <span>Plazas muy limitadas</span>
-              </div>
+            <div class="check-box-feedback" id="diagnostic-feedback">
+              <strong>✦ Elegirte fue creada exactamente para esta etapa:</strong> Cuando el cuello de botella ya no es tu capacidad técnica de vender, sino el modelo interno sobre el que sostienes tu negocio.
             </div>
+          </div>
 
+          <!-- HERO CTA -->
+          <div style="margin-top: 28px;">
+            <a href="https://wa.me/34611405518?text=Hola%2C%20me%20gustar%C3%ADa%20postularme%20al%20mentoring" class="btn-luxury">
+              <svg class="btn-whatsapp-icon" viewBox="0 0 24 24">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+              </svg>
+              Postularme para Elegirte 1:1
+            </a>
+            <div style="margin-top: 14px; font-size: 0.85rem; color: #EADCE5; display: flex; align-items: center; justify-content: center; gap: 8px;">
+              <span>✦ 12 semanas privadas</span> · <span>WhatsApp directo</span> · <span>Plazas muy limitadas</span>
+            </div>
           </div>
 
         </div>
@@ -1630,7 +1418,7 @@
     </section>
 
     <!-- =========================================================
-         01 · EL PATRÓN (LA MONTAÑA RUSA DE FACTURACIÓN)
+         01 · EL PATRÓN (CON GRÁFICO DINÁMICO MEJORADO)
          ========================================================= -->
     <section class="section-pad bg-ivory" id="el-patron">
       <div class="container-narrow">
@@ -1639,13 +1427,13 @@
         
         <p>Porque sabes hacer dinero. Ese no es el problema.</p>
         
-        <div style="background: #FFFFFF; border-left: 3px solid var(--accent-wine); border-radius: 0 var(--radius-md) var(--radius-md) 0; padding: 22px 26px; margin: 26px 0; box-shadow: var(--shadow-sm);">
-          <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; font-weight: 600; color: var(--text-main);">
-            <li style="display: flex; gap: 10px; align-items: center;"><span style="color: var(--accent-wine);">✓</span> Has vendido.</li>
-            <li style="display: flex; gap: 10px; align-items: center;"><span style="color: var(--accent-wine);">✓</span> Has conseguido clientes.</li>
-            <li style="display: flex; gap: 10px; align-items: center;"><span style="color: var(--accent-wine);">✓</span> Has facturado.</li>
-            <li style="display: flex; gap: 10px; align-items: center;"><span style="color: var(--accent-wine);">✓</span> Has construido un negocio.</li>
-            <li style="display: flex; gap: 10px; align-items: center;"><span style="color: var(--accent-wine);">✓</span> Quizás incluso tienes un equipo.</li>
+        <div class="editorial-highlight-card">
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-weight: 600; color: var(--text-main);">
+            <li style="display: flex; gap: 12px; align-items: center;"><span style="color: var(--accent-wine); font-weight: 800;">✓</span> Has vendido.</li>
+            <li style="display: flex; gap: 12px; align-items: center;"><span style="color: var(--accent-wine); font-weight: 800;">✓</span> Has conseguido clientes.</li>
+            <li style="display: flex; gap: 12px; align-items: center;"><span style="color: var(--accent-wine); font-weight: 800;">✓</span> Has facturado.</li>
+            <li style="display: flex; gap: 12px; align-items: center;"><span style="color: var(--accent-wine); font-weight: 800;">✓</span> Has construido un negocio.</li>
+            <li style="display: flex; gap: 12px; align-items: center;"><span style="color: var(--accent-wine); font-weight: 800;">✓</span> Quizás incluso tienes un equipo.</li>
           </ul>
         </div>
 
@@ -1653,61 +1441,112 @@
         <p><strong>Hasta que termina el mes.</strong></p>
         <p>Porque después de un gran mes… respiras. Te tranquilizas. Y poco tiempo después vuelve la misma voz:</p>
 
-        <div style="font-family: var(--font-serif); font-size: 1.45rem; font-style: italic; color: var(--accent-wine); margin: 24px 0; text-align: center; padding: 18px; background: rgba(156, 57, 108, 0.05); border-radius: var(--radius-md);">
+        <div style="font-family: var(--font-serif); font-size: 1.45rem; font-style: italic; color: var(--accent-wine); margin: 24px 0; text-align: center; padding: 18px; background: rgba(156, 57, 108, 0.06); border-radius: var(--radius-md); border: 1px solid rgba(156, 57, 108, 0.15);">
           «¿Y ahora cómo repetimos esto?»
         </div>
 
         <p>Entonces empieza otra vez. Hasta que vuelve a entrar dinero. Y vuelves a respirar. Por un tiempo.</p>
 
-        <!-- DYNAMIC SVG DIAGRAM: MONTAÑA RUSA DE INGRESOS VS SISTEMA REGULADO -->
-        <div class="pattern-diagram-wrap">
-          <div class="diagram-top-bar">
+        <!-- GRÁFICO DINÁMICO ELEGANTE Y CON MOVIMIENTO -->
+        <div class="chart-interactive-card">
+          <div class="chart-header">
             <div>
               <h4 style="margin: 0; font-family: var(--font-serif); font-size: 1.25rem;">El Ciclo del Miedo vs. Crecimiento Regulado</h4>
-              <p style="font-size: 0.88rem; color: var(--text-light); margin: 2px 0 0;">Dinámica del sistema nervioso frente a las metas de facturación</p>
+              <p style="font-size: 0.88rem; color: var(--text-light); margin: 2px 0 0;">Haz clic en cada fase para ver el impacto en tu sistema nervioso</p>
             </div>
-            <div class="diagram-legend">
-              <div class="legend-item"><span class="legend-dot-stress"></span> Facturación bajo presión</div>
-              <div class="legend-item"><span class="legend-dot-elegirte"></span> Sostén Elegirte™</div>
+            <div class="chart-legend">
+              <div class="legend-badge-stress"><span style="width: 10px; height: 10px; border-radius: 50%; background: #E93D3D;"></span> Facturación bajo presión</div>
+              <div class="legend-badge-elegirte"><span style="width: 10px; height: 10px; border-radius: 50%; background: var(--accent-wine);"></span> Crecimiento Elegirte™</div>
             </div>
           </div>
 
-          <svg class="svg-chart-container" viewBox="0 0 700 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Grid Lines -->
-            <line x1="40" y1="200" x2="660" y2="200" stroke="#e0d5db" stroke-width="1.5" stroke-dasharray="4 4" />
-            <line x1="40" y1="130" x2="660" y2="130" stroke="#e0d5db" stroke-width="1.5" stroke-dasharray="4 4" />
-            <line x1="40" y1="60" x2="660" y2="60" stroke="#e0d5db" stroke-width="1.5" stroke-dasharray="4 4" />
+          <!-- SVG CON CURVAS SUAVES DENTRO DE LOS LÍMITES -->
+          <svg class="chart-svg-box" viewBox="0 0 740 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="gradStressArea" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#E93D3D" stop-opacity="0.18" />
+                <stop offset="100%" stop-color="#E93D3D" stop-opacity="0.0" />
+              </linearGradient>
+              <linearGradient id="gradElegirteArea" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#9C396C" stop-opacity="0.22" />
+                <stop offset="100%" stop-color="#9C396C" stop-opacity="0.0" />
+              </linearGradient>
+            </defs>
 
-            <!-- Stress Curve (Red Spikes & Drops) -->
-            <path d="M 50 170 Q 110 30 170 60 T 290 190 T 410 45 T 530 185 T 650 50" fill="none" stroke="#e93d3d" stroke-width="3" stroke-linecap="round" />
+            <!-- Líneas de fondo -->
+            <line x1="50" y1="210" x2="690" y2="210" stroke="#EDE4EB" stroke-width="1.5" stroke-dasharray="4 4" />
+            <line x1="50" y1="140" x2="690" y2="140" stroke="#EDE4EB" stroke-width="1.5" stroke-dasharray="4 4" />
+            <line x1="50" y1="70" x2="690" y2="70" stroke="#EDE4EB" stroke-width="1.5" stroke-dasharray="4 4" />
 
-            <!-- Elegirte Curve (Smooth compounding upward slope) -->
-            <path d="M 50 160 C 180 150, 320 120, 460 90 C 540 75, 610 50, 650 40" fill="none" stroke="#9c396c" stroke-width="4.5" stroke-linecap="round" />
+            <!-- Área sombreada Elegirte -->
+            <path d="M 60 170 C 200 155, 360 120, 520 85 C 600 68, 650 50, 680 42 L 680 210 L 60 210 Z" fill="url(#gradElegirteArea)" />
 
-            <!-- Labels for peaks & valleys -->
-            <circle cx="170" cy="60" r="6" fill="#e93d3d" />
-            <text x="170" y="42" font-size="11" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" fill="#c53030" text-anchor="middle">MES RÉCORD</text>
+            <!-- Línea Sostenible Elegirte (Curva dorada / vino ascendente) -->
+            <path class="path-elegirte" d="M 60 170 C 200 155, 360 120, 520 85 C 600 68, 650 50, 680 42" stroke="#9C396C" stroke-width="4.5" stroke-linecap="round" />
 
-            <circle cx="290" cy="190" r="6" fill="#e93d3d" />
-            <text x="290" y="218" font-size="11" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" fill="#c53030" text-anchor="middle">«¿CÓMO REPETIMOS?»</text>
+            <!-- Línea Montaña Rusa (Curvas suaves dentro del canvas) -->
+            <path class="path-stress" d="M 60 160 C 100 50, 140 50, 180 85 C 220 120, 250 200, 290 195 C 330 190, 360 65, 400 65 C 440 65, 470 190, 510 190 C 550 190, 590 75, 630 85 C 655 90, 670 140, 680 150" stroke="#E93D3D" stroke-width="3" stroke-linecap="round" />
 
-            <circle cx="410" cy="45" r="6" fill="#e93d3d" />
-            <text x="410" y="28" font-size="11" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" fill="#c53030" text-anchor="middle">EMPUJAR AL LÍMITE</text>
+            <!-- Nodos interactivos con animación -->
+            <g transform="translate(180, 85)">
+              <circle cx="0" cy="0" r="10" fill="rgba(233, 61, 61, 0.25)" class="pulsing-node" />
+              <circle cx="0" cy="0" r="5" fill="#E93D3D" />
+              <text x="0" y="-14" font-size="10.5" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" fill="#C53030" text-anchor="middle">MES RÉCORD</text>
+            </g>
 
-            <circle cx="530" cy="185" r="6" fill="#e93d3d" />
-            <text x="530" y="218" font-size="11" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" fill="#c53030" text-anchor="middle">AGOTAMIENTO</text>
+            <g transform="translate(290, 195)">
+              <circle cx="0" cy="0" r="10" fill="rgba(233, 61, 61, 0.25)" class="pulsing-node" />
+              <circle cx="0" cy="0" r="5" fill="#E93D3D" />
+              <text x="0" y="24" font-size="10.5" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" fill="#C53030" text-anchor="middle">«¿CÓMO REPETIMOS?»</text>
+            </g>
 
-            <!-- Final badge for Elegirte curve -->
-            <rect x="520" y="70" width="130" height="26" rx="13" fill="#9c396c" />
-            <text x="585" y="87" font-size="10.5" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" fill="#FFFFFF" text-anchor="middle">SISTEMA SOSTENIBLE</text>
+            <g transform="translate(400, 65)">
+              <circle cx="0" cy="0" r="10" fill="rgba(233, 61, 61, 0.25)" class="pulsing-node" />
+              <circle cx="0" cy="0" r="5" fill="#E93D3D" />
+              <text x="0" y="-14" font-size="10.5" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" fill="#C53030" text-anchor="middle">EMPUJAR DE NUEVO</text>
+            </g>
+
+            <g transform="translate(510, 190)">
+              <circle cx="0" cy="0" r="10" fill="rgba(233, 61, 61, 0.25)" class="pulsing-node" />
+              <circle cx="0" cy="0" r="5" fill="#E93D3D" />
+              <text x="0" y="24" font-size="10.5" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" fill="#C53030" text-anchor="middle">SOBRECARGA</text>
+            </g>
+
+            <!-- Badge Final Elegirte -->
+            <rect x="540" y="30" width="140" height="28" rx="14" fill="#9C396C" />
+            <text x="610" y="48" font-size="11" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" fill="#FFFFFF" text-anchor="middle">EXPANSIÓN SOSTENIBLE</text>
           </svg>
+
+          <!-- 4 NODOS INTERACTIVOS EXPLICATIVOS -->
+          <div class="chart-interactive-nodes">
+            <div class="chart-node-pill active" onclick="highlightChartStage(0, this)">
+              <div class="chart-node-title">1. Mes Récord</div>
+              <div class="chart-node-sub">Euforia y alivio pasajero</div>
+            </div>
+            <div class="chart-node-pill" onclick="highlightChartStage(1, this)">
+              <div class="chart-node-title">2. La Caída</div>
+              <div class="chart-node-sub">Miedo al mes siguiente</div>
+            </div>
+            <div class="chart-node-pill" onclick="highlightChartStage(2, this)">
+              <div class="chart-node-title">3. Empuje Extremo</div>
+              <div class="chart-node-sub">Poner más de ti misma</div>
+            </div>
+            <div class="chart-node-pill" onclick="highlightChartStage(3, this)">
+              <div class="chart-node-title">4. Sistema Elegirte</div>
+              <div class="chart-node-sub">Liderazgo con serenidad</div>
+            </div>
+          </div>
+          
+          <div id="chart-stage-desc" style="margin-top: 18px; padding: 14px 18px; background: #FDF7FA; border-left: 3px solid var(--accent-wine); border-radius: var(--radius-sm); font-size: 0.95rem; color: var(--text-main);">
+            <strong>Fase 1 · Mes Récord:</strong> Facturas una cifra alta. Por unos días respiras. Pero no se siente como libertad, sino como haber superado una crisis antes de la siguiente.
+          </div>
         </div>
 
       </div>
     </section>
 
     <!-- =========================================================
-         02 · LA DISTINCIÓN
+         02 · LA DISTINCIÓN (2X2 EQUILIBRADO + CARD VINO DE LUJO)
          ========================================================= -->
     <section class="section-pad bg-silk" id="la-distincion">
       <div class="container-narrow">
@@ -1716,32 +1555,45 @@
         
         <p style="font-size: 1.15rem; color: var(--accent-wine); font-weight: 600;">Y existe una diferencia enorme:</p>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; margin: 30px 0;">
-          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 24px; box-shadow: var(--shadow-sm); border: 1px solid var(--border-subtle);">
-            <div style="font-size: 1.2rem; color: var(--accent-wine); margin-bottom: 8px;">✦</div>
-            <p style="margin: 0; font-weight: 600; color: var(--text-main);">Puedes facturar mucho y seguir sintiendo incertidumbre constante.</p>
+        <!-- EXACTAMENTE 2x2 EN DESKTOP (SIN 3 ARRIBA Y 1 ABAJO) -->
+        <div class="grid-2x2" style="margin: 28px 0;">
+          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 26px; box-shadow: var(--shadow-sm); border: 1.5px solid var(--border-subtle);">
+            <div style="font-size: 1.3rem; color: var(--accent-wine); margin-bottom: 8px;">✦</div>
+            <p style="margin: 0; font-weight: 600; color: var(--text-main); font-size: 1.05rem;">
+              Puedes facturar mucho y seguir sintiendo incertidumbre constante.
+            </p>
           </div>
-          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 24px; box-shadow: var(--shadow-sm); border: 1px solid var(--border-subtle);">
-            <div style="font-size: 1.2rem; color: var(--accent-wine); margin-bottom: 8px;">✦</div>
-            <p style="margin: 0; font-weight: 600; color: var(--text-main);">Puedes tener dinero en el banco y sentir que no puedes bajar el ritmo jamás.</p>
+
+          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 26px; box-shadow: var(--shadow-sm); border: 1.5px solid var(--border-subtle);">
+            <div style="font-size: 1.3rem; color: var(--accent-wine); margin-bottom: 8px;">✦</div>
+            <p style="margin: 0; font-weight: 600; color: var(--text-main); font-size: 1.05rem;">
+              Puedes tener dinero en el banco y sentir que no puedes bajar el ritmo jamás.
+            </p>
           </div>
-          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 24px; box-shadow: var(--shadow-sm); border: 1px solid var(--border-subtle);">
-            <div style="font-size: 1.2rem; color: var(--accent-wine); margin-bottom: 8px;">✦</div>
-            <p style="margin: 0; font-weight: 600; color: var(--text-main);">Puedes tener meses extraordinarios y pasar inmediatamente a la angustia del siguiente objetivo.</p>
+
+          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 26px; box-shadow: var(--shadow-sm); border: 1.5px solid var(--border-subtle);">
+            <div style="font-size: 1.3rem; color: var(--accent-wine); margin-bottom: 8px;">✦</div>
+            <p style="margin: 0; font-weight: 600; color: var(--text-main); font-size: 1.05rem;">
+              Puedes tener meses extraordinarios y pasar inmediatamente a la angustia del siguiente objetivo.
+            </p>
           </div>
-          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 24px; box-shadow: var(--shadow-sm); border: 1px solid var(--border-subtle);">
-            <div style="font-size: 1.2rem; color: var(--accent-wine); margin-bottom: 8px;">✦</div>
-            <p style="margin: 0; font-weight: 600; color: var(--text-main);">Puedes construir un negocio rentable y continuar sintiendo que tu tranquilidad depende demasiado de las ventas diarias.</p>
+
+          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 26px; box-shadow: var(--shadow-sm); border: 1.5px solid var(--border-subtle);">
+            <div style="font-size: 1.3rem; color: var(--accent-wine); margin-bottom: 8px;">✦</div>
+            <p style="margin: 0; font-weight: 600; color: var(--text-main); font-size: 1.05rem;">
+              Puedes construir un negocio rentable y continuar sintiendo que tu tranquilidad depende demasiado de las ventas diarias.
+            </p>
           </div>
         </div>
 
         <p>Y entonces sucede algo paradójico:</p>
 
-        <div style="background: linear-gradient(135deg, #251620 0%, #1A1116 100%); border-radius: var(--radius-lg); padding: 36px 40px; color: #FFFFFF; margin: 36px 0; border: 1px solid rgba(212, 175, 55, 0.35); box-shadow: var(--shadow-lg);">
-          <div style="font-family: var(--font-serif); font-size: 1.35rem; font-style: italic; color: #f7e7a9; margin-bottom: 14px; line-height: 1.6;">
+        <!-- REEMPLAZO DEL RECUADRO MARRÓN OSCURO POR TARJETA DE LUJO EN COLOR VINO BURDEOS -->
+        <div class="editorial-wine-card">
+          <div style="font-family: var(--font-serif); font-size: 1.4rem; font-style: italic; color: var(--accent-gold-light); margin-bottom: 12px; line-height: 1.6;">
             «El dinero que debía darte libertad empieza a exigir cada vez más de ti.»
           </div>
-          <p style="color: #dfced9; margin: 0; font-size: 1.05rem;">
+          <p style="margin: 0; font-size: 1.05rem;">
             No porque no sepas generarlo. Precisamente porque aprendiste que cuando necesitas más… puedes dar más. Y esa fórmula te trajo con éxito hasta aquí.
           </p>
         </div>
@@ -1762,14 +1614,14 @@
         
         <p>No hay infinitas horas. No hay infinita energía. No puedes multiplicarte. Y probablemente tampoco quieres hacerlo.</p>
 
-        <div style="background: #FFFFFF; border-left: 4px solid var(--accent-wine); border-radius: var(--radius-sm); padding: 24px 28px; margin: 30px 0; box-shadow: var(--shadow-sm);">
-          <p style="font-family: var(--font-serif); font-size: 1.25rem; font-style: italic; color: var(--accent-wine); margin: 0;">
+        <div class="editorial-highlight-card">
+          <p style="font-family: var(--font-serif); font-size: 1.3rem; font-style: italic; color: var(--accent-wine); margin: 0; line-height: 1.6;">
             «Si para llegar al siguiente nivel tengo que trabajar todavía más de lo que trabajo ahora… ¿realmente quiero ese siguiente nivel?»
           </p>
         </div>
 
         <p>Pero quizás esa sea la pregunta equivocada. Porque puede que tu siguiente nivel no necesite más esfuerzo.</p>
-        <p style="font-size: 1.2rem; font-weight: 700; color: var(--accent-wine);">Puede que necesite dejar de depender tanto de él.</p>
+        <p style="font-size: 1.25rem; font-weight: 700; color: var(--accent-wine);">Puede que necesite dejar de depender tanto de él.</p>
       </div>
     </section>
 
@@ -1789,24 +1641,24 @@
 
         <p>Y algunas veces seguramente tienes razón. Pero cuando esto se repite continuamente, ocurre algo: tienes equipo, pero no necesariamente tienes libertad.</p>
 
-        <div style="display: flex; flex-direction: column; gap: 14px; margin: 28px 0;">
-          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 20px 24px; box-shadow: var(--shadow-sm); display: flex; gap: 14px; align-items: center;">
-            <span style="font-size: 1.3rem; color: #e93d3d;">✕</span>
-            <span style="font-size: 1.05rem; color: var(--text-main); font-weight: 500;">Hay personas trabajando contigo… pero tú sigues pensando por demasiadas personas.</span>
+        <div style="display: flex; flex-direction: column; gap: 14px; margin: 26px 0;">
+          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 20px 24px; box-shadow: var(--shadow-sm); display: flex; gap: 14px; align-items: center; border: 1px solid var(--border-subtle);">
+            <span style="font-size: 1.3rem; color: #E93D3D;">✕</span>
+            <span style="font-size: 1.05rem; color: var(--text-main); font-weight: 600;">Hay personas trabajando contigo… pero tú sigues pensando por demasiadas personas.</span>
           </div>
-          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 20px 24px; box-shadow: var(--shadow-sm); display: flex; gap: 14px; align-items: center;">
-            <span style="font-size: 1.3rem; color: #e93d3d;">✕</span>
-            <span style="font-size: 1.05rem; color: var(--text-main); font-weight: 500;">Hay estructura… pero demasiadas decisiones continúan pasando exclusivamente por ti.</span>
+          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 20px 24px; box-shadow: var(--shadow-sm); display: flex; gap: 14px; align-items: center; border: 1px solid var(--border-subtle);">
+            <span style="font-size: 1.3rem; color: #E93D3D;">✕</span>
+            <span style="font-size: 1.05rem; color: var(--text-main); font-weight: 600;">Hay estructura… pero demasiadas decisiones continúan pasando exclusivamente por ti.</span>
           </div>
-          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 20px 24px; box-shadow: var(--shadow-sm); display: flex; gap: 14px; align-items: center;">
-            <span style="font-size: 1.3rem; color: #e93d3d;">✕</span>
-            <span style="font-size: 1.05rem; color: var(--text-main); font-weight: 500;">Hay crecimiento… pero el negocio sigue dependiendo críticamente de tu capacidad personal para sostenerlo.</span>
+          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 20px 24px; box-shadow: var(--shadow-sm); display: flex; gap: 14px; align-items: center; border: 1px solid var(--border-subtle);">
+            <span style="font-size: 1.3rem; color: #E93D3D;">✕</span>
+            <span style="font-size: 1.05rem; color: var(--text-main); font-weight: 600;">Hay crecimiento… pero el negocio sigue dependiendo críticamente de tu capacidad personal para sostenerlo.</span>
           </div>
         </div>
 
         <p>Y quizá tu siguiente contratación no resuelva eso. Porque la pregunta deja de ser <em>«¿a quién más necesito contratar?»</em> y pasa a ser:</p>
 
-        <div style="text-align: center; margin: 30px 0;">
+        <div style="text-align: center; margin: 28px 0;">
           <div class="eyebrow" style="font-size: 1rem; padding: 10px 24px;">
             ¿Por qué sigo necesitando ser imprescindible?
           </div>
@@ -1824,55 +1676,41 @@
         
         <p>No necesariamente en cuánto puedes facturar. Probablemente puedes facturar más. El techo aparece cuando:</p>
 
-        <div style="background: #251620; color: #FFFFFF; border-radius: var(--radius-md); padding: 28px; margin: 28px 0; text-align: center; border: 1.5px solid var(--accent-wine); box-shadow: var(--shadow-md);">
-          <div style="font-family: var(--font-serif); font-size: 1.7rem; font-weight: 700; color: var(--accent-gold-light); margin-bottom: 6px;">
+        <!-- REEMPLAZO DEL RECUADRO MARRÓN OSCURO POR CAJA DE LUJO BLANCA Y VINO -->
+        <div style="background: #FFFFFF; border: 2px solid var(--accent-wine); border-radius: var(--radius-md); padding: 26px; margin: 26px 0; text-align: center; box-shadow: var(--shadow-md);">
+          <div style="font-family: var(--font-serif); font-size: 1.8rem; font-weight: 700; color: var(--accent-wine); margin-bottom: 4px;">
             Más negocio = Más de ti.
           </div>
+          <div style="font-size: 0.95rem; color: var(--text-muted);">La ecuación que bloquea tu tranquilidad</div>
         </div>
 
-        <!-- DIAGRAMA INTERACTIVO DE LAS 4 FUERZAS DE PRESIÓN -->
-        <div class="ceiling-diagram-container">
-          <div style="text-align: center; max-width: 600px; margin: 0 auto 20px;">
-            <h4 style="font-family: var(--font-serif); font-size: 1.35rem; color: var(--text-main);">Las 4 Fuerzas que Comprimen tu Sistema Nervioso</h4>
-            <p style="font-size: 0.92rem; color: var(--text-muted);">Por qué cada escalón de facturación incrementa la presión en lugar de la paz</p>
+        <!-- 4 FUERZAS EN 2X2 EQUILIBRADO -->
+        <div class="grid-2x2" style="margin: 28px 0;">
+          <div style="background: #FFFFFF; border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 22px; text-align: center;">
+            <div style="font-weight: 800; font-size: 1.1rem; color: var(--accent-wine); margin-bottom: 4px;">01 · Más clientes</div>
+            <div style="font-size: 1.1rem; color: #E93D3D; margin: 4px 0;">▼</div>
+            <div style="font-size: 0.96rem; color: var(--text-muted);">Más decisiones que resolver a diario</div>
           </div>
-
-          <div class="ceiling-grid">
-            <div class="ceiling-force-card">
-              <div class="ceiling-force-icon">01</div>
-              <div class="ceiling-force-title">Más clientes</div>
-              <div class="ceiling-force-arrow">▼</div>
-              <div class="ceiling-force-impact">Más decisiones que resolver</div>
-            </div>
-            <div class="ceiling-force-card">
-              <div class="ceiling-force-icon">02</div>
-              <div class="ceiling-force-title">Más equipo</div>
-              <div class="ceiling-force-arrow">▼</div>
-              <div class="ceiling-force-impact">Más microgestión acumulada</div>
-            </div>
-            <div class="ceiling-force-card">
-              <div class="ceiling-force-icon">03</div>
-              <div class="ceiling-force-title">Más facturación</div>
-              <div class="ceiling-force-arrow">▼</div>
-              <div class="ceiling-force-impact">Más responsabilidad financiera</div>
-            </div>
-            <div class="ceiling-force-card">
-              <div class="ceiling-force-icon">04</div>
-              <div class="ceiling-force-title">Más crecimiento</div>
-              <div class="ceiling-force-arrow">▼</div>
-              <div class="ceiling-force-impact">Más presión constante</div>
-            </div>
+          <div style="background: #FFFFFF; border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 22px; text-align: center;">
+            <div style="font-weight: 800; font-size: 1.1rem; color: var(--accent-wine); margin-bottom: 4px;">02 · Más equipo</div>
+            <div style="font-size: 1.1rem; color: #E93D3D; margin: 4px 0;">▼</div>
+            <div style="font-size: 0.96rem; color: var(--text-muted);">Más microgestión y supervisión acumulada</div>
           </div>
-
-          <div class="ceiling-bottleneck-summary">
-            <div class="bottleneck-icon">⚠️</div>
-            <div class="bottleneck-text">
-              Si esa ecuación no cambia, cada siguiente nivel puede hacer tu negocio más grande… <strong>sin hacer tu vida mejor</strong>. Y probablemente no construiste una empresa para eso.
-            </div>
+          <div style="background: #FFFFFF; border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 22px; text-align: center;">
+            <div style="font-weight: 800; font-size: 1.1rem; color: var(--accent-wine); margin-bottom: 4px;">03 · Más facturación</div>
+            <div style="font-size: 1.1rem; color: #E93D3D; margin: 4px 0;">▼</div>
+            <div style="font-size: 0.96rem; color: var(--text-muted);">Más responsabilidad financiera constante</div>
+          </div>
+          <div style="background: #FFFFFF; border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 22px; text-align: center;">
+            <div style="font-weight: 800; font-size: 1.1rem; color: var(--accent-wine); margin-bottom: 4px;">04 · Más crecimiento</div>
+            <div style="font-size: 1.1rem; color: #E93D3D; margin: 4px 0;">▼</div>
+            <div style="font-size: 0.96rem; color: var(--text-muted);">Más presión sobre tu propio cuerpo</div>
           </div>
         </div>
 
-        <!-- TESTIMONIO 1: AURA (32.000€ EN UN MES SIN LANZAMIENTO) -->
+        <p>Si esa ecuación no cambia, cada siguiente nivel puede hacer tu negocio más grande… <strong>sin hacer tu vida mejor</strong>. Y probablemente no construiste una empresa para eso.</p>
+
+        <!-- TESTIMONIO 1: AURA -->
         <div class="testimonial-feature-card">
           <div class="testi-image-frame">
             <img src="https://assets.cdn.filesafe.space/qppz20Iqh0Akr4YLi5vY/media/6a9a1220a289659c08379f08.jpg" alt="Testimonio de Aura: 32.000 euros en un mes, sin lanzamiento" loading="lazy">
@@ -1894,7 +1732,7 @@
     </section>
 
     <!-- =========================================================
-         06 · LO QUE SÍ QUIERES (PORQUE NO QUIERES MENOS)
+         06 · LO QUE SÍ QUIERES
          ========================================================= -->
     <section class="section-pad bg-silk">
       <div class="container">
@@ -1903,32 +1741,33 @@
           <h2>Porque no quieres menos.<br><span class="text-serif-italic">Quieres más de lo que realmente importa.</span></h2>
         </div>
 
-        <div class="desires-split-grid">
-          
-          <div class="desire-column-card desire-col-left">
-            <h4 style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--text-main); margin-bottom: 6px;">Quieres más:</h4>
-            <p style="font-size: 0.95rem; color: var(--text-light); margin-bottom: 18px;">Tu ambición sigue intacta y legítima</p>
-            <ul class="desire-list">
-              <li class="desire-list-item"><span class="desire-bullet-check">✓</span> Más dinero</li>
-              <li class="desire-list-item"><span class="desire-bullet-check">✓</span> Más crecimiento</li>
-              <li class="desire-list-item"><span class="desire-bullet-check">✓</span> Más estabilidad</li>
-              <li class="desire-list-item"><span class="desire-bullet-check">✓</span> Más libertad real</li>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin: 38px 0;">
+          <div style="background: #FFFFFF; border-radius: var(--radius-lg); padding: 36px 30px; box-shadow: var(--shadow-sm); border: 1.5px solid var(--border-subtle);">
+            <h4 style="font-family: var(--font-serif); font-size: 1.45rem; color: var(--text-main); margin-bottom: 6px;">Quieres más:</h4>
+            <p style="font-size: 0.92rem; color: var(--text-light); margin-bottom: 18px;">Tu ambición sigue intacta y legítima</p>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
+              <li style="display: flex; gap: 12px; align-items: center; font-weight: 600;"><span style="color: var(--accent-wine); font-weight: 800;">✓</span> Más dinero</li>
+              <li style="display: flex; gap: 12px; align-items: center; font-weight: 600;"><span style="color: var(--accent-wine); font-weight: 800;">✓</span> Más crecimiento</li>
+              <li style="display: flex; gap: 12px; align-items: center; font-weight: 600;"><span style="color: var(--accent-wine); font-weight: 800;">✓</span> Más estabilidad</li>
+              <li style="display: flex; gap: 12px; align-items: center; font-weight: 600;"><span style="color: var(--accent-wine); font-weight: 800;">✓</span> Más libertad real</li>
             </ul>
           </div>
 
-          <div class="desire-column-card desire-col-right">
-            <h4 style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--accent-wine); margin-bottom: 6px;">Y también quieres:</h4>
-            <p style="font-size: 0.95rem; color: var(--accent-wine); margin-bottom: 18px;">Lo que el éxito no debería arrebatarte</p>
-            <ul class="desire-list">
-              <li class="desire-list-item"><span class="desire-bullet-check desire-bullet-gold">★</span> Más tiempo</li>
-              <li class="desire-list-item"><span class="desire-bullet-check desire-bullet-gold">★</span> Más espacio mental</li>
-              <li class="desire-list-item"><span class="desire-bullet-check desire-bullet-gold">★</span> Más disfrute genuino</li>
-              <li class="desire-list-item"><span class="desire-bullet-check desire-bullet-gold">★</span> Más tranquilidad diaria</li>
-              <li class="desire-list-item"><span class="desire-bullet-check desire-bullet-gold">★</span> Más capacidad lúcida de decidir</li>
-              <li class="desire-list-item"><span class="desire-bullet-check desire-bullet-gold">★</span> Más vida fuera del negocio</li>
+          <div style="background: linear-gradient(135deg, rgba(156, 57, 108, 0.06) 0%, rgba(246, 237, 242, 0.95) 100%); border-radius: var(--radius-lg); padding: 36px 30px; border: 1.5px solid rgba(156, 57, 108, 0.3); position: relative;">
+            <div style="position: absolute; top: 14px; right: 20px; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.1em; color: var(--accent-wine); background: rgba(156, 57, 108, 0.12); padding: 3px 10px; border-radius: var(--radius-full);">
+              NUEVO PARADIGMA
+            </div>
+            <h4 style="font-family: var(--font-serif); font-size: 1.45rem; color: var(--accent-wine); margin-bottom: 6px;">Y también quieres:</h4>
+            <p style="font-size: 0.92rem; color: var(--accent-wine); margin-bottom: 18px;">Lo que el éxito no debería arrebatarte</p>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
+              <li style="display: flex; gap: 12px; align-items: center; font-weight: 600;"><span style="color: var(--accent-gold-dark);">★</span> Más tiempo de calidad</li>
+              <li style="display: flex; gap: 12px; align-items: center; font-weight: 600;"><span style="color: var(--accent-gold-dark);">★</span> Más espacio mental y calma</li>
+              <li style="display: flex; gap: 12px; align-items: center; font-weight: 600;"><span style="color: var(--accent-gold-dark);">★</span> Más disfrute genuino</li>
+              <li style="display: flex; gap: 12px; align-items: center; font-weight: 600;"><span style="color: var(--accent-gold-dark);">★</span> Más tranquilidad diaria</li>
+              <li style="display: flex; gap: 12px; align-items: center; font-weight: 600;"><span style="color: var(--accent-gold-dark);">★</span> Más capacidad lúcida de decidir</li>
+              <li style="display: flex; gap: 12px; align-items: center; font-weight: 600;"><span style="color: var(--accent-gold-dark);">★</span> Más vida fuera del negocio</li>
             </ul>
           </div>
-
         </div>
 
         <div style="text-align: center; max-width: 820px; margin: 30px auto 0;">
@@ -1936,7 +1775,6 @@
             No quieres perder tu ambición. <span class="text-serif-italic">Quieres dejar de necesitar sacrificarte para demostrarla.</span>
           </p>
         </div>
-
       </div>
     </section>
 
@@ -1951,7 +1789,7 @@
         <p>La mujer que construyó lo que tienes probablemente aprendió a solucionar todo sola, a resistir, a no pedir ayuda y a empujar hasta que saliera.</p>
         <p>Esa mujer no es el enemigo. <strong>Esa mujer te trajo hasta aquí.</strong> Pero ahora tenemos que preguntarnos:</p>
 
-        <div style="background: #FFFFFF; border: 1.5px solid var(--accent-wine); border-radius: var(--radius-md); padding: 26px 30px; margin: 30px 0; text-align: center; box-shadow: var(--shadow-sm);">
+        <div class="editorial-highlight-card" style="text-align: center;">
           <div style="font-family: var(--font-serif); font-size: 1.35rem; font-style: italic; color: var(--accent-wine); line-height: 1.6;">
             «¿Los comportamientos que te permitieron construir tu negocio son los mismos que necesitas para escalar tu siguiente etapa?»
           </div>
@@ -1970,20 +1808,20 @@
         <p>Y tampoco significa que la estrategia no importe. Si tu oferta necesita mejorar, necesitas mejorarla. Si tienes un problema de adquisición, necesitas resolverlo. Elegirte no convierte problemas empresariales en "bloqueos emocionales".</p>
         <p><strong>Pero existe otro escenario muy habitual:</strong></p>
 
-        <div style="display: flex; flex-direction: column; gap: 14px; margin: 28px 0;">
-          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 18px 24px; box-shadow: var(--shadow-sm); border-left: 3px solid var(--accent-wine);">
+        <div style="display: flex; flex-direction: column; gap: 12px; margin: 26px 0;">
+          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 18px 24px; box-shadow: var(--shadow-sm); border-left: 4px solid var(--accent-wine);">
             <strong>Sabes que tienes que delegar…</strong> y vuelves a recuperar el control.
           </div>
-          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 18px 24px; box-shadow: var(--shadow-sm); border-left: 3px solid var(--accent-wine);">
+          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 18px 24px; box-shadow: var(--shadow-sm); border-left: 4px solid var(--accent-wine);">
             <strong>Sabes que necesitas decir no…</strong> y aceptas igualmente por temor a perder.
           </div>
-          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 18px 24px; box-shadow: var(--shadow-sm); border-left: 3px solid var(--accent-wine);">
+          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 18px 24px; box-shadow: var(--shadow-sm); border-left: 4px solid var(--accent-wine);">
             <strong>Sabes que una semana floja no significa que todo vaya mal…</strong> y reaccionas como si fuera una emergencia crítica.
           </div>
-          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 18px 24px; box-shadow: var(--shadow-sm); border-left: 3px solid var(--accent-wine);">
+          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 18px 24px; box-shadow: var(--shadow-sm); border-left: 4px solid var(--accent-wine);">
             <strong>Sabes que tienes que tomar una decisión…</strong> y llevas meses postergándola.
           </div>
-          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 18px 24px; box-shadow: var(--shadow-sm); border-left: 3px solid var(--accent-wine);">
+          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 18px 24px; box-shadow: var(--shadow-sm); border-left: 4px solid var(--accent-wine);">
             <strong>Sabes que necesitas proteger tu tiempo…</strong> pero eres siempre la primera en sacrificarlo.
           </div>
         </div>
@@ -2033,7 +1871,7 @@
     </section>
 
     <!-- =========================================================
-         10 · LA RUTA: EL PROCESO ELEGIRTE™ (LAS 5 FASES INTERACTIVAS)
+         10 · LA RUTA: LAS 5 FASES (CON TEXTOS CLAROS Y LEGIBLES)
          ========================================================= -->
     <section class="section-pad bg-silk" id="proceso">
       <div class="container">
@@ -2043,9 +1881,7 @@
           <p style="font-size: 1.15rem;">Cinco fases. No es un temario rígido — es un mapa: dónde empezamos, qué desbloqueamos y hacia dónde construyes.</p>
         </div>
 
-        <!-- INTERACTIVE STEPPER / ROADMAP TABS -->
         <div class="roadmap-interactive-box">
-          
           <div class="phases-stepper-nav">
             <div class="stepper-tab-btn active" onclick="switchPhase(0, this)">
               <span class="stepper-tab-num">FASE 01</span>
@@ -2076,31 +1912,59 @@
             <p class="phase-lede">
               No empezamos preguntando solo cuánto quieres facturar. Primero entendemos qué está ocurriendo detrás de esa facturación.
             </p>
-            <div class="phase-bullets-box">
-              <div class="phase-bullets-title">Las preguntas estratégicas de esta fase:</div>
+            <div class="phase-enhanced-box">
+              <div class="phase-enhanced-title">
+                <span>✦</span> LAS PREGUNTAS ESTRATÉGICAS DE ESTA FASE:
+              </div>
               <div class="phase-bullets-grid">
-                <div class="phase-bullet-item">¿Cuánto del negocio depende 100% de ti?</div>
-                <div class="phase-bullet-item">¿Hacia dónde se está fugando tu energía vital?</div>
-                <div class="phase-bullet-item">¿Qué sigues haciendo hoy que ya deberías haber soltado?</div>
-                <div class="phase-bullet-item">¿Qué decisiones cruciales estás postergando por miedo?</div>
+                <div class="phase-bullet-card">
+                  <span class="phase-bullet-icon">◆</span>
+                  <div class="phase-bullet-text">¿Cuánto del negocio depende 100% de ti hoy?</div>
+                </div>
+                <div class="phase-bullet-card">
+                  <span class="phase-bullet-icon">◆</span>
+                  <div class="phase-bullet-text">¿Hacia dónde se está fugando tu tiempo y energía vital?</div>
+                </div>
+                <div class="phase-bullet-card">
+                  <span class="phase-bullet-icon">◆</span>
+                  <div class="phase-bullet-text">¿Qué sigues haciendo tú que ya deberías haber delegado?</div>
+                </div>
+                <div class="phase-bullet-card">
+                  <span class="phase-bullet-icon">◆</span>
+                  <div class="phase-bullet-text">¿Qué decisiones cruciales estás postergando por temor?</div>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- CARD FASE 02 -->
+          <!-- CARD FASE 02 (LA DE LA CAPTURA 5, AHORA 100% LEGIBLE) -->
           <div class="stepper-content-card" id="phase-card-1">
             <div class="phase-badge">FASE 02 · CORTAR EL CIRCUITO</div>
             <h3 class="phase-headline">Cortar el circuito de sobreexigencia y control.</h3>
             <p class="phase-lede">
               Identificar la necesidad de ser imprescindible, la dificultad para soltar y la respuesta somática de alarma cuando dejas de producir.
             </p>
-            <div class="phase-bullets-box">
-              <div class="phase-bullets-title">Qué transformamos aquí:</div>
+            <div class="phase-enhanced-box">
+              <div class="phase-enhanced-title">
+                <span>✦</span> QUÉ TRANSFORMAMOS AQUÍ:
+              </div>
               <div class="phase-bullets-grid">
-                <div class="phase-bullet-item">La culpa automática cuando tienes tiempo libre.</div>
-                <div class="phase-bullet-item">El miedo visceral a que si tú no miras, todo se rompe.</div>
-                <div class="phase-bullet-item">La hipervigilancia ante cualquier fallo del equipo.</div>
-                <div class="phase-bullet-item">La regulación somática de tu sistema nervioso bajo estrés.</div>
+                <div class="phase-bullet-card">
+                  <span class="phase-bullet-icon">◆</span>
+                  <div class="phase-bullet-text">La culpa automática cuando tienes una tarde libre sin trabajar.</div>
+                </div>
+                <div class="phase-bullet-card">
+                  <span class="phase-bullet-icon">◆</span>
+                  <div class="phase-bullet-text">El miedo visceral a que si tú no miras cada detalle, todo se rompe.</div>
+                </div>
+                <div class="phase-bullet-card">
+                  <span class="phase-bullet-icon">◆</span>
+                  <div class="phase-bullet-text">La hipervigilancia reactiva ante cualquier fallo del equipo.</div>
+                </div>
+                <div class="phase-bullet-card">
+                  <span class="phase-bullet-icon">◆</span>
+                  <div class="phase-bullet-text">La regulación somática de tu sistema nervioso bajo presión.</div>
+                </div>
               </div>
             </div>
           </div>
@@ -2112,13 +1976,27 @@
             <p class="phase-lede">
               Tu relación entre valor personal, resultados, dinero, seguridad, merecimiento, ambición, ventas, reconocimiento, recibir y producir.
             </p>
-            <div class="phase-bullets-box">
-              <div class="phase-bullets-title">El impacto directo en el negocio:</div>
+            <div class="phase-enhanced-box">
+              <div class="phase-enhanced-title">
+                <span>✦</span> EL IMPACTO DIRECTO EN EL NEGOCIO:
+              </div>
               <div class="phase-bullets-grid">
-                <div class="phase-bullet-item">Qué cobras y con qué serenidad sostienes tus tarifas.</div>
-                <div class="phase-bullet-item">Qué toleras de clientes o colaboradores por inseguridad.</div>
-                <div class="phase-bullet-item">Cuánto controlas innecesariamente por demostrar valor.</div>
-                <div class="phase-bullet-item">Decidir desde la convicción y no desde la necesidad de aprobación.</div>
+                <div class="phase-bullet-card">
+                  <span class="phase-bullet-icon">◆</span>
+                  <div class="phase-bullet-text">Qué cobras y con qué serenidad sostienes tus tarifas altas.</div>
+                </div>
+                <div class="phase-bullet-card">
+                  <span class="phase-bullet-icon">◆</span>
+                  <div class="phase-bullet-text">Qué toleras de clientes o colaboradores por inseguridad.</div>
+                </div>
+                <div class="phase-bullet-card">
+                  <span class="phase-bullet-icon">◆</span>
+                  <div class="phase-bullet-text">Cuánto controlas innecesariamente para validar tu valor.</div>
+                </div>
+                <div class="phase-bullet-card">
+                  <span class="phase-bullet-icon">◆</span>
+                  <div class="phase-bullet-text">Decidir desde la convicción y no desde la necesidad de aprobación.</div>
+                </div>
               </div>
             </div>
           </div>
@@ -2130,13 +2008,27 @@
             <p class="phase-lede">
               Si todo queda en una conversación interesante, no sirve. Aquí traducimos lo trabajado a límites, delegación, prioridades, liderazgo, tiempo y forma de operar.
             </p>
-            <div class="phase-bullets-box">
-              <div class="phase-bullets-title">Decisiones ejecutivas concretas:</div>
+            <div class="phase-enhanced-box">
+              <div class="phase-enhanced-title">
+                <span>✦</span> DECISIONES EJECUTIVAS CONCRETAS:
+              </div>
               <div class="phase-bullets-grid">
-                <div class="phase-bullet-item">¿Qué solamente puedes y debes hacer tú?</div>
-                <div class="phase-bullet-item">¿Qué tienes que dejar de hacer de inmediato?</div>
-                <div class="phase-bullet-item">¿Qué necesitas delegar con procesos reales y autonomía?</div>
-                <div class="phase-bullet-item">¿Dónde necesitas levantar un límite innegociable?</div>
+                <div class="phase-bullet-card">
+                  <span class="phase-bullet-icon">◆</span>
+                  <div class="phase-bullet-text">¿Qué solamente puedes y debes hacer tú en tu rol de CEO?</div>
+                </div>
+                <div class="phase-bullet-card">
+                  <span class="phase-bullet-icon">◆</span>
+                  <div class="phase-bullet-text">¿Qué tienes que dejar de hacer de inmediato para no quemarte?</div>
+                </div>
+                <div class="phase-bullet-card">
+                  <span class="phase-bullet-icon">◆</span>
+                  <div class="phase-bullet-text">¿Qué necesitas delegar con procesos reales y total autonomía?</div>
+                </div>
+                <div class="phase-bullet-card">
+                  <span class="phase-bullet-icon">◆</span>
+                  <div class="phase-bullet-text">¿Dónde necesitas levantar un límite innegociable con tu tiempo?</div>
+                </div>
               </div>
             </div>
           </div>
@@ -2146,15 +2038,29 @@
             <div class="phase-badge">FASE 05 · EXPANSIÓN A 12 MESES</div>
             <h3 class="phase-headline">Construir tu siguiente etapa sin volver a "más dinero = más de mí".</h3>
             <p class="phase-lede">
-              ¿Qué quieres construir económicamente? ¿Cuánto quieres que dependa de ti? ¿Qué quieres recuperar de tu tiempo? De aquí sale tu <strong>Plan de Expansión Elegirte™ — 12 meses</strong>, alrededor de dinero, trabajo, tiempo, tú y expansión.
+              ¿Qué quieres construir económicamente? ¿Cuánto quieres que dependa de ti? ¿Qué quieres recuperar de tu tiempo? De aquí sale tu <strong>Plan de Expansión Elegirte™ — 12 meses</strong>.
             </p>
-            <div class="phase-bullets-box">
-              <div class="phase-bullets-title">Las 5 dimensiones de tu Plan de Expansión:</div>
+            <div class="phase-enhanced-box">
+              <div class="phase-enhanced-title">
+                <span>✦</span> LAS 4 DIMENSIONES DE TU PLAN DE EXPANSIÓN:
+              </div>
               <div class="phase-bullets-grid">
-                <div class="phase-bullet-item">1. Dimensión Dinero: Metas sin sobrecarga de entrega.</div>
-                <div class="phase-bullet-item">2. Dimensión Trabajo: Rol de CEO sin apagafuegos.</div>
-                <div class="phase-bullet-item">3. Dimensión Tiempo: Días libres sin desconexión fingida.</div>
-                <div class="phase-bullet-item">4. Dimensión Tú: Vitalidad, descanso y relaciones.</div>
+                <div class="phase-bullet-card">
+                  <span class="phase-bullet-icon">◆</span>
+                  <div class="phase-bullet-text">1. Dimensión Dinero: Metas de facturación sin sobrecarga personal.</div>
+                </div>
+                <div class="phase-bullet-card">
+                  <span class="phase-bullet-icon">◆</span>
+                  <div class="phase-bullet-text">2. Dimensión Trabajo: Liderazgo estratégico sin ser la apagafuegos.</div>
+                </div>
+                <div class="phase-bullet-card">
+                  <span class="phase-bullet-icon">◆</span>
+                  <div class="phase-bullet-text">3. Dimensión Tiempo: Descanso real sin hiperconexión mental.</div>
+                </div>
+                <div class="phase-bullet-card">
+                  <span class="phase-bullet-icon">◆</span>
+                  <div class="phase-bullet-text">4. Dimensión Tú: Vitalidad, disfrute y vida personal recuperada.</div>
+                </div>
               </div>
             </div>
           </div>
@@ -2179,8 +2085,7 @@
           </div>
         </div>
 
-        <!-- CTA INTERMEDIO -->
-        <div class="text-center" style="margin-top: 40px;">
+        <div class="text-center" style="margin-top: 36px;">
           <a href="https://wa.me/34611405518?text=Hola%2C%20me%20gustar%C3%ADa%20postularme%20al%20mentoring" class="btn-luxury">
             <svg class="btn-whatsapp-icon" viewBox="0 0 24 24">
               <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
@@ -2193,7 +2098,7 @@
     </section>
 
     <!-- =========================================================
-         11 · LA OBJECIÓN MÁS COMÚN ("PERO YO YA SÉ TODO ESTO")
+         11 · LA OBJECIÓN MÁS COMÚN
          ========================================================= -->
     <section class="section-pad bg-ivory">
       <div class="container-narrow">
@@ -2203,11 +2108,12 @@
         <p>Quizás sí. Quizás ya hiciste terapia, coaching, cursos. Has leído. Has trabajado creencias. Conoces tus patrones intelectualmente al detalle.</p>
         <p>Perfecto — entonces no necesitamos discutir la teoría.</p>
 
-        <div style="background: #251620; border-radius: var(--radius-lg); padding: 36px 40px; color: #FFFFFF; margin: 30px 0; border: 1.5px solid var(--accent-wine);">
-          <div style="font-family: var(--font-serif); font-size: 1.45rem; font-style: italic; color: #f7e7a9; margin-bottom: 12px; line-height: 1.6;">
+        <!-- REEMPLAZO DEL RECUADRO MARRÓN OSCURO POR TARJETA DE LUJO EN COLOR VINO BURDEOS -->
+        <div class="editorial-wine-card">
+          <div style="font-family: var(--font-serif); font-size: 1.45rem; font-style: italic; color: var(--accent-gold-light); margin-bottom: 12px; line-height: 1.6;">
             «Saber lo que te pasa no es lo mismo que responder de otra manera cuando pasa.»
           </div>
-          <p style="color: #dfced9; margin: 0;">
+          <p style="margin: 0;">
             Ahí descubrimos qué has comprendido… y qué realmente has conseguido transformar en tu sistema nervioso.
           </p>
         </div>
@@ -2215,7 +2121,7 @@
     </section>
 
     <!-- =========================================================
-         12 · CÓMO TRABAJAMOS (METODOLOGÍA PRIVADA)
+         12 · CÓMO TRABAJAMOS
          ========================================================= -->
     <section class="section-pad bg-silk">
       <div class="container-narrow">
@@ -2238,29 +2144,29 @@
         </div>
 
         <div class="bio-kirti-grid">
-          
           <div class="bio-kirti-photo-frame">
             <img src="https://assets.cdn.filesafe.space/qppz20Iqh0Akr4YLi5vY/media/6aa1e98ad953a0128b56eb11.jpg" alt="Kirti Ranpreet · Mentora de Desarrollo Personal para Empresarias" loading="lazy">
           </div>
 
-          <div class="bio-kirti-content">
+          <div style="display: flex; flex-direction: column; gap: 18px;">
             <p>Empiezo a vender a los 8 años. A los 16, lancé mi primera campaña de marketing. Desde 2014 emprendo online, ayudando a mujeres a monetizar su conocimiento y su talento.</p>
             <p>He dado conferencias en Estados Unidos, España, Malta, Italia, Brasil, Colombia, México e Inglaterra. He salido en medios como <em>Emprendedores, RTVE, La Vanguardia</em>.</p>
             
             <p><strong>Pero Elegirte no nace de una teoría académica.</strong></p>
             <p>Nace de algo que vi repetirse, una y otra vez, en mis propias clientas. Mujeres que facturaban. Que viajaban. Que salían en los medios. Y que, por dentro, estaban sosteniendo una presión insoportable.</p>
 
-            <div class="bio-quote-callout">
-              «Y lo viví yo misma. Facturaba bien. Tenía tiempo, viajaba, daba conferencias en tres continentes. Y en 2022 terminé en un hospital. Ahí entendí lo que confirmo en cada proceso de Elegirte: facturar tanto no vale la pena si te cuesta a ti misma.»
+            <div class="editorial-highlight-card">
+              <p style="font-family: var(--font-serif); font-size: 1.18rem; font-style: italic; color: var(--accent-wine); margin: 0; line-height: 1.6;">
+                «Y lo viví yo misma. Facturaba bien. Tenía tiempo, viajaba, daba conferencias en tres continentes. Y en 2022 terminé en un hospital. Ahí entendí lo que confirmo en cada proceso de Elegirte: facturar tanto no vale la pena si te cuesta a ti misma.»
+              </p>
             </div>
           </div>
-
         </div>
       </div>
     </section>
 
     <!-- =========================================================
-         14 · ASÍ TRABAJAREMOS (LOS 5 ENTREGABLES / COMPONENTES)
+         14 · ASÍ TRABAJAREMOS (LOS 5 ENTREGABLES + VIDEO RESULTADOS)
          ========================================================= -->
     <section class="section-pad bg-silk" id="resultados">
       <div class="container">
@@ -2270,57 +2176,55 @@
           <p style="font-size: 1.15rem;">Una estructura privada diseñada para transformar tu forma de decidir mientras operas tu negocio en tiempo real.</p>
         </div>
 
-        <div class="deliverables-grid">
-          
-          <div class="deliverable-card featured">
-            <div class="deliverable-icon-box">01</div>
-            <h3 class="deliverable-title">Sesiones privadas 1:1</h3>
-            <p class="deliverable-text">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin: 40px 0;">
+          <div style="background: #FFFFFF; border: 2px solid var(--accent-wine); border-radius: var(--radius-lg); padding: 32px 28px; box-shadow: var(--shadow-sm);">
+            <div style="font-size: 1.4rem; color: var(--accent-wine); font-weight: 800; margin-bottom: 12px;">01</div>
+            <h3 style="font-size: 1.3rem; margin-bottom: 12px;">Sesiones privadas 1:1</h3>
+            <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.65; margin: 0;">
               Una sesión individual de 60 minutos por Zoom cada semana. No es grupal — trabajamos sobre tu situación, tus decisiones y lo que vaya apareciendo durante la semana.
             </p>
           </div>
 
-          <div class="deliverable-card">
-            <div class="deliverable-icon-box">02</div>
-            <h3 class="deliverable-title">Acompañamiento por WhatsApp</h3>
-            <p class="deliverable-text">
+          <div style="background: #FFFFFF; border: 1.5px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 32px 28px; box-shadow: var(--shadow-sm);">
+            <div style="font-size: 1.4rem; color: var(--accent-wine); font-weight: 800; margin-bottom: 12px;">02</div>
+            <h3 style="font-size: 1.3rem; margin-bottom: 12px;">Acompañamiento por WhatsApp</h3>
+            <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.65; margin: 0;">
               Entre sesiones también tienes acceso directo. Bajan las ventas, alguien del equipo falla, aparece miedo — ahí intervenimos mientras está ocurriendo en tiempo real.
             </p>
           </div>
 
-          <div class="deliverable-card">
-            <div class="deliverable-icon-box">03</div>
-            <h3 class="deliverable-title">Mapa Elegirte™</h3>
-            <p class="deliverable-text">
+          <div style="background: #FFFFFF; border: 1.5px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 32px 28px; box-shadow: var(--shadow-sm);">
+            <div style="font-size: 1.4rem; color: var(--accent-wine); font-weight: 800; margin-bottom: 12px;">03</div>
+            <h3 style="font-size: 1.3rem; margin-bottom: 12px;">Mapa Elegirte™</h3>
+            <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.65; margin: 0;">
               Tu diagnóstico inicial en seis dimensiones para ver con total transparencia matemática dónde está el verdadero cuello de botella de tu crecimiento.
             </p>
           </div>
 
-          <div class="deliverable-card">
-            <div class="deliverable-icon-box">04</div>
-            <h3 class="deliverable-title">Intervenciones personalizadas</h3>
-            <p class="deliverable-text">
+          <div style="background: #FFFFFF; border: 1.5px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 32px 28px; box-shadow: var(--shadow-sm);">
+            <div style="font-size: 1.4rem; color: var(--accent-wine); font-weight: 800; margin-bottom: 12px;">04</div>
+            <h3 style="font-size: 1.3rem; margin-bottom: 12px;">Intervenciones personalizadas</h3>
+            <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.65; margin: 0;">
               Según aquello que necesitemos trabajar contigo: regulación del sistema nervioso, límites ejecutivos, reprogramación o conversaciones difíciles de delegación.
             </p>
           </div>
 
-          <div class="deliverable-card">
-            <div class="deliverable-icon-box">05</div>
-            <h3 class="deliverable-title">Plan de Expansión Elegirte™</h3>
-            <p class="deliverable-text">
+          <div style="background: #FFFFFF; border: 1.5px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 32px 28px; box-shadow: var(--shadow-sm);">
+            <div style="font-size: 1.4rem; color: var(--accent-wine); font-weight: 800; margin-bottom: 12px;">05</div>
+            <h3 style="font-size: 1.3rem; margin-bottom: 12px;">Plan de Expansión Elegirte™</h3>
+            <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.65; margin: 0;">
               12 meses estructurados, traducidos a tu siguiente etapa, sin que el crecimiento dependa de aumentar tus horas personales de trabajo.
             </p>
           </div>
-
         </div>
 
         <!-- VTURB SMARTPLAYER 2 (HORIZONTAL 16:9 - RESULTADOS DE CLIENTAS) -->
-        <div style="margin-top: 60px; text-align: center;">
+        <div style="margin-top: 55px; text-align: center;">
           <div class="eyebrow">Resultados reales</div>
           <h3 style="font-family: var(--font-serif); font-size: 1.7rem;">En este video, varias de ellas lo cuentan en sus propias palabras:</h3>
           
-          <div class="video-luxury-wide">
-            <div class="video-inner-container">
+          <div style="max-width: 840px; margin: 30px auto; border-radius: 20px; padding: 6px; background: linear-gradient(135deg, rgba(212, 175, 55, 0.3) 0%, rgba(156, 57, 108, 0.3) 100%); box-shadow: var(--shadow-md);">
+            <div style="border-radius: 16px; overflow: hidden; background: #000000; line-height: 0;">
               <vturb-smartplayer id="vid-6a99cb3bb9f605e051c951f6" style="display: block; margin: 0 auto; width: 100%;">
                 <div class="vturb-player-placeholder" style="position: relative; width: 100%; padding: 56.239015817223205% 0 0; z-index: 0; background-color: black;"></div>
               </vturb-smartplayer>
@@ -2345,24 +2249,24 @@
         <div class="eyebrow">Concreto, no abstracto</div>
         <h2>Ahora imagina algo mucho más concreto que "tu mejor versión".</h2>
 
-        <div style="display: flex; flex-direction: column; gap: 16px; margin: 30px 0;">
-          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 22px 26px; box-shadow: var(--shadow-sm); display: flex; gap: 16px; align-items: center;">
+        <div style="display: flex; flex-direction: column; gap: 14px; margin: 28px 0;">
+          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 20px 24px; box-shadow: var(--shadow-sm); display: flex; gap: 16px; align-items: center; border: 1px solid var(--border-subtle);">
             <span style="color: var(--accent-wine); font-size: 1.3rem;">✦</span>
             <span style="font-size: 1.05rem; color: var(--text-main);">Un mes en el que las ventas bajan… y no conviertes la situación en una emergencia catastrófica.</span>
           </div>
-          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 22px 26px; box-shadow: var(--shadow-sm); display: flex; gap: 16px; align-items: center;">
+          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 20px 24px; box-shadow: var(--shadow-sm); display: flex; gap: 16px; align-items: center; border: 1px solid var(--border-subtle);">
             <span style="color: var(--accent-wine); font-size: 1.3rem;">✦</span>
             <span style="font-size: 1.05rem; color: var(--text-main);">Un miembro de tu equipo comete un error… y no necesitas recuperar todo el control compulsivamente.</span>
           </div>
-          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 22px 26px; box-shadow: var(--shadow-sm); display: flex; gap: 16px; align-items: center;">
+          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 20px 24px; box-shadow: var(--shadow-sm); display: flex; gap: 16px; align-items: center; border: 1px solid var(--border-subtle);">
             <span style="color: var(--accent-wine); font-size: 1.3rem;">✦</span>
             <span style="font-size: 1.05rem; color: var(--text-main);">Tienes una tarde libre… y no buscas automáticamente algo "productivo" para tapar el vacío.</span>
           </div>
-          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 22px 26px; box-shadow: var(--shadow-sm); display: flex; gap: 16px; align-items: center;">
+          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 20px 24px; box-shadow: var(--shadow-sm); display: flex; gap: 16px; align-items: center; border: 1px solid var(--border-subtle);">
             <span style="color: var(--accent-wine); font-size: 1.3rem;">✦</span>
             <span style="font-size: 1.05rem; color: var(--text-main);">Aparece una oportunidad económica… y antes de "¿cuánto puedo ganar?" te preguntas con calma: "¿quiero esto?"</span>
           </div>
-          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 22px 26px; box-shadow: var(--shadow-sm); display: flex; gap: 16px; align-items: center;">
+          <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 20px 24px; box-shadow: var(--shadow-sm); display: flex; gap: 16px; align-items: center; border: 1px solid var(--border-subtle);">
             <span style="color: var(--accent-wine); font-size: 1.3rem;">✦</span>
             <span style="font-size: 1.05rem; color: var(--text-main);">Tienes que decir no… y no necesitas justificarte durante dos días seguidos.</span>
           </div>
@@ -2370,7 +2274,7 @@
 
         <p>Quieres crecer… pero tu primera pregunta deja de ser <em>«¿cuántas horas más voy a necesitar?»</em> y empieza a ser:</p>
 
-        <div style="font-family: var(--font-serif); font-size: 2rem; font-weight: 700; color: var(--accent-wine); text-align: center; margin: 26px 0;">
+        <div style="font-family: var(--font-serif); font-size: 2rem; font-weight: 700; color: var(--accent-wine); text-align: center; margin: 24px 0;">
           «¿Cómo quiero construirlo?»
         </div>
         <p style="text-align: center; font-size: 1.25rem; font-weight: 700; color: var(--text-main);">Eso es expansión.</p>
@@ -2386,7 +2290,6 @@
         <h2>Antes de que las pienses tú.</h2>
 
         <div class="accordion-wrap">
-          
           <div class="faq-item">
             <button class="faq-btn" onclick="toggleFaq(this)">
               <span>«No tengo tiempo para esto.»</span>
@@ -2434,14 +2337,13 @@
               </div>
             </div>
           </div>
-
         </div>
 
       </div>
     </section>
 
     <!-- =========================================================
-         17 · ANTES DE MIRAR EL PRECIO (CALCULA EL COSTO DE SEGUIR IGUAL) + ROCÍO
+         17 · ANTES DE MIRAR EL PRECIO + ROCÍO (SIN MARRONES)
          ========================================================= -->
     <section class="section-pad bg-ivory">
       <div class="container">
@@ -2451,33 +2353,34 @@
           <p style="font-size: 1.15rem;">No solamente en dinero.</p>
         </div>
 
-        <div class="desires-split-grid" style="margin-top: 30px;">
-          <div class="desire-column-card desire-col-left">
-            <h4 style="font-family: var(--font-serif); font-size: 1.35rem; color: #c53030;">El costo visible</h4>
-            <ul class="desire-list">
-              <li class="desire-list-item"><span style="color: #e93d3d;">✕</span> Horas interminables</li>
-              <li class="desire-list-item"><span style="color: #e93d3d;">✕</span> Decisiones postergadas</li>
-              <li class="desire-list-item"><span style="color: #e93d3d;">✕</span> Trabajo operativo que no debería depender de ti</li>
-              <li class="desire-list-item"><span style="color: #e93d3d;">✕</span> Oportunidades aceptadas únicamente por miedo</li>
-              <li class="desire-list-item"><span style="color: #e93d3d;">✕</span> Límites que no logras sostener</li>
-              <li class="desire-list-item"><span style="color: #e93d3d;">✕</span> Fines de semana sacrificados</li>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin: 34px 0;">
+          <div style="background: #FFFFFF; border-radius: var(--radius-lg); padding: 36px 30px; box-shadow: var(--shadow-sm); border: 1.5px solid rgba(233, 61, 61, 0.25);">
+            <h4 style="font-family: var(--font-serif); font-size: 1.35rem; color: #C53030;">El costo visible</h4>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; margin-top: 16px;">
+              <li style="display: flex; gap: 10px; font-weight: 600;"><span style="color: #E93D3D;">✕</span> Horas interminables</li>
+              <li style="display: flex; gap: 10px; font-weight: 600;"><span style="color: #E93D3D;">✕</span> Decisiones postergadas</li>
+              <li style="display: flex; gap: 10px; font-weight: 600;"><span style="color: #E93D3D;">✕</span> Trabajo operativo que no debería depender de ti</li>
+              <li style="display: flex; gap: 10px; font-weight: 600;"><span style="color: #E93D3D;">✕</span> Oportunidades aceptadas únicamente por miedo</li>
+              <li style="display: flex; gap: 10px; font-weight: 600;"><span style="color: #E93D3D;">✕</span> Límites que no logras sostener</li>
+              <li style="display: flex; gap: 10px; font-weight: 600;"><span style="color: #E93D3D;">✕</span> Fines de semana sacrificados</li>
             </ul>
           </div>
 
-          <div class="desire-column-card" style="background: #251620; color: #FFFFFF; border-radius: var(--radius-lg); padding: 38px 32px; border: 1.5px solid rgba(212, 175, 55, 0.4);">
+          <!-- REEMPLAZO DEL RECUADRO MARRÓN OSCURO POR COLOR VINO BURDEOS DE LUJO -->
+          <div style="background: linear-gradient(135deg, #6E224A 0%, #8C2B5F 100%); color: #FFFFFF; border-radius: var(--radius-lg); padding: 36px 30px; border: 1.5px solid rgba(212, 175, 55, 0.4); box-shadow: 0 12px 35px rgba(110, 34, 74, 0.22);">
             <h4 style="font-family: var(--font-serif); font-size: 1.35rem; color: var(--accent-gold-light);">La otra moneda</h4>
-            <ul class="desire-list">
-              <li class="desire-list-item" style="color: #f7e8ef;"><span style="color: var(--accent-gold);">✦</span> Tu tranquilidad interna</li>
-              <li class="desire-list-item" style="color: #f7e8ef;"><span style="color: var(--accent-gold);">✦</span> Tus relaciones y tu familia</li>
-              <li class="desire-list-item" style="color: #f7e8ef;"><span style="color: var(--accent-gold);">✦</span> Tu salud y la respuesta de tu cuerpo</li>
-              <li class="desire-list-item" style="color: #f7e8ef;"><span style="color: var(--accent-gold);">✦</span> Tu tiempo libre auténtico</li>
-              <li class="desire-list-item" style="color: #f7e8ef;"><span style="color: var(--accent-gold);">✦</span> Tu capacidad de disfrutar lo conseguido</li>
-              <li class="desire-list-item" style="color: #f7e8ef;"><span style="color: var(--accent-gold);">✦</span> La mujer que existe fuera de su negocio</li>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; margin-top: 16px;">
+              <li style="display: flex; gap: 10px; font-weight: 600; color: #F8EBF2;"><span style="color: var(--accent-gold);">✦</span> Tu tranquilidad interna</li>
+              <li style="display: flex; gap: 10px; font-weight: 600; color: #F8EBF2;"><span style="color: var(--accent-gold);">✦</span> Tus relaciones y tu familia</li>
+              <li style="display: flex; gap: 10px; font-weight: 600; color: #F8EBF2;"><span style="color: var(--accent-gold);">✦</span> Tu salud y la respuesta de tu cuerpo</li>
+              <li style="display: flex; gap: 10px; font-weight: 600; color: #F8EBF2;"><span style="color: var(--accent-gold);">✦</span> Tu tiempo libre auténtico</li>
+              <li style="display: flex; gap: 10px; font-weight: 600; color: #F8EBF2;"><span style="color: var(--accent-gold);">✦</span> Tu capacidad de disfrutar lo conseguido</li>
+              <li style="display: flex; gap: 10px; font-weight: 600; color: #F8EBF2;"><span style="color: var(--accent-gold);">✦</span> La mujer que existe fuera de su negocio</li>
             </ul>
           </div>
         </div>
 
-        <p style="text-align: center; max-width: 780px; margin: 30px auto; font-size: 1.15rem; font-weight: 600;">
+        <p style="text-align: center; max-width: 780px; margin: 28px auto; font-size: 1.15rem; font-weight: 600;">
           Porque el coste de sostenerlo todo sola no se queda en las métricas del negocio: se refleja directamente en ti.
         </p>
 
@@ -2496,21 +2399,21 @@
             <div class="rocio-comparison-col">
               <div class="rocio-state-box state-before">
                 <div class="state-title">A la izquierda (Antes)</div>
-                <p style="margin: 0; font-size: 0.96rem; color: #742a2a; line-height: 1.6;">
+                <p style="margin: 0; font-size: 0.96rem; color: #742A2A; line-height: 1.6;">
                   No hay un mal día; hay años acumulados de sobreexigencia, de resolver cada detalle, de ser el soporte exclusivo de su estructura y de pagar el crecimiento con su propio cuerpo.
                 </p>
               </div>
 
               <div class="rocio-state-box state-after">
                 <div class="state-title">A la derecha (Después)</div>
-                <p style="margin: 0; font-size: 0.96rem; color: #22543d; line-height: 1.6;">
+                <p style="margin: 0; font-size: 0.96rem; color: #22543D; line-height: 1.6;">
                   No hay un filtro estético; hay una mujer que redefinió cómo lidera, cómo delega y qué lugar ocupa ella dentro de su empresa. La misma capacidad profesional, sosteniéndose desde un lugar completamente diferente.
                 </p>
               </div>
             </div>
           </div>
 
-          <div style="text-align: center; margin-top: 30px;">
+          <div style="text-align: center; margin-top: 28px;">
             <p style="font-family: var(--font-serif); font-size: 1.35rem; color: var(--text-main); font-weight: 700;">
               Quizás puedes seguir así. Probablemente puedes. Pero esa ya no es la pregunta.<br>
               <span class="text-serif-italic" style="font-size: 1.55rem;">¿Realmente quieres?</span>
@@ -2522,7 +2425,7 @@
     </section>
 
     <!-- =========================================================
-         18 · LA INVERSIÓN Y PROCESO DE POSTULACIÓN
+         18 · LA INVERSIÓN (2X2 EQUILIBRADO)
          ========================================================= -->
     <section class="section-pad bg-silk" id="inversion">
       <div class="container-narrow">
@@ -2535,16 +2438,17 @@
         <p>Si después de nuestra conversación ambas consideramos que Elegirte es el proceso adecuado para ti, te presentaré personalmente las opciones de inversión.</p>
         <p><strong>No tienes que tomar ninguna decisión antes de hablar conmigo.</strong></p>
 
-        <div style="background: #FFFFFF; border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 36px; margin: 34px 0; box-shadow: var(--shadow-sm);">
+        <!-- 2x2 EQUILIBRADO -->
+        <div style="background: #FFFFFF; border: 1.5px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 34px; margin: 32px 0; box-shadow: var(--shadow-sm);">
           <h4 style="font-family: var(--font-serif); font-size: 1.3rem; margin-bottom: 14px;">Pero existe otra cifra que rara vez calculamos:</h4>
           <p style="font-size: 1.15rem; color: var(--accent-wine); font-weight: 700; margin-bottom: 16px;">
             ¿Cuánto te costará otro año funcionando exactamente igual?
           </p>
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px;">
-            <div style="padding: 14px; background: var(--bg-primary); border-radius: var(--radius-sm); font-weight: 600;">¿Cuántas horas?</div>
-            <div style="padding: 14px; background: var(--bg-primary); border-radius: var(--radius-sm); font-weight: 600;">¿Cuánta energía vital?</div>
-            <div style="padding: 14px; background: var(--bg-primary); border-radius: var(--radius-sm); font-weight: 600;">¿Cuántas decisiones postergadas?</div>
-            <div style="padding: 14px; background: var(--bg-primary); border-radius: var(--radius-sm); font-weight: 600;">¿Cuántas cosas dependiendo de ti?</div>
+          <div class="grid-2x2">
+            <div style="padding: 16px; background: var(--bg-primary); border-radius: var(--radius-sm); font-weight: 600; text-align: center;">¿Cuántas horas de tu vida?</div>
+            <div style="padding: 16px; background: var(--bg-primary); border-radius: var(--radius-sm); font-weight: 600; text-align: center;">¿Cuánta energía vital acumulada?</div>
+            <div style="padding: 16px; background: var(--bg-primary); border-radius: var(--radius-sm); font-weight: 600; text-align: center;">¿Cuántas decisiones postergadas?</div>
+            <div style="padding: 16px; background: var(--bg-primary); border-radius: var(--radius-sm); font-weight: 600; text-align: center;">¿Cuántas cosas dependiendo de ti?</div>
           </div>
         </div>
 
@@ -2554,7 +2458,7 @@
         </p>
 
         <!-- ACOMPAÑAMIENTO LIMITADO -->
-        <div style="background: linear-gradient(135deg, rgba(156, 57, 108, 0.08) 0%, rgba(212, 175, 55, 0.08) 100%); border: 1.5px solid var(--accent-gold); border-radius: var(--radius-md); padding: 26px 30px; margin: 30px 0;">
+        <div style="background: #FFFFFF; border: 1.5px solid var(--accent-gold); border-radius: var(--radius-md); padding: 24px 28px; margin: 28px 0; box-shadow: var(--shadow-sm);">
           <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
             <span class="nav-status-dot"></span>
             <strong style="font-family: var(--font-serif); font-size: 1.15rem; color: var(--accent-wine);">Acompañamiento Estrictamente Limitado</strong>
@@ -2564,18 +2468,18 @@
           </p>
         </div>
 
-        <!-- ÚLTIMA RESISTENCIA -->
-        <div style="margin-top: 40px;">
+        <!-- ÚLTIMA RESISTENCIA (TARJETAS ELEGANTES) -->
+        <div style="margin-top: 36px;">
           <div class="eyebrow">Última resistencia</div>
           <h3 style="font-family: var(--font-serif); font-size: 1.7rem; color: var(--text-main);">«Ahora no es el momento.»</h3>
           <p>Puede ser verdad. Pero antes de decidir, pregúntate con serenidad: ¿cuántas veces te has dicho exactamente eso?</p>
           <p>Y quizá siempre aparece otra cosa antes. Otro objetivo. Otro cliente. Otro lanzamiento. Otro problema. Otra cifra. Así que distingue entre:</p>
 
           <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0;">
-            <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 20px; text-align: center; border: 1px solid var(--border-subtle); font-weight: 600; color: var(--text-muted);">
+            <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 20px; text-align: center; border: 1.5px solid var(--border-subtle); font-weight: 600; color: var(--text-muted);">
               «No es mi momento.»
             </div>
-            <div style="background: #251620; border-radius: var(--radius-md); padding: 20px; text-align: center; border: 1px solid var(--accent-gold); font-weight: 700; color: var(--accent-gold-light);">
+            <div style="background: linear-gradient(135deg, #6E224A 0%, #8C2B5F 100%); border-radius: var(--radius-md); padding: 20px; text-align: center; border: 1.5px solid var(--accent-gold); font-weight: 700; color: #FFFFFF;">
               «Estoy volviendo a dejarme para después.»
             </div>
           </div>
@@ -2585,7 +2489,7 @@
     </section>
 
     <!-- =========================================================
-         19 · PARA QUIÉN SÍ / PARA QUIÉN NO (FILTRO DE ADMISIÓN)
+         19 · PARA QUIÉN SÍ / PARA QUIÉN NO
          ========================================================= -->
     <section class="section-pad bg-ivory">
       <div class="container">
@@ -2596,17 +2500,16 @@
         </div>
 
         <div class="filter-columns-grid">
-          
           <div class="filter-card filter-card-no">
-            <h4 style="font-family: var(--font-serif); font-size: 1.35rem; color: #c53030; margin-bottom: 6px;">No es para ti si:</h4>
+            <h4 style="font-family: var(--font-serif); font-size: 1.35rem; color: #C53030; margin-bottom: 6px;">No es para ti si:</h4>
             <p style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 16px;">Para no hacerte perder tiempo</p>
             <ul class="filter-list">
-              <li class="filter-list-item"><span class="filter-icon-no">✕</span> Todavía estás intentando conseguir tus primeros clientes.</li>
-              <li class="filter-list-item"><span class="filter-icon-no">✕</span> Buscas una consultoría técnica de funnels, anuncios o lanzamientos.</li>
-              <li class="filter-list-item"><span class="filter-icon-no">✕</span> Buscas una promesa ficticia de facturación sin implicación.</li>
-              <li class="filter-list-item"><span class="filter-icon-no">✕</span> Necesitas atención psicológica clínica o médica en este momento.</li>
-              <li class="filter-list-item"><span class="filter-icon-no">✕</span> Buscas acumular más teoría e información sin implementar.</li>
-              <li class="filter-list-item"><span class="filter-icon-no">✕</span> Quieres que alguien cambie tu vida sin tomar decisiones diferentes.</li>
+              <li class="filter-list-item"><span style="color: #E93D3D; font-weight: 800; font-size: 1.1rem; flex-shrink: 0;">✕</span> Todavía estás intentando conseguir tus primeros clientes.</li>
+              <li class="filter-list-item"><span style="color: #E93D3D; font-weight: 800; font-size: 1.1rem; flex-shrink: 0;">✕</span> Buscas una consultoría técnica de funnels, anuncios o lanzamientos.</li>
+              <li class="filter-list-item"><span style="color: #E93D3D; font-weight: 800; font-size: 1.1rem; flex-shrink: 0;">✕</span> Buscas una promesa ficticia de facturación sin implicación.</li>
+              <li class="filter-list-item"><span style="color: #E93D3D; font-weight: 800; font-size: 1.1rem; flex-shrink: 0;">✕</span> Necesitas atención psicológica clínica o médica en este momento.</li>
+              <li class="filter-list-item"><span style="color: #E93D3D; font-weight: 800; font-size: 1.1rem; flex-shrink: 0;">✕</span> Buscas acumular más teoría e información sin implementar.</li>
+              <li class="filter-list-item"><span style="color: #E93D3D; font-weight: 800; font-size: 1.1rem; flex-shrink: 0;">✕</span> Quieres que alguien cambie tu vida sin tomar decisiones diferentes.</li>
             </ul>
           </div>
 
@@ -2614,18 +2517,17 @@
             <h4 style="font-family: var(--font-serif); font-size: 1.35rem; color: var(--accent-wine); margin-bottom: 6px;">Puede ser para ti si:</h4>
             <p style="font-size: 0.9rem; color: var(--accent-wine); margin-bottom: 16px;">El perfil idóneo de Elegirte</p>
             <ul class="filter-list">
-              <li class="filter-list-item"><span class="filter-icon-yes">✓</span> Ya sabes hacer dinero, pero estás cansada de perseguirlo con desgaste.</li>
-              <li class="filter-list-item"><span class="filter-icon-yes">✓</span> Facturas, pero vives con incertidumbre constante por el mes siguiente.</li>
-              <li class="filter-list-item"><span class="filter-icon-yes">✓</span> Tienes equipo, pero demasiado sigue dependiendo críticamente de ti.</li>
-              <li class="filter-list-item"><span class="filter-icon-yes">✓</span> Quieres crecer, pero trabajar más horas ya no es una opción viable.</li>
-              <li class="filter-list-item"><span class="filter-icon-yes">✓</span> Te cuesta soltar el control, parar y dejar de hacerte cargo de todo.</li>
-              <li class="filter-list-item"><span class="filter-icon-yes">✓</span> Quieres decidir desde mayor claridad y serenidad — y disfrutar lo que construiste.</li>
+              <li class="filter-list-item"><span style="color: #25D366; font-weight: 800; font-size: 1.1rem; flex-shrink: 0;">✓</span> Ya sabes hacer dinero, pero estás cansada de perseguirlo con desgaste.</li>
+              <li class="filter-list-item"><span style="color: #25D366; font-weight: 800; font-size: 1.1rem; flex-shrink: 0;">✓</span> Facturas, pero vives con incertidumbre constante por el mes siguiente.</li>
+              <li class="filter-list-item"><span style="color: #25D366; font-weight: 800; font-size: 1.1rem; flex-shrink: 0;">✓</span> Tienes equipo, pero demasiado sigue dependiendo críticamente de ti.</li>
+              <li class="filter-list-item"><span style="color: #25D366; font-weight: 800; font-size: 1.1rem; flex-shrink: 0;">✓</span> Quieres crecer, pero trabajar más horas ya no es una opción viable.</li>
+              <li class="filter-list-item"><span style="color: #25D366; font-weight: 800; font-size: 1.1rem; flex-shrink: 0;">✓</span> Te cuesta soltar el control, parar y dejar de hacerte cargo de todo.</li>
+              <li class="filter-list-item"><span style="color: #25D366; font-weight: 800; font-size: 1.1rem; flex-shrink: 0;">✓</span> Quieres decidir desde mayor claridad y serenidad — y disfrutar lo que construiste.</li>
             </ul>
           </div>
-
         </div>
 
-        <div style="max-width: 820px; margin: 40px auto 0; text-align: center;">
+        <div style="max-width: 820px; margin: 38px auto 0; text-align: center;">
           <p style="font-size: 1.15rem; line-height: 1.8;">
             Porque puedes seguir así. Puedes. Puedes hacer otro lanzamiento. Puedes trabajar otro sábado. Puedes resolver otra crisis. Puedes volver a asumir el coste sola.
           </p>
@@ -2636,51 +2538,46 @@
             No empezaste un negocio para convertirte en la empleada más exigida de tu propia empresa. No querías libertad para sentir culpa cada vez que tienes una tarde libre.
           </p>
         </div>
-
       </div>
     </section>
 
     <!-- =========================================================
-         20 · CIERRE Y LLAMADO A LA ACCIÓN FINAL
+         20 · CIERRE Y CTA FINAL (COLOR VINO DE LUJO)
          ========================================================= -->
-    <section class="section-pad bg-dark" style="border-top: 1px solid rgba(212, 175, 55, 0.25); text-align: center; position: relative;">
-      <div class="ambient-glow ambient-top-left ambient-dark-wine"></div>
-      <div class="ambient-glow ambient-bottom-right ambient-dark-wine"></div>
-
-      <div class="container-narrow" style="position: relative; z-index: 2;">
-        
+    <section class="section-pad" style="background: linear-gradient(180deg, var(--hero-wine-deep) 0%, #320C21 100%); border-top: 1px solid rgba(212, 175, 55, 0.3); text-align: center; color: #FFFFFF;">
+      <div class="container-narrow">
         <div class="eyebrow eyebrow-dark">✦ EL SIGUIENTE PASO</div>
 
         <h2 style="font-size: clamp(2.1rem, 4.4vw, 3.4rem); margin-bottom: 22px; color: #FFFFFF;">
           Ya aprendiste a hacer dinero.<br>
-          <span style="background: linear-gradient(135deg, #f7e7a9 0%, #d4af37 50%, #e8b3cf 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-style: italic;">
+          <span style="background: linear-gradient(135deg, #F9EAB8 0%, #D4AF37 50%, #F2C7DD 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-style: italic;">
             Ahora aprende a hacerlo sin perderte a ti en el proceso.
           </span>
         </h2>
 
-        <p style="font-size: 1.3rem; color: #f2d9e6; font-family: var(--font-serif); font-style: italic; margin-bottom: 30px;">
+        <p style="font-size: 1.3rem; color: #F8E2EE; font-family: var(--font-serif); font-style: italic; margin-bottom: 28px;">
           Sin que el precio de tu siguiente nivel sigas siendo tú.
         </p>
 
-        <p style="max-width: 720px; margin: 0 auto 36px; font-size: 1.05rem; color: #d4c2cb; line-height: 1.75;">
+        <p style="max-width: 720px; margin: 0 auto 34px; font-size: 1.05rem; color: #EADCE5; line-height: 1.75;">
           Primero vamos a entender dónde estás. Qué has construido. Qué quieres conseguir ahora. Qué está dependiendo demasiado de ti. Qué te está costando sostenerlo.<br><br>
           Si considero que Elegirte tiene sentido para tu situación, te explicaré exactamente cómo trabajaríamos juntas. Si considero que necesitas otra cosa, te lo diré con total honestidad.
         </p>
 
-        <div style="margin: 40px 0 20px;">
+        <div style="margin: 36px 0 20px;">
           <a href="https://wa.me/34611405518?text=Hola%2C%20me%20gustar%C3%ADa%20postularme%20al%20mentoring" class="btn-luxury" style="padding: 22px 48px; font-size: 1.15rem;">
             <svg class="btn-whatsapp-icon" viewBox="0 0 24 24">
               <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
             </svg>
             Postularme al Mentoring Elegirte por WhatsApp
           </a>
-          <div class="cta-subtext cta-subtext-dark" style="margin-top: 14px;">
+          <div style="margin-top: 14px; font-size: 0.85rem; color: #EADCE5;">
             <span>✦ Conversación confidencial directa</span> · <span>Sin compromiso</span> · <span>12 semanas privadas</span>
           </div>
         </div>
 
-        <div style="margin-top: 40px; padding: 20px; background: rgba(255, 255, 255, 0.04); border-radius: var(--radius-md); border: 1px solid rgba(255, 255, 255, 0.08); max-width: 640px; margin-left: auto; margin-right: auto;">
-          <p style="margin: 0; font-size: 0.95rem; color: #f7e7a9; font-style: italic;">
+        <div style="margin-top: 36px; padding: 18px; background: rgba(255, 255, 255, 0.05); border-radius: var(--radius-md); border: 1px solid rgba(255, 255, 255, 0.1); max-width: 640px; margin-left: auto; margin-right: auto;">
+          <p style="margin: 0; font-size: 0.95rem; color: #F7E7A9; font-style: italic;">
             Si llevas meses pensando «no puedo seguir así»… deja de convertir esa frase en algo que vas a resolver «algún día».
           </p>
         </div>
@@ -2689,7 +2586,7 @@
     </section>
 
     <!-- =========================================================
-         21 · LEGAL FOOTER & DISCLAIMERS
+         21 · LEGAL FOOTER
          ========================================================= -->
     <footer class="footer-legal">
       <div class="container text-center">
@@ -2709,7 +2606,7 @@
           <a href="https://www.legal.kirtiranpreet.com/disclaimer-807528" target="_blank" rel="noopener">Disclaimer Legal</a>
         </div>
 
-        <p style="font-size: 0.8rem; color: #a1909a;">
+        <p style="font-size: 0.8rem; color: #A1909A;">
           © 2026 Kirti Ranpreet | Expert Business Solution LLC · Todos los derechos reservados.
         </p>
       </div>
@@ -2727,7 +2624,7 @@
 
   </div>
 
-  <!-- INTERACTIVE LOGIC SCRIPT -->
+  <!-- INTERACTIVE SCRIPTS -->
   <script>
     // 1. SCROLL PROGRESS BAR & STICKY MOBILE BAR
     window.addEventListener('scroll', function() {
@@ -2750,11 +2647,9 @@
     });
 
     // 2. DIAGNÓSTICO RÁPIDO INTERACTIVO
-    let selectedSymptoms = 0;
     function toggleSymptom(card) {
       card.classList.toggle('selected');
       const allSelected = document.querySelectorAll('.check-item-card.selected').length;
-      selectedSymptoms = allSelected;
 
       const counter = document.getElementById('symptom-counter');
       const feedback = document.getElementById('diagnostic-feedback');
@@ -2777,33 +2672,45 @@
       }
     }
 
-    // 3. ROADMAP 5 FASES TABS
+    // 3. GRÁFICO DINÁMICO: EXPLICACIÓN DE FASES AL HACER CLIC
+    const chartStageDescriptions = [
+      "<strong>Fase 1 · Mes Récord:</strong> Facturas una cifra alta. Por unos días respiras. Pero no se siente como libertad, sino como haber superado una crisis antes de la siguiente.",
+      "<strong>Fase 2 · La Caída:</strong> Al mes siguiente, la presión vuelve inmediatamente: «¿Y ahora cómo repetimos esto?». El sistema nervioso vuelve a ponerse en alerta máxima.",
+      "<strong>Fase 3 · Empuje Extremo:</strong> Tu única respuesta aprendida es meter más horas, hacer otro lanzamiento forzado y asumir todo el peso sola.",
+      "<strong>Fase 4 · Sistema Elegirte™:</strong> Construyes una estructura y una identidad donde las ventas crecen de forma regulada y sostenible, sin que el precio sigas siendo tú."
+    ];
+
+    function highlightChartStage(index, pill) {
+      document.querySelectorAll('.chart-node-pill').forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      const descBox = document.getElementById('chart-stage-desc');
+      if (descBox && chartStageDescriptions[index]) {
+        descBox.innerHTML = chartStageDescriptions[index];
+      }
+    }
+
+    // 4. ROADMAP 5 FASES TABS
     function switchPhase(phaseIndex, tabBtn) {
-      // Deactivate all buttons
       const allButtons = document.querySelectorAll('.stepper-tab-btn');
       allButtons.forEach(btn => btn.classList.remove('active'));
       tabBtn.classList.add('active');
 
-      // Deactivate all cards
       const allCards = document.querySelectorAll('.stepper-content-card');
       allCards.forEach(card => card.classList.remove('active'));
 
-      // Activate selected card
       const targetCard = document.getElementById('phase-card-' + phaseIndex);
       if (targetCard) {
         targetCard.classList.add('active');
       }
     }
 
-    // 4. ACCORDION FAQ
+    // 5. ACCORDION FAQ
     function toggleFaq(btn) {
       const item = btn.parentElement;
       const isActive = item.classList.contains('active');
 
-      // Close all
       document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
 
-      // Toggle current
       if (!isActive) {
         item.classList.add('active');
       }
